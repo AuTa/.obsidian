@@ -1,0 +1,11 @@
+{
+  "theme": "moonstone",
+  "cssTheme": "Pink Topaz",
+  "enabledCssSnippets": [
+    "default-font",
+    "blockquote before"
+  ],
+  "baseFontSize": 20,
+  "baseFontSizeAction": true,
+  "translucency": false
+}

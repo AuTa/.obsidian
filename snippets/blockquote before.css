@@ -1,0 +1,24 @@
+/* blockquote:before {
+    font: 14px/20px italic Times, serif;
+    content: "";
+    font-size: 3em;
+    line-height: 0.1em;
+    vertical-align: -0.4em;
+} */
+
+/* blockquote p {
+    margin: 0 !important;
+} */
+
+.markdown-embed-title {
+    display: none;
+}
+
+/* .markdown-preview-view.is-readable-line-width .markdown-preview-section h1,
+.markdown-source-view.is-readable-line-width .CodeMirror h1 {
+    line-height: 1.5 !important;
+} */
+
+pre[class*="language-"] {
+    display: none;
+}
