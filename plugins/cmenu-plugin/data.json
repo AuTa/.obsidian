@@ -50,5 +50,6 @@
   "appendMethod": "workspace",
   "shouldShowMenuOnSelect": false,
   "cMenuVisibility": true,
-  "cMenuBottomValue": 4.25
+  "cMenuBottomValue": 4.25,
+  "cMenuNumRows": 9
 }
