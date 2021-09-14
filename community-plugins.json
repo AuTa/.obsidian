@@ -13,5 +13,10 @@
   "obsidian-git",
   "sliding-panes-obsidian",
   "remember-cursor-position",
-  "table-extended"
+  "table-extended",
+  "open-vscode",
+  "buttons",
+  "customjs",
+  "obsidian-style-settings",
+  "cmenu-plugin"
 ]

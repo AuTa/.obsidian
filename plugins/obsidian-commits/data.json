@@ -3128,12 +3128,17 @@
       "size": 3,
       "tags": 0,
       "links": 3
+    },
+    "どんなときどう使う/Dataview/目次 1.md": {
+      "size": 624,
+      "tags": 0,
+      "links": 0
     }
   },
   "commitTypes": {
     "/": {
       "Refactor": 586,
-      "Create": 412,
+      "Create": 413,
       "Link": 791,
       "Expand": 41
     }
@@ -3159,7 +3164,7 @@
       "16": 352,
       "17": 229,
       "18": 126,
-      "19": 80,
+      "19": 81,
       "20": 37,
       "21": 10,
       "22": 6,
@@ -3168,7 +3173,7 @@
   },
   "weeklyCommits": {
     "/": {
-      "Mon": 200,
+      "Mon": 201,
       "Tue": 388,
       "Wed": 272,
       "Thu": 337,
@@ -3223,6 +3228,7 @@
         "<a class=\"internal-link\" href=\"どんなときどう使う/V るところです・V ているところです・V たところです.md\"> V るところです・V ているところです・V たところです </a>"
       ],
       "Created": [
+        "<a class=\"internal-link\" href=\"どんなときどう使う/Dataview/目次 1.md\"> 目次 1 </a>",
         "<a class=\"internal-link\" href=\"どんなときどう使う/例文/例文 3　～べく 1.md\"> 例文 3　～べく 1 </a>",
         "<a class=\"internal-link\" href=\"どんなときどう使う/500/～べく 1.md\"> ～べく 1 </a>",
         "<a class=\"internal-link\" href=\"どんなときどう使う/例文/例文 2　～上で 1.md\"> 例文 2　～上で 1 </a>",
@@ -3272,8 +3278,7 @@
         "<a class=\"internal-link\" href=\"どんなときどう使う/例文/例文 2　「は」と「が」 1 1.md\"> 例文 2　「は」と「が」 1 1 </a>",
         "<a class=\"internal-link\" href=\"どんなときどう使う/例文/例文 2　「は」と「が」 1.md\"> 例文 2　「は」と「が」 1 </a>",
         "<a class=\"internal-link\" href=\"どんなときどう使う/V て・V ないで・V ずに・ V なくて 1.md\"> V て・V ないで・V ずに・ V なくて 1 </a>",
-        "<a class=\"internal-link\" href=\"どんなときどう使う/「は」と「が」 1.md\"> 「は」と「が」 1 </a>",
-        "<a class=\"internal-link\" href=\"どんなときどう使う/例文/例文 1　こ・そ・あ 1.md\"> 例文 1　こ・そ・あ 1 </a>"
+        "<a class=\"internal-link\" href=\"どんなときどう使う/「は」と「が」 1.md\"> 「は」と「が」 1 </a>"
       ],
       "Renamed": [
         "<a class=\"internal-link\" href=\"どんなときどう使う/例文/例文 1　～によって・～による.md\"> 例文 1　～によって・～による </a>",
