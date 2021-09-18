@@ -45,6 +45,11 @@
       "id": "cmenu-plugin:editor:toggle-blockquote",
       "name": "cMenu: Toggle blockquote",
       "icon": "quote-glyph"
+    },
+    {
+      "id": "cmenu-plugin:editor:toggle-bullet-list",
+      "name": "cMenu: Toggle bullet",
+      "icon": "bullet-list-glyph"
     }
   ],
   "appendMethod": "workspace",
