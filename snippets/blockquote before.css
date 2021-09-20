@@ -18,7 +18,3 @@
 .markdown-source-view.is-readable-line-width .CodeMirror h1 {
     line-height: 1.5 !important;
 } */
-
-pre[class*="language-"] {
-    display: none;
-}
