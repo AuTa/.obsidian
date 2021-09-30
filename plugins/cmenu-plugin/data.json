@@ -50,6 +50,11 @@
       "id": "cmenu-plugin:editor:toggle-bullet-list",
       "name": "cMenu: Toggle bullet",
       "icon": "bullet-list-glyph"
+    },
+    {
+      "id": "cmenu-plugin:editor:toggle-highlight",
+      "name": "cMenu: Toggle highlight",
+      "icon": "highlight-glyph"
     }
   ],
   "appendMethod": "workspace",

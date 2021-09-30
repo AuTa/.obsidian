@@ -3,6 +3,8 @@ graph.json
 workspace
 workspaces.json
 daily-notes.json
+starred.json
+templates.json
 plugins/obsidian-commits/data.json
 plugins/obsidian-day-planner/data.json
 plugins/templater-obsidian/data.json
