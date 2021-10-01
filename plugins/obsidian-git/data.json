@@ -1,13 +1,14 @@
 {
-  "commitMessage": "vault backup: {{date}}",
-  "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
+  "commitMessage": "Vault backup: {{date}}",
+  "commitDateFormat": "YYYY-MM-DD HH",
   "autoSaveInterval": 0,
   "autoPullInterval": 0,
   "autoPullOnBoot": false,
   "disablePush": false,
-  "pullBeforePush": true,
+  "pullBeforePush": false,
   "disablePopups": false,
   "listChangedFilesInMessageBody": true,
   "showStatusBar": true,
-  "updateSubmodules": false
+  "updateSubmodules": true,
+  "gitPath": ""
 }
