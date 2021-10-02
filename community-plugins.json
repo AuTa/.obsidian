@@ -4,7 +4,6 @@
   "extract-highlights-plugin",
   "obsidian-commits",
   "obsidian-journey-plugin",
-  "note-folder-autorename",
   "obsidian-query-language",
   "obsidian-markdown-furigana",
   "footlinks",
@@ -18,5 +17,9 @@
   "buttons",
   "customjs",
   "cmenu-plugin",
-  "obsidian-excalidraw-plugin"
+  "obsidian-excalidraw-plugin",
+  "juggl",
+  "obsidian-spaced-repetition",
+  "folder-note-plugin",
+  "obsidian-banners"
 ]

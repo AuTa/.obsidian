@@ -55,6 +55,21 @@
       "id": "cmenu-plugin:editor:toggle-highlight",
       "name": "cMenu: Toggle highlight",
       "icon": "highlight-glyph"
+    },
+    {
+      "id": "obsidian-git:list-changed-files",
+      "name": "Obsidian Git: List changed files",
+      "icon": "remix-FileListLine"
+    },
+    {
+      "id": "obsidian-git:push",
+      "name": "Obsidian Git: Create backup",
+      "icon": "check-small"
+    },
+    {
+      "id": "obsidian-git:commit-push-specified-message",
+      "name": "Obsidian Git: Create backup with specified message",
+      "icon": "check-in-circle"
     }
   ],
   "appendMethod": "workspace",
