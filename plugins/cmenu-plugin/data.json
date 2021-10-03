@@ -70,6 +70,11 @@
       "id": "obsidian-git:commit-push-specified-message",
       "name": "Obsidian Git: Create backup with specified message",
       "icon": "check-in-circle"
+    },
+    {
+      "id": "cmenu-plugin:editor:insert-wikilink",
+      "name": "cMenu: Add internal link",
+      "icon": "bracket-glyph"
     }
   ],
   "appendMethod": "workspace",
