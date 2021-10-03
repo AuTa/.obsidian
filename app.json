@@ -1,17 +1,1 @@
-{
-  "obsidianCss": false,
-  "alwaysUpdateLinks": true,
-  "promptDelete": false,
-  "newFileLocation": "current",
-  "showFrontmatter": false,
-  "readableLineLength": true,
-  "foldHeading": false,
-  "useTab": false,
-  "lineWrap": true,
-  "defaultViewMode": "preview",
-  "strictLineBreaks": true,
-  "fileSortOrder": "byCreatedTimeReverse",
-  "attachmentFolderPath": "./attachments",
-  "newLinkFormat": "relative",
-  "useMarkdownLinks": false
-}
+../.obsidian_link/app.json
