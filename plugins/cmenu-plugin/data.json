@@ -75,6 +75,11 @@
       "id": "cmenu-plugin:editor:insert-wikilink",
       "name": "cMenu: Add internal link",
       "icon": "bracket-glyph"
+    },
+    {
+      "id": "quickadd:choice:610f58aa-503a-4655-ae26-8e6608b2ece4",
+      "name": "QuickAdd: zero-width space",
+      "icon": "remix-ArrowDropDownLine"
     }
   ],
   "appendMethod": "workspace",
