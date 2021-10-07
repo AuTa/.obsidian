@@ -1,0 +1,3 @@
+.internal-link + .internal-link::before {
+    content: " ";
+}

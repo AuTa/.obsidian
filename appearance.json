@@ -2,7 +2,9 @@
   "theme": "moonstone",
   "cssTheme": "Yin and Yang",
   "enabledCssSnippets": [
-    "default-font"
+    "default-font",
+    "internal-link",
+    "internal-embed"
   ],
   "baseFontSize": 20,
   "baseFontSizeAction": true,
