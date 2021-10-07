@@ -1,5 +1,6 @@
 [
   "cm-editor-syntax-highlight-obsidian",
+  "markdown-prettifier",
   "extract-highlights-plugin",
   "obsidian-commits",
   "obsidian-journey-plugin",
@@ -22,5 +23,6 @@
   "obsidian-banners",
   "media-extended",
   "quickadd",
-  "smart-random-note"
+  "smart-random-note",
+  "obsidian42-text-transporter"
 ]
