@@ -7,3 +7,7 @@
 .markdown-preview-view span.internal-embed:not(.image-embed)[width="1"] .markdown-embed {
     background-color: inherit;
 }
+
+.markdown-preview-view span.internal-embed:not(.image-embed)[width="1"] .markdown-embed .markdown-preview-view {
+    padding: 0px 20px 0px 20px;
+}
