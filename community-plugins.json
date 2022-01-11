@@ -25,5 +25,8 @@
   "quickadd",
   "smart-random-note",
   "obsidian42-text-transporter",
-  "rss-reader"
+  "rss-reader",
+  "obsidian-auto-pair-chinese-symbol",
+  "cm-chs-patch",
+  "obsidian-stille"
 ]
