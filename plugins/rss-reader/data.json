@@ -16,9 +16,9 @@
       "sortOrder": "ALPHABET_NORMAL"
     }
   ],
-  "saveLocation": "default",
+  "saveLocation": "custom",
   "displayStyle": "cards",
-  "saveLocationFolder": "",
+  "saveLocationFolder": "🔖栞",
   "items": [],
   "dateFormat": "YYYY-MM-DDTHH:mm:SS",
   "template": "---\nlink: {{link}}\nauthor: {{author}}\npublished: {{published}}\ntags: [{{tags:,}}]\n---\n# Highlights\n{{highlights}}\n\n---\n# {{title}}\n{{content}}",
@@ -43,5 +43,6 @@
     "filtered_folders": "",
     "folders": "",
     "no_folder": ""
-  }
+  },
+  "displayMedia": true
 }

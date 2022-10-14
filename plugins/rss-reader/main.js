@@ -68,435 +68,6 @@ var __async = (__this, __arguments, generator) => {
   });
 };
 
-// node_modules/tslib/tslib.js
-var require_tslib = __commonJS({
-  "node_modules/tslib/tslib.js"(exports, module2) {
-    var __extends2;
-    var __assign2;
-    var __rest2;
-    var __decorate2;
-    var __param2;
-    var __metadata2;
-    var __awaiter2;
-    var __generator2;
-    var __exportStar2;
-    var __values2;
-    var __read2;
-    var __spread2;
-    var __spreadArrays2;
-    var __spreadArray2;
-    var __await2;
-    var __asyncGenerator2;
-    var __asyncDelegator2;
-    var __asyncValues2;
-    var __makeTemplateObject2;
-    var __importStar2;
-    var __importDefault2;
-    var __classPrivateFieldGet2;
-    var __classPrivateFieldSet2;
-    var __createBinding2;
-    (function(factory) {
-      var root = typeof global === "object" ? global : typeof self === "object" ? self : typeof this === "object" ? this : {};
-      if (typeof define === "function" && define.amd) {
-        define("tslib", ["exports"], function(exports2) {
-          factory(createExporter(root, createExporter(exports2)));
-        });
-      } else if (typeof module2 === "object" && typeof module2.exports === "object") {
-        factory(createExporter(root, createExporter(module2.exports)));
-      } else {
-        factory(createExporter(root));
-      }
-      function createExporter(exports2, previous) {
-        if (exports2 !== root) {
-          if (typeof Object.create === "function") {
-            Object.defineProperty(exports2, "__esModule", { value: true });
-          } else {
-            exports2.__esModule = true;
-          }
-        }
-        return function(id, v) {
-          return exports2[id] = previous ? previous(id, v) : v;
-        };
-      }
-    })(function(exporter) {
-      var extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d, b) {
-        d.__proto__ = b;
-      } || function(d, b) {
-        for (var p in b)
-          if (Object.prototype.hasOwnProperty.call(b, p))
-            d[p] = b[p];
-      };
-      __extends2 = function(d, b) {
-        if (typeof b !== "function" && b !== null)
-          throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() {
-          this.constructor = d;
-        }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-      };
-      __assign2 = Object.assign || function(t2) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-          s = arguments[i];
-          for (var p in s)
-            if (Object.prototype.hasOwnProperty.call(s, p))
-              t2[p] = s[p];
-        }
-        return t2;
-      };
-      __rest2 = function(s, e) {
-        var t2 = {};
-        for (var p in s)
-          if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-            t2[p] = s[p];
-        if (s != null && typeof Object.getOwnPropertySymbols === "function")
-          for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-              t2[p[i]] = s[p[i]];
-          }
-        return t2;
-      };
-      __decorate2 = function(decorators, target, key, desc) {
-        var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-        if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
-          r = Reflect.decorate(decorators, target, key, desc);
-        else
-          for (var i = decorators.length - 1; i >= 0; i--)
-            if (d = decorators[i])
-              r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-        return c > 3 && r && Object.defineProperty(target, key, r), r;
-      };
-      __param2 = function(paramIndex, decorator) {
-        return function(target, key) {
-          decorator(target, key, paramIndex);
-        };
-      };
-      __metadata2 = function(metadataKey, metadataValue) {
-        if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
-          return Reflect.metadata(metadataKey, metadataValue);
-      };
-      __awaiter2 = function(thisArg, _arguments, P, generator) {
-        function adopt(value) {
-          return value instanceof P ? value : new P(function(resolve) {
-            resolve(value);
-          });
-        }
-        return new (P || (P = Promise))(function(resolve, reject) {
-          function fulfilled(value) {
-            try {
-              step(generator.next(value));
-            } catch (e) {
-              reject(e);
-            }
-          }
-          function rejected(value) {
-            try {
-              step(generator["throw"](value));
-            } catch (e) {
-              reject(e);
-            }
-          }
-          function step(result) {
-            result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
-          }
-          step((generator = generator.apply(thisArg, _arguments || [])).next());
-        });
-      };
-      __generator2 = function(thisArg, body) {
-        var _ = { label: 0, sent: function() {
-          if (t2[0] & 1)
-            throw t2[1];
-          return t2[1];
-        }, trys: [], ops: [] }, f, y, t2, g;
-        return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() {
-          return this;
-        }), g;
-        function verb(n) {
-          return function(v) {
-            return step([n, v]);
-          };
-        }
-        function step(op) {
-          if (f)
-            throw new TypeError("Generator is already executing.");
-          while (_)
-            try {
-              if (f = 1, y && (t2 = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t2 = y["return"]) && t2.call(y), 0) : y.next) && !(t2 = t2.call(y, op[1])).done)
-                return t2;
-              if (y = 0, t2)
-                op = [op[0] & 2, t2.value];
-              switch (op[0]) {
-                case 0:
-                case 1:
-                  t2 = op;
-                  break;
-                case 4:
-                  _.label++;
-                  return { value: op[1], done: false };
-                case 5:
-                  _.label++;
-                  y = op[1];
-                  op = [0];
-                  continue;
-                case 7:
-                  op = _.ops.pop();
-                  _.trys.pop();
-                  continue;
-                default:
-                  if (!(t2 = _.trys, t2 = t2.length > 0 && t2[t2.length - 1]) && (op[0] === 6 || op[0] === 2)) {
-                    _ = 0;
-                    continue;
-                  }
-                  if (op[0] === 3 && (!t2 || op[1] > t2[0] && op[1] < t2[3])) {
-                    _.label = op[1];
-                    break;
-                  }
-                  if (op[0] === 6 && _.label < t2[1]) {
-                    _.label = t2[1];
-                    t2 = op;
-                    break;
-                  }
-                  if (t2 && _.label < t2[2]) {
-                    _.label = t2[2];
-                    _.ops.push(op);
-                    break;
-                  }
-                  if (t2[2])
-                    _.ops.pop();
-                  _.trys.pop();
-                  continue;
-              }
-              op = body.call(thisArg, _);
-            } catch (e) {
-              op = [6, e];
-              y = 0;
-            } finally {
-              f = t2 = 0;
-            }
-          if (op[0] & 5)
-            throw op[1];
-          return { value: op[0] ? op[1] : void 0, done: true };
-        }
-      };
-      __exportStar2 = function(m, o) {
-        for (var p in m)
-          if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p))
-            __createBinding2(o, m, p);
-      };
-      __createBinding2 = Object.create ? function(o, m, k, k2) {
-        if (k2 === void 0)
-          k2 = k;
-        Object.defineProperty(o, k2, { enumerable: true, get: function() {
-          return m[k];
-        } });
-      } : function(o, m, k, k2) {
-        if (k2 === void 0)
-          k2 = k;
-        o[k2] = m[k];
-      };
-      __values2 = function(o) {
-        var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
-        if (m)
-          return m.call(o);
-        if (o && typeof o.length === "number")
-          return {
-            next: function() {
-              if (o && i >= o.length)
-                o = void 0;
-              return { value: o && o[i++], done: !o };
-            }
-          };
-        throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
-      };
-      __read2 = function(o, n) {
-        var m = typeof Symbol === "function" && o[Symbol.iterator];
-        if (!m)
-          return o;
-        var i = m.call(o), r, ar = [], e;
-        try {
-          while ((n === void 0 || n-- > 0) && !(r = i.next()).done)
-            ar.push(r.value);
-        } catch (error) {
-          e = { error };
-        } finally {
-          try {
-            if (r && !r.done && (m = i["return"]))
-              m.call(i);
-          } finally {
-            if (e)
-              throw e.error;
-          }
-        }
-        return ar;
-      };
-      __spread2 = function() {
-        for (var ar = [], i = 0; i < arguments.length; i++)
-          ar = ar.concat(__read2(arguments[i]));
-        return ar;
-      };
-      __spreadArrays2 = function() {
-        for (var s = 0, i = 0, il = arguments.length; i < il; i++)
-          s += arguments[i].length;
-        for (var r = Array(s), k = 0, i = 0; i < il; i++)
-          for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-            r[k] = a[j];
-        return r;
-      };
-      __spreadArray2 = function(to, from, pack) {
-        if (pack || arguments.length === 2)
-          for (var i = 0, l = from.length, ar; i < l; i++) {
-            if (ar || !(i in from)) {
-              if (!ar)
-                ar = Array.prototype.slice.call(from, 0, i);
-              ar[i] = from[i];
-            }
-          }
-        return to.concat(ar || Array.prototype.slice.call(from));
-      };
-      __await2 = function(v) {
-        return this instanceof __await2 ? (this.v = v, this) : new __await2(v);
-      };
-      __asyncGenerator2 = function(thisArg, _arguments, generator) {
-        if (!Symbol.asyncIterator)
-          throw new TypeError("Symbol.asyncIterator is not defined.");
-        var g = generator.apply(thisArg, _arguments || []), i, q = [];
-        return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function() {
-          return this;
-        }, i;
-        function verb(n) {
-          if (g[n])
-            i[n] = function(v) {
-              return new Promise(function(a, b) {
-                q.push([n, v, a, b]) > 1 || resume(n, v);
-              });
-            };
-        }
-        function resume(n, v) {
-          try {
-            step(g[n](v));
-          } catch (e) {
-            settle(q[0][3], e);
-          }
-        }
-        function step(r) {
-          r.value instanceof __await2 ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r);
-        }
-        function fulfill(value) {
-          resume("next", value);
-        }
-        function reject(value) {
-          resume("throw", value);
-        }
-        function settle(f, v) {
-          if (f(v), q.shift(), q.length)
-            resume(q[0][0], q[0][1]);
-        }
-      };
-      __asyncDelegator2 = function(o) {
-        var i, p;
-        return i = {}, verb("next"), verb("throw", function(e) {
-          throw e;
-        }), verb("return"), i[Symbol.iterator] = function() {
-          return this;
-        }, i;
-        function verb(n, f) {
-          i[n] = o[n] ? function(v) {
-            return (p = !p) ? { value: __await2(o[n](v)), done: n === "return" } : f ? f(v) : v;
-          } : f;
-        }
-      };
-      __asyncValues2 = function(o) {
-        if (!Symbol.asyncIterator)
-          throw new TypeError("Symbol.asyncIterator is not defined.");
-        var m = o[Symbol.asyncIterator], i;
-        return m ? m.call(o) : (o = typeof __values2 === "function" ? __values2(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function() {
-          return this;
-        }, i);
-        function verb(n) {
-          i[n] = o[n] && function(v) {
-            return new Promise(function(resolve, reject) {
-              v = o[n](v), settle(resolve, reject, v.done, v.value);
-            });
-          };
-        }
-        function settle(resolve, reject, d, v) {
-          Promise.resolve(v).then(function(v2) {
-            resolve({ value: v2, done: d });
-          }, reject);
-        }
-      };
-      __makeTemplateObject2 = function(cooked, raw) {
-        if (Object.defineProperty) {
-          Object.defineProperty(cooked, "raw", { value: raw });
-        } else {
-          cooked.raw = raw;
-        }
-        return cooked;
-      };
-      var __setModuleDefault = Object.create ? function(o, v) {
-        Object.defineProperty(o, "default", { enumerable: true, value: v });
-      } : function(o, v) {
-        o["default"] = v;
-      };
-      __importStar2 = function(mod) {
-        if (mod && mod.__esModule)
-          return mod;
-        var result = {};
-        if (mod != null) {
-          for (var k in mod)
-            if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k))
-              __createBinding2(result, mod, k);
-        }
-        __setModuleDefault(result, mod);
-        return result;
-      };
-      __importDefault2 = function(mod) {
-        return mod && mod.__esModule ? mod : { "default": mod };
-      };
-      __classPrivateFieldGet2 = function(receiver, state, kind, f) {
-        if (kind === "a" && !f)
-          throw new TypeError("Private accessor was defined without a getter");
-        if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver))
-          throw new TypeError("Cannot read private member from an object whose class did not declare it");
-        return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
-      };
-      __classPrivateFieldSet2 = function(receiver, state, value, kind, f) {
-        if (kind === "m")
-          throw new TypeError("Private method is not writable");
-        if (kind === "a" && !f)
-          throw new TypeError("Private accessor was defined without a setter");
-        if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver))
-          throw new TypeError("Cannot write private member to an object whose class did not declare it");
-        return kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value), value;
-      };
-      exporter("__extends", __extends2);
-      exporter("__assign", __assign2);
-      exporter("__rest", __rest2);
-      exporter("__decorate", __decorate2);
-      exporter("__param", __param2);
-      exporter("__metadata", __metadata2);
-      exporter("__awaiter", __awaiter2);
-      exporter("__generator", __generator2);
-      exporter("__exportStar", __exportStar2);
-      exporter("__createBinding", __createBinding2);
-      exporter("__values", __values2);
-      exporter("__read", __read2);
-      exporter("__spread", __spread2);
-      exporter("__spreadArrays", __spreadArrays2);
-      exporter("__spreadArray", __spreadArray2);
-      exporter("__await", __await2);
-      exporter("__asyncGenerator", __asyncGenerator2);
-      exporter("__asyncDelegator", __asyncDelegator2);
-      exporter("__asyncValues", __asyncValues2);
-      exporter("__makeTemplateObject", __makeTemplateObject2);
-      exporter("__importStar", __importStar2);
-      exporter("__importDefault", __importDefault2);
-      exporter("__classPrivateFieldGet", __classPrivateFieldGet2);
-      exporter("__classPrivateFieldSet", __classPrivateFieldSet2);
-    });
-  }
-});
-
 // node_modules/ts-md5/dist/md5.js
 var require_md5 = __commonJS({
   "node_modules/ts-md5/dist/md5.js"(exports) {
@@ -504,6 +75,8 @@ var require_md5 = __commonJS({
     Object.defineProperty(exports, "__esModule", { value: true });
     var Md54 = function() {
       function Md55() {
+        this._dataLength = 0;
+        this._bufferLength = 0;
         this._state = new Int32Array(4);
         this._buffer = new ArrayBuffer(68);
         this._buffer8 = new Uint8Array(this._buffer, 0, 68);
@@ -765,12 +338,11 @@ var require_md5 = __commonJS({
         return this;
       };
       Md55.prototype.getState = function() {
-        var self2 = this;
-        var s = self2._state;
+        var s = this._state;
         return {
-          buffer: String.fromCharCode.apply(null, self2._buffer8),
-          buflen: self2._bufferLength,
-          length: self2._dataLength,
+          buffer: String.fromCharCode.apply(null, Array.from(this._buffer8)),
+          buflen: this._bufferLength,
+          length: this._dataLength,
           state: [s[0], s[1], s[2], s[3]]
         };
       };
@@ -797,8 +369,8 @@ var require_md5 = __commonJS({
         var buf8 = this._buffer8;
         var buf32 = this._buffer32;
         var i = (bufLen >> 2) + 1;
-        var dataBitsLen;
         this._dataLength += bufLen;
+        var dataBitsLen = this._dataLength * 8;
         buf8[bufLen] = 128;
         buf8[bufLen + 1] = buf8[bufLen + 2] = buf8[bufLen + 3] = 0;
         buf32.set(Md55.buffer32Identity.subarray(i), i);
@@ -806,7 +378,6 @@ var require_md5 = __commonJS({
           Md55._md5cycle(this._state, buf32);
           buf32.set(Md55.buffer32Identity);
         }
-        dataBitsLen = this._dataLength * 8;
         if (dataBitsLen <= 4294967295) {
           buf32[14] = dataBitsLen;
         } else {
@@ -831,7 +402,7 @@ var require_md5 = __commonJS({
     }();
     exports.Md5 = Md54;
     if (Md54.hashStr("hello") !== "5d41402abc4b2a76b9719d911017c592") {
-      console.error("Md5 self test failed.");
+      throw new Error("Md5 self test failed.");
     }
   }
 });
@@ -894,7 +465,7 @@ var require_feather = __commonJS({
         return __webpack_require__(__webpack_require__.s = 0);
       }({
         "./dist/icons.json": function(module3) {
-          module3.exports = { "activity": '<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>', "airplay": '<path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon>', "alert-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line>', "alert-octagon": '<polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line>', "alert-triangle": '<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line>', "align-center": '<line x1="18" y1="10" x2="6" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="18" y1="18" x2="6" y2="18"></line>', "align-justify": '<line x1="21" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="3" y2="18"></line>', "align-left": '<line x1="17" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="17" y1="18" x2="3" y2="18"></line>', "align-right": '<line x1="21" y1="10" x2="7" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="7" y2="18"></line>', "anchor": '<circle cx="12" cy="5" r="3"></circle><line x1="12" y1="22" x2="12" y2="8"></line><path d="M5 12H2a10 10 0 0 0 20 0h-3"></path>', "aperture": '<circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>', "archive": '<polyline points="21 8 21 21 3 21 3 8"></polyline><rect x="1" y="3" width="22" height="5"></rect><line x1="10" y1="12" x2="14" y2="12"></line>', "arrow-down-circle": '<circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line>', "arrow-down-left": '<line x1="17" y1="7" x2="7" y2="17"></line><polyline points="17 17 7 17 7 7"></polyline>', "arrow-down-right": '<line x1="7" y1="7" x2="17" y2="17"></line><polyline points="17 7 17 17 7 17"></polyline>', "arrow-down": '<line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline>', "arrow-left-circle": '<circle cx="12" cy="12" r="10"></circle><polyline points="12 8 8 12 12 16"></polyline><line x1="16" y1="12" x2="8" y2="12"></line>', "arrow-left": '<line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline>', "arrow-right-circle": '<circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line>', "arrow-right": '<line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline>', "arrow-up-circle": '<circle cx="12" cy="12" r="10"></circle><polyline points="16 12 12 8 8 12"></polyline><line x1="12" y1="16" x2="12" y2="8"></line>', "arrow-up-left": '<line x1="17" y1="17" x2="7" y2="7"></line><polyline points="7 17 7 7 17 7"></polyline>', "arrow-up-right": '<line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline>', "arrow-up": '<line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline>', "at-sign": '<circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>', "award": '<circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>', "bar-chart-2": '<line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line>', "bar-chart": '<line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line>', "battery-charging": '<path d="M5 18H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.19M15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.19"></path><line x1="23" y1="13" x2="23" y2="11"></line><polyline points="11 6 7 12 13 12 9 18"></polyline>', "battery": '<rect x="1" y="6" width="18" height="12" rx="2" ry="2"></rect><line x1="23" y1="13" x2="23" y2="11"></line>', "bell-off": '<path d="M13.73 21a2 2 0 0 1-3.46 0"></path><path d="M18.63 13A17.89 17.89 0 0 1 18 8"></path><path d="M6.26 6.26A5.86 5.86 0 0 0 6 8c0 7-3 9-3 9h14"></path><path d="M18 8a6 6 0 0 0-9.33-5"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "bell": '<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path>', "bluetooth": '<polyline points="6.5 6.5 17.5 17.5 12 23 12 1 17.5 6.5 6.5 17.5"></polyline>', "bold": '<path d="M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"></path><path d="M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"></path>', "book-open": '<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>', "book": '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>', "bookmark": '<path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>', "box": '<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line>', "briefcase": '<rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>', "calendar": '<rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>', "camera-off": '<line x1="1" y1="1" x2="23" y2="23"></line><path d="M21 21H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3m3-3h6l2 3h4a2 2 0 0 1 2 2v9.34m-7.72-2.06a4 4 0 1 1-5.56-5.56"></path>', "camera": '<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle>', "cast": '<path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path><line x1="2" y1="20" x2="2.01" y2="20"></line>', "check-circle": '<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline>', "check-square": '<polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>', "check": '<polyline points="20 6 9 17 4 12"></polyline>', "chevron-down": '<polyline points="6 9 12 15 18 9"></polyline>', "chevron-left": '<polyline points="15 18 9 12 15 6"></polyline>', "chevron-right": '<polyline points="9 18 15 12 9 6"></polyline>', "chevron-up": '<polyline points="18 15 12 9 6 15"></polyline>', "chevrons-down": '<polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline>', "chevrons-left": '<polyline points="11 17 6 12 11 7"></polyline><polyline points="18 17 13 12 18 7"></polyline>', "chevrons-right": '<polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline>', "chevrons-up": '<polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline>', "chrome": '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line>', "circle": '<circle cx="12" cy="12" r="10"></circle>', "clipboard": '<path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>', "clock": '<circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>', "cloud-drizzle": '<line x1="8" y1="19" x2="8" y2="21"></line><line x1="8" y1="13" x2="8" y2="15"></line><line x1="16" y1="19" x2="16" y2="21"></line><line x1="16" y1="13" x2="16" y2="15"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="12" y1="15" x2="12" y2="17"></line><path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"></path>', "cloud-lightning": '<path d="M19 16.9A5 5 0 0 0 18 7h-1.26a8 8 0 1 0-11.62 9"></path><polyline points="13 11 9 17 15 17 11 23"></polyline>', "cloud-off": '<path d="M22.61 16.95A5 5 0 0 0 18 10h-1.26a8 8 0 0 0-7.05-6M5 5a8 8 0 0 0 4 15h9a5 5 0 0 0 1.7-.3"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "cloud-rain": '<line x1="16" y1="13" x2="16" y2="21"></line><line x1="8" y1="13" x2="8" y2="21"></line><line x1="12" y1="15" x2="12" y2="23"></line><path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"></path>', "cloud-snow": '<path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"></path><line x1="8" y1="16" x2="8.01" y2="16"></line><line x1="8" y1="20" x2="8.01" y2="20"></line><line x1="12" y1="18" x2="12.01" y2="18"></line><line x1="12" y1="22" x2="12.01" y2="22"></line><line x1="16" y1="16" x2="16.01" y2="16"></line><line x1="16" y1="20" x2="16.01" y2="20"></line>', "cloud": '<path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>', "code": '<polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline>', "codepen": '<polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="22" x2="12" y2="15.5"></line><polyline points="22 8.5 12 15.5 2 8.5"></polyline><polyline points="2 15.5 12 8.5 22 15.5"></polyline><line x1="12" y1="2" x2="12" y2="8.5"></line>', "codesandbox": '<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline><polyline points="7.5 19.79 7.5 14.6 3 12"></polyline><polyline points="21 12 16.5 14.6 16.5 19.79"></polyline><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line>', "coffee": '<path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line>', "columns": '<path d="M12 3h7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-7m0-18H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7m0-18v18"></path>', "command": '<path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path>', "compass": '<circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>', "copy": '<rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>', "corner-down-left": '<polyline points="9 10 4 15 9 20"></polyline><path d="M20 4v7a4 4 0 0 1-4 4H4"></path>', "corner-down-right": '<polyline points="15 10 20 15 15 20"></polyline><path d="M4 4v7a4 4 0 0 0 4 4h12"></path>', "corner-left-down": '<polyline points="14 15 9 20 4 15"></polyline><path d="M20 4h-7a4 4 0 0 0-4 4v12"></path>', "corner-left-up": '<polyline points="14 9 9 4 4 9"></polyline><path d="M20 20h-7a4 4 0 0 1-4-4V4"></path>', "corner-right-down": '<polyline points="10 15 15 20 20 15"></polyline><path d="M4 4h7a4 4 0 0 1 4 4v12"></path>', "corner-right-up": '<polyline points="10 9 15 4 20 9"></polyline><path d="M4 20h7a4 4 0 0 0 4-4V4"></path>', "corner-up-left": '<polyline points="9 14 4 9 9 4"></polyline><path d="M20 20v-7a4 4 0 0 0-4-4H4"></path>', "corner-up-right": '<polyline points="15 14 20 9 15 4"></polyline><path d="M4 20v-7a4 4 0 0 1 4-4h12"></path>', "cpu": '<rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line>', "credit-card": '<rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line>', "crop": '<path d="M6.13 1L6 16a2 2 0 0 0 2 2h15"></path><path d="M1 6.13L16 6a2 2 0 0 1 2 2v15"></path>', "crosshair": '<circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line>', "database": '<ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>', "delete": '<path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"></path><line x1="18" y1="9" x2="12" y2="15"></line><line x1="12" y1="9" x2="18" y2="15"></line>', "disc": '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle>', "divide-circle": '<line x1="8" y1="12" x2="16" y2="12"></line><line x1="12" y1="16" x2="12" y2="16"></line><line x1="12" y1="8" x2="12" y2="8"></line><circle cx="12" cy="12" r="10"></circle>', "divide-square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="8" y1="12" x2="16" y2="12"></line><line x1="12" y1="16" x2="12" y2="16"></line><line x1="12" y1="8" x2="12" y2="8"></line>', "divide": '<circle cx="12" cy="6" r="2"></circle><line x1="5" y1="12" x2="19" y2="12"></line><circle cx="12" cy="18" r="2"></circle>', "dollar-sign": '<line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>', "download-cloud": '<polyline points="8 17 12 21 16 17"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"></path>', "download": '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line>', "dribbble": '<circle cx="12" cy="12" r="10"></circle><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"></path>', "droplet": '<path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>', "edit-2": '<path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>', "edit-3": '<path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>', "edit": '<path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>', "external-link": '<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>', "eye-off": '<path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "eye": '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle>', "facebook": '<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>', "fast-forward": '<polygon points="13 19 22 12 13 5 13 19"></polygon><polygon points="2 19 11 12 2 5 2 19"></polygon>', "feather": '<path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17.5" y1="15" x2="9" y2="15"></line>', "figma": '<path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path>', "file-minus": '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="9" y1="15" x2="15" y2="15"></line>', "file-plus": '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line>', "file-text": '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline>', "file": '<path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>', "film": '<rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line>', "filter": '<polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>', "flag": '<path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line>', "folder-minus": '<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path><line x1="9" y1="14" x2="15" y2="14"></line>', "folder-plus": '<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path><line x1="12" y1="11" x2="12" y2="17"></line><line x1="9" y1="14" x2="15" y2="14"></line>', "folder": '<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>', "framer": '<path d="M5 16V9h14V2H5l14 14h-7m-7 0l7 7v-7m-7 0h7"></path>', "frown": '<circle cx="12" cy="12" r="10"></circle><path d="M16 16s-1.5-2-4-2-4 2-4 2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line>', "gift": '<polyline points="20 12 20 22 4 22 4 12"></polyline><rect x="2" y="7" width="20" height="5"></rect><line x1="12" y1="22" x2="12" y2="7"></line><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>', "git-branch": '<line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path>', "git-commit": '<circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line>', "git-merge": '<circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M6 21V9a9 9 0 0 0 9 9"></path>', "git-pull-request": '<circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><line x1="6" y1="9" x2="6" y2="21"></line>', "github": '<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>', "gitlab": '<path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"></path>', "globe": '<circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>', "grid": '<rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect>', "hard-drive": '<line x1="22" y1="12" x2="2" y2="12"></line><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path><line x1="6" y1="16" x2="6.01" y2="16"></line><line x1="10" y1="16" x2="10.01" y2="16"></line>', "hash": '<line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>', "headphones": '<path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>', "heart": '<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>', "help-circle": '<circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line>', "hexagon": '<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>', "home": '<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline>', "image": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline>', "inbox": '<polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>', "info": '<circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line>', "instagram": '<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>', "italic": '<line x1="19" y1="4" x2="10" y2="4"></line><line x1="14" y1="20" x2="5" y2="20"></line><line x1="15" y1="4" x2="9" y2="20"></line>', "key": '<path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path>', "layers": '<polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline>', "layout": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line>', "life-buoy": '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line><line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line><line x1="14.83" y1="9.17" x2="18.36" y2="5.64"></line><line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line>', "link-2": '<path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line>', "link": '<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>', "linkedin": '<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>', "list": '<line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line>', "loader": '<line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="22" y2="12"></line><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>', "lock": '<rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path>', "log-in": '<path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line>', "log-out": '<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line>', "mail": '<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline>', "map-pin": '<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle>', "map": '<polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line>', "maximize-2": '<polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line>', "maximize": '<path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>', "meh": '<circle cx="12" cy="12" r="10"></circle><line x1="8" y1="15" x2="16" y2="15"></line><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line>', "menu": '<line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>', "message-circle": '<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>', "message-square": '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>', "mic-off": '<line x1="1" y1="1" x2="23" y2="23"></line><path d="M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6"></path><path d="M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line>', "mic": '<path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line>', "minimize-2": '<polyline points="4 14 10 14 10 20"></polyline><polyline points="20 10 14 10 14 4"></polyline><line x1="14" y1="10" x2="21" y2="3"></line><line x1="3" y1="21" x2="10" y2="14"></line>', "minimize": '<path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path>', "minus-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="8" y1="12" x2="16" y2="12"></line>', "minus-square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="8" y1="12" x2="16" y2="12"></line>', "minus": '<line x1="5" y1="12" x2="19" y2="12"></line>', "monitor": '<rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line>', "moon": '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>', "more-horizontal": '<circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle>', "more-vertical": '<circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle>', "mouse-pointer": '<path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"></path><path d="M13 13l6 6"></path>', "move": '<polyline points="5 9 2 12 5 15"></polyline><polyline points="9 5 12 2 15 5"></polyline><polyline points="15 19 12 22 9 19"></polyline><polyline points="19 9 22 12 19 15"></polyline><line x1="2" y1="12" x2="22" y2="12"></line><line x1="12" y1="2" x2="12" y2="22"></line>', "music": '<path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle>', "navigation-2": '<polygon points="12 2 19 21 12 17 5 21 12 2"></polygon>', "navigation": '<polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>', "octagon": '<polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon>', "package": '<line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line>', "paperclip": '<path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>', "pause-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="10" y1="15" x2="10" y2="9"></line><line x1="14" y1="15" x2="14" y2="9"></line>', "pause": '<rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect>', "pen-tool": '<path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle>', "percent": '<line x1="19" y1="5" x2="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle>', "phone-call": '<path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone-forwarded": '<polyline points="19 1 23 5 19 9"></polyline><line x1="15" y1="5" x2="23" y2="5"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone-incoming": '<polyline points="16 2 16 8 22 8"></polyline><line x1="23" y1="1" x2="16" y2="8"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone-missed": '<line x1="23" y1="1" x2="17" y2="7"></line><line x1="17" y1="1" x2="23" y2="7"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone-off": '<path d="M10.68 13.31a16 16 0 0 0 3.41 2.6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.42 19.42 0 0 1-3.33-2.67m-2.67-3.34a19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91"></path><line x1="23" y1="1" x2="1" y2="23"></line>', "phone-outgoing": '<polyline points="23 7 23 1 17 1"></polyline><line x1="16" y1="8" x2="23" y2="1"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone": '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "pie-chart": '<path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path>', "play-circle": '<circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon>', "play": '<polygon points="5 3 19 12 5 21 5 3"></polygon>', "plus-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line>', "plus-square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line>', "plus": '<line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line>', "pocket": '<path d="M4 3h16a2 2 0 0 1 2 2v6a10 10 0 0 1-10 10A10 10 0 0 1 2 11V5a2 2 0 0 1 2-2z"></path><polyline points="8 10 12 14 16 10"></polyline>', "power": '<path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line>', "printer": '<polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect>', "radio": '<circle cx="12" cy="12" r="2"></circle><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path>', "refresh-ccw": '<polyline points="1 4 1 10 7 10"></polyline><polyline points="23 20 23 14 17 14"></polyline><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>', "refresh-cw": '<polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>', "repeat": '<polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path>', "rewind": '<polygon points="11 19 2 12 11 5 11 19"></polygon><polygon points="22 19 13 12 22 5 22 19"></polygon>', "rotate-ccw": '<polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>', "rotate-cw": '<polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>', "rss": '<path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle>', "save": '<path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline>', "scissors": '<circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><line x1="20" y1="4" x2="8.12" y2="15.88"></line><line x1="14.47" y1="14.48" x2="20" y2="20"></line><line x1="8.12" y1="8.12" x2="12" y2="12"></line>', "search": '<circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>', "send": '<line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>', "server": '<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line>', "settings": '<circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>', "share-2": '<circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>', "share": '<path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line>', "shield-off": '<path d="M19.69 14a6.9 6.9 0 0 0 .31-2V5l-8-3-3.16 1.18"></path><path d="M4.73 4.73L4 5v7c0 6 8 10 8 10a20.29 20.29 0 0 0 5.62-4.38"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "shield": '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>', "shopping-bag": '<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path>', "shopping-cart": '<circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>', "shuffle": '<polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="20" x2="21" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" y1="15" x2="21" y2="21"></line><line x1="4" y1="4" x2="9" y2="9"></line>', "sidebar": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line>', "skip-back": '<polygon points="19 20 9 12 19 4 19 20"></polygon><line x1="5" y1="19" x2="5" y2="5"></line>', "skip-forward": '<polygon points="5 4 15 12 5 20 5 4"></polygon><line x1="19" y1="5" x2="19" y2="19"></line>', "slack": '<path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"></path><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"></path><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"></path><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"></path><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"></path><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"></path><path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"></path><path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"></path>', "slash": '<circle cx="12" cy="12" r="10"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>', "sliders": '<line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line>', "smartphone": '<rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line>', "smile": '<circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line>', "speaker": '<rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><circle cx="12" cy="14" r="4"></circle><line x1="12" y1="6" x2="12.01" y2="6"></line>', "square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>', "star": '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>', "stop-circle": '<circle cx="12" cy="12" r="10"></circle><rect x="9" y="9" width="6" height="6"></rect>', "sun": '<circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>', "sunrise": '<path d="M17 18a5 5 0 0 0-10 0"></path><line x1="12" y1="2" x2="12" y2="9"></line><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"></line><line x1="1" y1="18" x2="3" y2="18"></line><line x1="21" y1="18" x2="23" y2="18"></line><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"></line><line x1="23" y1="22" x2="1" y2="22"></line><polyline points="8 6 12 2 16 6"></polyline>', "sunset": '<path d="M17 18a5 5 0 0 0-10 0"></path><line x1="12" y1="9" x2="12" y2="2"></line><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"></line><line x1="1" y1="18" x2="3" y2="18"></line><line x1="21" y1="18" x2="23" y2="18"></line><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"></line><line x1="23" y1="22" x2="1" y2="22"></line><polyline points="16 5 12 9 8 5"></polyline>', "tablet": '<rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line>', "tag": '<path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>', "target": '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle>', "terminal": '<polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line>', "thermometer": '<path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path>', "thumbs-down": '<path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path>', "thumbs-up": '<path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>', "toggle-left": '<rect x="1" y="5" width="22" height="14" rx="7" ry="7"></rect><circle cx="8" cy="12" r="3"></circle>', "toggle-right": '<rect x="1" y="5" width="22" height="14" rx="7" ry="7"></rect><circle cx="16" cy="12" r="3"></circle>', "tool": '<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>', "trash-2": '<polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line>', "trash": '<polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>', "trello": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><rect x="7" y="7" width="3" height="9"></rect><rect x="14" y="7" width="3" height="5"></rect>', "trending-down": '<polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline>', "trending-up": '<polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline>', "triangle": '<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>', "truck": '<rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle>', "tv": '<rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline>', "twitch": '<path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7"></path>', "twitter": '<path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>', "type": '<polyline points="4 7 4 4 20 4 20 7"></polyline><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="4" x2="12" y2="20"></line>', "umbrella": '<path d="M23 12a11.05 11.05 0 0 0-22 0zm-5 7a3 3 0 0 1-6 0v-7"></path>', "underline": '<path d="M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3"></path><line x1="4" y1="21" x2="20" y2="21"></line>', "unlock": '<rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 9.9-1"></path>', "upload-cloud": '<polyline points="16 16 12 12 8 16"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path><polyline points="16 16 12 12 8 16"></polyline>', "upload": '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line>', "user-check": '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline>', "user-minus": '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="23" y1="11" x2="17" y2="11"></line>', "user-plus": '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line>', "user-x": '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="18" y1="8" x2="23" y2="13"></line><line x1="23" y1="8" x2="18" y2="13"></line>', "user": '<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>', "users": '<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>', "video-off": '<path d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2m5.66 0H14a2 2 0 0 1 2 2v3.34l1 1L23 7v10"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "video": '<polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>', "voicemail": '<circle cx="5.5" cy="11.5" r="4.5"></circle><circle cx="18.5" cy="11.5" r="4.5"></circle><line x1="5.5" y1="16" x2="18.5" y2="16"></line>', "volume-1": '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>', "volume-2": '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>', "volume-x": '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line>', "volume": '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>', "watch": '<circle cx="12" cy="12" r="7"></circle><polyline points="12 9 12 12 13.5 13.5"></polyline><path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83"></path>', "wifi-off": '<line x1="1" y1="1" x2="23" y2="23"></line><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path><path d="M10.71 5.05A16 16 0 0 1 22.58 9"></path><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line>', "wifi": '<path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line>', "wind": '<path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path>', "x-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line>', "x-octagon": '<polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line>', "x-square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="9" x2="15" y2="15"></line><line x1="15" y1="9" x2="9" y2="15"></line>', "x": '<line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>', "youtube": '<path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>', "zap-off": '<polyline points="12.41 6.75 13 2 10.57 4.92"></polyline><polyline points="18.57 12.91 21 10 15.66 10"></polyline><polyline points="8 8 3 14 12 14 11 22 16 16"></polyline><line x1="1" y1="1" x2="23" y2="23"></line>', "zap": '<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>', "zoom-in": '<circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line>', "zoom-out": '<circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="8" y1="11" x2="14" y2="11"></line>' };
+          module3.exports = { "activity": '<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>', "airplay": '<path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon>', "alert-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line>', "alert-octagon": '<polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line>', "alert-triangle": '<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line>', "align-center": '<line x1="18" y1="10" x2="6" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="18" y1="18" x2="6" y2="18"></line>', "align-justify": '<line x1="21" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="3" y2="18"></line>', "align-left": '<line x1="17" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="17" y1="18" x2="3" y2="18"></line>', "align-right": '<line x1="21" y1="10" x2="7" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="7" y2="18"></line>', "anchor": '<circle cx="12" cy="5" r="3"></circle><line x1="12" y1="22" x2="12" y2="8"></line><path d="M5 12H2a10 10 0 0 0 20 0h-3"></path>', "aperture": '<circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>', "archive": '<polyline points="21 8 21 21 3 21 3 8"></polyline><rect x="1" y="3" width="22" height="5"></rect><line x1="10" y1="12" x2="14" y2="12"></line>', "arrow-down-circle": '<circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line>', "arrow-down-left": '<line x1="17" y1="7" x2="7" y2="17"></line><polyline points="17 17 7 17 7 7"></polyline>', "arrow-down-right": '<line x1="7" y1="7" x2="17" y2="17"></line><polyline points="17 7 17 17 7 17"></polyline>', "arrow-down": '<line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline>', "arrow-left-circle": '<circle cx="12" cy="12" r="10"></circle><polyline points="12 8 8 12 12 16"></polyline><line x1="16" y1="12" x2="8" y2="12"></line>', "arrow-left": '<line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline>', "arrow-right-circle": '<circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line>', "arrow-right": '<line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline>', "arrow-up-circle": '<circle cx="12" cy="12" r="10"></circle><polyline points="16 12 12 8 8 12"></polyline><line x1="12" y1="16" x2="12" y2="8"></line>', "arrow-up-left": '<line x1="17" y1="17" x2="7" y2="7"></line><polyline points="7 17 7 7 17 7"></polyline>', "arrow-up-right": '<line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline>', "arrow-up": '<line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline>', "at-sign": '<circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>', "award": '<circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>', "bar-chart-2": '<line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line>', "bar-chart": '<line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line>', "battery-charging": '<path d="M5 18H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.19M15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.19"></path><line x1="23" y1="13" x2="23" y2="11"></line><polyline points="11 6 7 12 13 12 9 18"></polyline>', "battery": '<rect x="1" y="6" width="18" height="12" rx="2" ry="2"></rect><line x1="23" y1="13" x2="23" y2="11"></line>', "bell-off": '<path d="M13.73 21a2 2 0 0 1-3.46 0"></path><path d="M18.63 13A17.89 17.89 0 0 1 18 8"></path><path d="M6.26 6.26A5.86 5.86 0 0 0 6 8c0 7-3 9-3 9h14"></path><path d="M18 8a6 6 0 0 0-9.33-5"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "bell": '<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path>', "bluetooth": '<polyline points="6.5 6.5 17.5 17.5 12 23 12 1 17.5 6.5 6.5 17.5"></polyline>', "bold": '<path d="M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"></path><path d="M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"></path>', "book-open": '<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>', "book": '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>', "bookmark": '<path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>', "box": '<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line>', "briefcase": '<rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>', "calendar": '<rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>', "camera-off": '<line x1="1" y1="1" x2="23" y2="23"></line><path d="M21 21H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3m3-3h6l2 3h4a2 2 0 0 1 2 2v9.34m-7.72-2.06a4 4 0 1 1-5.56-5.56"></path>', "camera": '<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle>', "cast": '<path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path><line x1="2" y1="20" x2="2.01" y2="20"></line>', "check-circle": '<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline>', "check-square": '<polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>', "check": '<polyline points="20 6 9 17 4 12"></polyline>', "chevron-down": '<polyline points="6 9 12 15 18 9"></polyline>', "chevron-left": '<polyline points="15 18 9 12 15 6"></polyline>', "chevron-right": '<polyline points="9 18 15 12 9 6"></polyline>', "chevron-up": '<polyline points="18 15 12 9 6 15"></polyline>', "chevrons-down": '<polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline>', "chevrons-left": '<polyline points="11 17 6 12 11 7"></polyline><polyline points="18 17 13 12 18 7"></polyline>', "chevrons-right": '<polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline>', "chevrons-up": '<polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline>', "chrome": '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line>', "circle": '<circle cx="12" cy="12" r="10"></circle>', "clipboard": '<path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>', "clock": '<circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>', "cloud-drizzle": '<line x1="8" y1="19" x2="8" y2="21"></line><line x1="8" y1="13" x2="8" y2="15"></line><line x1="16" y1="19" x2="16" y2="21"></line><line x1="16" y1="13" x2="16" y2="15"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="12" y1="15" x2="12" y2="17"></line><path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"></path>', "cloud-lightning": '<path d="M19 16.9A5 5 0 0 0 18 7h-1.26a8 8 0 1 0-11.62 9"></path><polyline points="13 11 9 17 15 17 11 23"></polyline>', "cloud-off": '<path d="M22.61 16.95A5 5 0 0 0 18 10h-1.26a8 8 0 0 0-7.05-6M5 5a8 8 0 0 0 4 15h9a5 5 0 0 0 1.7-.3"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "cloud-rain": '<line x1="16" y1="13" x2="16" y2="21"></line><line x1="8" y1="13" x2="8" y2="21"></line><line x1="12" y1="15" x2="12" y2="23"></line><path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"></path>', "cloud-snow": '<path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"></path><line x1="8" y1="16" x2="8.01" y2="16"></line><line x1="8" y1="20" x2="8.01" y2="20"></line><line x1="12" y1="18" x2="12.01" y2="18"></line><line x1="12" y1="22" x2="12.01" y2="22"></line><line x1="16" y1="16" x2="16.01" y2="16"></line><line x1="16" y1="20" x2="16.01" y2="20"></line>', "cloud": '<path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>', "code": '<polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline>', "codepen": '<polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="22" x2="12" y2="15.5"></line><polyline points="22 8.5 12 15.5 2 8.5"></polyline><polyline points="2 15.5 12 8.5 22 15.5"></polyline><line x1="12" y1="2" x2="12" y2="8.5"></line>', "codesandbox": '<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline><polyline points="7.5 19.79 7.5 14.6 3 12"></polyline><polyline points="21 12 16.5 14.6 16.5 19.79"></polyline><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line>', "coffee": '<path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line>', "columns": '<path d="M12 3h7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-7m0-18H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7m0-18v18"></path>', "command": '<path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path>', "compass": '<circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>', "copy": '<rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>', "corner-down-left": '<polyline points="9 10 4 15 9 20"></polyline><path d="M20 4v7a4 4 0 0 1-4 4H4"></path>', "corner-down-right": '<polyline points="15 10 20 15 15 20"></polyline><path d="M4 4v7a4 4 0 0 0 4 4h12"></path>', "corner-left-down": '<polyline points="14 15 9 20 4 15"></polyline><path d="M20 4h-7a4 4 0 0 0-4 4v12"></path>', "corner-left-up": '<polyline points="14 9 9 4 4 9"></polyline><path d="M20 20h-7a4 4 0 0 1-4-4V4"></path>', "corner-right-down": '<polyline points="10 15 15 20 20 15"></polyline><path d="M4 4h7a4 4 0 0 1 4 4v12"></path>', "corner-right-up": '<polyline points="10 9 15 4 20 9"></polyline><path d="M4 20h7a4 4 0 0 0 4-4V4"></path>', "corner-up-left": '<polyline points="9 14 4 9 9 4"></polyline><path d="M20 20v-7a4 4 0 0 0-4-4H4"></path>', "corner-up-right": '<polyline points="15 14 20 9 15 4"></polyline><path d="M4 20v-7a4 4 0 0 1 4-4h12"></path>', "cpu": '<rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line>', "credit-card": '<rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line>', "crop": '<path d="M6.13 1L6 16a2 2 0 0 0 2 2h15"></path><path d="M1 6.13L16 6a2 2 0 0 1 2 2v15"></path>', "crosshair": '<circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line>', "database": '<ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>', "delete": '<path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"></path><line x1="18" y1="9" x2="12" y2="15"></line><line x1="12" y1="9" x2="18" y2="15"></line>', "disc": '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle>', "divide-circle": '<line x1="8" y1="12" x2="16" y2="12"></line><line x1="12" y1="16" x2="12" y2="16"></line><line x1="12" y1="8" x2="12" y2="8"></line><circle cx="12" cy="12" r="10"></circle>', "divide-square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="8" y1="12" x2="16" y2="12"></line><line x1="12" y1="16" x2="12" y2="16"></line><line x1="12" y1="8" x2="12" y2="8"></line>', "divide": '<circle cx="12" cy="6" r="2"></circle><line x1="5" y1="12" x2="19" y2="12"></line><circle cx="12" cy="18" r="2"></circle>', "dollar-sign": '<line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>', "download-cloud": '<polyline points="8 17 12 21 16 17"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"></path>', "download": '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line>', "dribbble": '<circle cx="12" cy="12" r="10"></circle><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"></path>', "droplet": '<path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>', "edit-2": '<path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>', "edit-3": '<path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>', "edit": '<path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>', "external-link": '<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>', "eye-off": '<path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "eye": '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle>', "facebook": '<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>', "fast-forward": '<polygon points="13 19 22 12 13 5 13 19"></polygon><polygon points="2 19 11 12 2 5 2 19"></polygon>', "feather": '<path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17.5" y1="15" x2="9" y2="15"></line>', "figma": '<path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path>', "file-minus": '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="9" y1="15" x2="15" y2="15"></line>', "file-plus": '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line>', "file-text": '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline>', "file": '<path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>', "film": '<rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line>', "filter": '<polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>', "flag": '<path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line>', "folder-minus": '<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path><line x1="9" y1="14" x2="15" y2="14"></line>', "folder-plus": '<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path><line x1="12" y1="11" x2="12" y2="17"></line><line x1="9" y1="14" x2="15" y2="14"></line>', "folder": '<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>', "framer": '<path d="M5 16V9h14V2H5l14 14h-7m-7 0l7 7v-7m-7 0h7"></path>', "frown": '<circle cx="12" cy="12" r="10"></circle><path d="M16 16s-1.5-2-4-2-4 2-4 2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line>', "gift": '<polyline points="20 12 20 22 4 22 4 12"></polyline><rect x="2" y="7" width="20" height="5"></rect><line x1="12" y1="22" x2="12" y2="7"></line><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>', "git-branch": '<line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path>', "git-commit": '<circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line>', "git-merge": '<circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M6 21V9a9 9 0 0 0 9 9"></path>', "git-pull-request": '<circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><line x1="6" y1="9" x2="6" y2="21"></line>', "github": '<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>', "gitlab": '<path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"></path>', "globe": '<circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>', "grid": '<rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect>', "hard-drive": '<line x1="22" y1="12" x2="2" y2="12"></line><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path><line x1="6" y1="16" x2="6.01" y2="16"></line><line x1="10" y1="16" x2="10.01" y2="16"></line>', "hash": '<line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>', "headphones": '<path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>', "heart": '<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>', "help-circle": '<circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line>', "hexagon": '<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>', "home": '<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline>', "image": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline>', "inbox": '<polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>', "info": '<circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line>', "instagram": '<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>', "italic": '<line x1="19" y1="4" x2="10" y2="4"></line><line x1="14" y1="20" x2="5" y2="20"></line><line x1="15" y1="4" x2="9" y2="20"></line>', "key": '<path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path>', "layers": '<polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline>', "layout": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line>', "life-buoy": '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line><line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line><line x1="14.83" y1="9.17" x2="18.36" y2="5.64"></line><line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line>', "link-2": '<path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line>', "link": '<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>', "linkedin": '<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>', "list": '<line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line>', "loader": '<line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="22" y2="12"></line><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>', "lock": '<rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path>', "log-in": '<path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line>', "log-out": '<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line>', "mail": '<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline>', "map-pin": '<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle>', "map": '<polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line>', "maximize-2": '<polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line>', "maximize": '<path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>', "meh": '<circle cx="12" cy="12" r="10"></circle><line x1="8" y1="15" x2="16" y2="15"></line><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line>', "menu": '<line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>', "message-circle": '<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>', "message-square": '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>', "mic-off": '<line x1="1" y1="1" x2="23" y2="23"></line><path d="M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6"></path><path d="M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line>', "mic": '<path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line>', "minimize-2": '<polyline points="4 14 10 14 10 20"></polyline><polyline points="20 10 14 10 14 4"></polyline><line x1="14" y1="10" x2="21" y2="3"></line><line x1="3" y1="21" x2="10" y2="14"></line>', "minimize": '<path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path>', "minus-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="8" y1="12" x2="16" y2="12"></line>', "minus-square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="8" y1="12" x2="16" y2="12"></line>', "minus": '<line x1="5" y1="12" x2="19" y2="12"></line>', "monitor": '<rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line>', "moon": '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>', "more-horizontal": '<circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle>', "more-vertical": '<circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle>', "mouse-pointer": '<path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"></path><path d="M13 13l6 6"></path>', "move": '<polyline points="5 9 2 12 5 15"></polyline><polyline points="9 5 12 2 15 5"></polyline><polyline points="15 19 12 22 9 19"></polyline><polyline points="19 9 22 12 19 15"></polyline><line x1="2" y1="12" x2="22" y2="12"></line><line x1="12" y1="2" x2="12" y2="22"></line>', "music": '<path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle>', "navigation-2": '<polygon points="12 2 19 21 12 17 5 21 12 2"></polygon>', "navigation": '<polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>', "octagon": '<polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon>', "package": '<line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line>', "paperclip": '<path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>', "pause-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="10" y1="15" x2="10" y2="9"></line><line x1="14" y1="15" x2="14" y2="9"></line>', "pause": '<rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect>', "pen-tool": '<path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle>', "percent": '<line x1="19" y1="5" x2="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle>', "phone-call": '<path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone-forwarded": '<polyline points="19 1 23 5 19 9"></polyline><line x1="15" y1="5" x2="23" y2="5"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone-incoming": '<polyline points="16 2 16 8 22 8"></polyline><line x1="23" y1="1" x2="16" y2="8"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone-missed": '<line x1="23" y1="1" x2="17" y2="7"></line><line x1="17" y1="1" x2="23" y2="7"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone-off": '<path d="M10.68 13.31a16 16 0 0 0 3.41 2.6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.42 19.42 0 0 1-3.33-2.67m-2.67-3.34a19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91"></path><line x1="23" y1="1" x2="1" y2="23"></line>', "phone-outgoing": '<polyline points="23 7 23 1 17 1"></polyline><line x1="16" y1="8" x2="23" y2="1"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone": '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "pie-chart": '<path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path>', "play-circle": '<circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon>', "play": '<polygon points="5 3 19 12 5 21 5 3"></polygon>', "plus-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line>', "plus-square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line>', "plus": '<line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line>', "pocket": '<path d="M4 3h16a2 2 0 0 1 2 2v6a10 10 0 0 1-10 10A10 10 0 0 1 2 11V5a2 2 0 0 1 2-2z"></path><polyline points="8 10 12 14 16 10"></polyline>', "power": '<path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line>', "printer": '<polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect>', "radio": '<circle cx="12" cy="12" r="2"></circle><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path>', "refresh-ccw": '<polyline points="1 4 1 10 7 10"></polyline><polyline points="23 20 23 14 17 14"></polyline><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>', "refresh-cw": '<polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>', "repeat": '<polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path>', "rewind": '<polygon points="11 19 2 12 11 5 11 19"></polygon><polygon points="22 19 13 12 22 5 22 19"></polygon>', "rotate-ccw": '<polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>', "rotate-cw": '<polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>', "rss": '<path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle>', "save": '<path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline>', "scissors": '<circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><line x1="20" y1="4" x2="8.12" y2="15.88"></line><line x1="14.47" y1="14.48" x2="20" y2="20"></line><line x1="8.12" y1="8.12" x2="12" y2="12"></line>', "search": '<circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>', "send": '<line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>', "server": '<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line>', "settings": '<circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>', "share-2": '<circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>', "share": '<path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line>', "shield-off": '<path d="M19.69 14a6.9 6.9 0 0 0 .31-2V5l-8-3-3.16 1.18"></path><path d="M4.73 4.73L4 5v7c0 6 8 10 8 10a20.29 20.29 0 0 0 5.62-4.38"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "shield": '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>', "shopping-bag": '<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path>', "shopping-cart": '<circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>', "shuffle": '<polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="20" x2="21" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" y1="15" x2="21" y2="21"></line><line x1="4" y1="4" x2="9" y2="9"></line>', "sidebar": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line>', "skip-back": '<polygon points="19 20 9 12 19 4 19 20"></polygon><line x1="5" y1="19" x2="5" y2="5"></line>', "skip-forward": '<polygon points="5 4 15 12 5 20 5 4"></polygon><line x1="19" y1="5" x2="19" y2="19"></line>', "slack": '<path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"></path><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"></path><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"></path><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"></path><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"></path><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"></path><path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"></path><path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"></path>', "slash": '<circle cx="12" cy="12" r="10"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>', "sliders": '<line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line>', "smartphone": '<rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line>', "smile": '<circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line>', "speaker": '<rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><circle cx="12" cy="14" r="4"></circle><line x1="12" y1="6" x2="12.01" y2="6"></line>', "square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>', "star": '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>', "stop-circle": '<circle cx="12" cy="12" r="10"></circle><rect x="9" y="9" width="6" height="6"></rect>', "sun": '<circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>', "sunrise": '<path d="M17 18a5 5 0 0 0-10 0"></path><line x1="12" y1="2" x2="12" y2="9"></line><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"></line><line x1="1" y1="18" x2="3" y2="18"></line><line x1="21" y1="18" x2="23" y2="18"></line><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"></line><line x1="23" y1="22" x2="1" y2="22"></line><polyline points="8 6 12 2 16 6"></polyline>', "sunset": '<path d="M17 18a5 5 0 0 0-10 0"></path><line x1="12" y1="9" x2="12" y2="2"></line><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"></line><line x1="1" y1="18" x2="3" y2="18"></line><line x1="21" y1="18" x2="23" y2="18"></line><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"></line><line x1="23" y1="22" x2="1" y2="22"></line><polyline points="16 5 12 9 8 5"></polyline>', "table": '<path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"></path>', "tablet": '<rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line>', "tag": '<path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>', "target": '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle>', "terminal": '<polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line>', "thermometer": '<path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path>', "thumbs-down": '<path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path>', "thumbs-up": '<path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>', "toggle-left": '<rect x="1" y="5" width="22" height="14" rx="7" ry="7"></rect><circle cx="8" cy="12" r="3"></circle>', "toggle-right": '<rect x="1" y="5" width="22" height="14" rx="7" ry="7"></rect><circle cx="16" cy="12" r="3"></circle>', "tool": '<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>', "trash-2": '<polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line>', "trash": '<polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>', "trello": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><rect x="7" y="7" width="3" height="9"></rect><rect x="14" y="7" width="3" height="5"></rect>', "trending-down": '<polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline>', "trending-up": '<polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline>', "triangle": '<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>', "truck": '<rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle>', "tv": '<rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline>', "twitch": '<path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7"></path>', "twitter": '<path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>', "type": '<polyline points="4 7 4 4 20 4 20 7"></polyline><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="4" x2="12" y2="20"></line>', "umbrella": '<path d="M23 12a11.05 11.05 0 0 0-22 0zm-5 7a3 3 0 0 1-6 0v-7"></path>', "underline": '<path d="M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3"></path><line x1="4" y1="21" x2="20" y2="21"></line>', "unlock": '<rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 9.9-1"></path>', "upload-cloud": '<polyline points="16 16 12 12 8 16"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path><polyline points="16 16 12 12 8 16"></polyline>', "upload": '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line>', "user-check": '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline>', "user-minus": '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="23" y1="11" x2="17" y2="11"></line>', "user-plus": '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line>', "user-x": '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="18" y1="8" x2="23" y2="13"></line><line x1="23" y1="8" x2="18" y2="13"></line>', "user": '<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>', "users": '<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>', "video-off": '<path d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2m5.66 0H14a2 2 0 0 1 2 2v3.34l1 1L23 7v10"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "video": '<polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>', "voicemail": '<circle cx="5.5" cy="11.5" r="4.5"></circle><circle cx="18.5" cy="11.5" r="4.5"></circle><line x1="5.5" y1="16" x2="18.5" y2="16"></line>', "volume-1": '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>', "volume-2": '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>', "volume-x": '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line>', "volume": '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>', "watch": '<circle cx="12" cy="12" r="7"></circle><polyline points="12 9 12 12 13.5 13.5"></polyline><path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83"></path>', "wifi-off": '<line x1="1" y1="1" x2="23" y2="23"></line><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path><path d="M10.71 5.05A16 16 0 0 1 22.58 9"></path><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line>', "wifi": '<path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line>', "wind": '<path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path>', "x-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line>', "x-octagon": '<polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line>', "x-square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="9" x2="15" y2="15"></line><line x1="15" y1="9" x2="9" y2="15"></line>', "x": '<line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>', "youtube": '<path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>', "zap-off": '<polyline points="12.41 6.75 13 2 10.57 4.92"></polyline><polyline points="18.57 12.91 21 10 15.66 10"></polyline><polyline points="8 8 3 14 12 14 11 22 16 16"></polyline><line x1="1" y1="1" x2="23" y2="23"></line>', "zap": '<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>', "zoom-in": '<circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line>', "zoom-out": '<circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="8" y1="11" x2="14" y2="11"></line>' };
         },
         "./node_modules/classnames/dedupe.js": function(module3, exports2, __webpack_require__) {
           var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
@@ -2223,7 +1794,7 @@ var require_feather = __commonJS({
           exports2.default = replace;
         },
         "./src/tags.json": function(module3) {
-          module3.exports = { "activity": ["pulse", "health", "action", "motion"], "airplay": ["stream", "cast", "mirroring"], "alert-circle": ["warning", "alert", "danger"], "alert-octagon": ["warning", "alert", "danger"], "alert-triangle": ["warning", "alert", "danger"], "align-center": ["text alignment", "center"], "align-justify": ["text alignment", "justified"], "align-left": ["text alignment", "left"], "align-right": ["text alignment", "right"], "anchor": [], "archive": ["index", "box"], "at-sign": ["mention", "at", "email", "message"], "award": ["achievement", "badge"], "aperture": ["camera", "photo"], "bar-chart": ["statistics", "diagram", "graph"], "bar-chart-2": ["statistics", "diagram", "graph"], "battery": ["power", "electricity"], "battery-charging": ["power", "electricity"], "bell": ["alarm", "notification", "sound"], "bell-off": ["alarm", "notification", "silent"], "bluetooth": ["wireless"], "book-open": ["read", "library"], "book": ["read", "dictionary", "booklet", "magazine", "library"], "bookmark": ["read", "clip", "marker", "tag"], "box": ["cube"], "briefcase": ["work", "bag", "baggage", "folder"], "calendar": ["date"], "camera": ["photo"], "cast": ["chromecast", "airplay"], "circle": ["off", "zero", "record"], "clipboard": ["copy"], "clock": ["time", "watch", "alarm"], "cloud-drizzle": ["weather", "shower"], "cloud-lightning": ["weather", "bolt"], "cloud-rain": ["weather"], "cloud-snow": ["weather", "blizzard"], "cloud": ["weather"], "codepen": ["logo"], "codesandbox": ["logo"], "code": ["source", "programming"], "coffee": ["drink", "cup", "mug", "tea", "cafe", "hot", "beverage"], "columns": ["layout"], "command": ["keyboard", "cmd", "terminal", "prompt"], "compass": ["navigation", "safari", "travel", "direction"], "copy": ["clone", "duplicate"], "corner-down-left": ["arrow", "return"], "corner-down-right": ["arrow"], "corner-left-down": ["arrow"], "corner-left-up": ["arrow"], "corner-right-down": ["arrow"], "corner-right-up": ["arrow"], "corner-up-left": ["arrow"], "corner-up-right": ["arrow"], "cpu": ["processor", "technology"], "credit-card": ["purchase", "payment", "cc"], "crop": ["photo", "image"], "crosshair": ["aim", "target"], "database": ["storage", "memory"], "delete": ["remove"], "disc": ["album", "cd", "dvd", "music"], "dollar-sign": ["currency", "money", "payment"], "droplet": ["water"], "edit": ["pencil", "change"], "edit-2": ["pencil", "change"], "edit-3": ["pencil", "change"], "eye": ["view", "watch"], "eye-off": ["view", "watch", "hide", "hidden"], "external-link": ["outbound"], "facebook": ["logo", "social"], "fast-forward": ["music"], "figma": ["logo", "design", "tool"], "file-minus": ["delete", "remove", "erase"], "file-plus": ["add", "create", "new"], "file-text": ["data", "txt", "pdf"], "film": ["movie", "video"], "filter": ["funnel", "hopper"], "flag": ["report"], "folder-minus": ["directory"], "folder-plus": ["directory"], "folder": ["directory"], "framer": ["logo", "design", "tool"], "frown": ["emoji", "face", "bad", "sad", "emotion"], "gift": ["present", "box", "birthday", "party"], "git-branch": ["code", "version control"], "git-commit": ["code", "version control"], "git-merge": ["code", "version control"], "git-pull-request": ["code", "version control"], "github": ["logo", "version control"], "gitlab": ["logo", "version control"], "globe": ["world", "browser", "language", "translate"], "hard-drive": ["computer", "server", "memory", "data"], "hash": ["hashtag", "number", "pound"], "headphones": ["music", "audio", "sound"], "heart": ["like", "love", "emotion"], "help-circle": ["question mark"], "hexagon": ["shape", "node.js", "logo"], "home": ["house", "living"], "image": ["picture"], "inbox": ["email"], "instagram": ["logo", "camera"], "key": ["password", "login", "authentication", "secure"], "layers": ["stack"], "layout": ["window", "webpage"], "life-bouy": ["help", "life ring", "support"], "link": ["chain", "url"], "link-2": ["chain", "url"], "linkedin": ["logo", "social media"], "list": ["options"], "lock": ["security", "password", "secure"], "log-in": ["sign in", "arrow", "enter"], "log-out": ["sign out", "arrow", "exit"], "mail": ["email", "message"], "map-pin": ["location", "navigation", "travel", "marker"], "map": ["location", "navigation", "travel"], "maximize": ["fullscreen"], "maximize-2": ["fullscreen", "arrows", "expand"], "meh": ["emoji", "face", "neutral", "emotion"], "menu": ["bars", "navigation", "hamburger"], "message-circle": ["comment", "chat"], "message-square": ["comment", "chat"], "mic-off": ["record", "sound", "mute"], "mic": ["record", "sound", "listen"], "minimize": ["exit fullscreen", "close"], "minimize-2": ["exit fullscreen", "arrows", "close"], "minus": ["subtract"], "monitor": ["tv", "screen", "display"], "moon": ["dark", "night"], "more-horizontal": ["ellipsis"], "more-vertical": ["ellipsis"], "mouse-pointer": ["arrow", "cursor"], "move": ["arrows"], "music": ["note"], "navigation": ["location", "travel"], "navigation-2": ["location", "travel"], "octagon": ["stop"], "package": ["box", "container"], "paperclip": ["attachment"], "pause": ["music", "stop"], "pause-circle": ["music", "audio", "stop"], "pen-tool": ["vector", "drawing"], "percent": ["discount"], "phone-call": ["ring"], "phone-forwarded": ["call"], "phone-incoming": ["call"], "phone-missed": ["call"], "phone-off": ["call", "mute"], "phone-outgoing": ["call"], "phone": ["call"], "play": ["music", "start"], "pie-chart": ["statistics", "diagram"], "play-circle": ["music", "start"], "plus": ["add", "new"], "plus-circle": ["add", "new"], "plus-square": ["add", "new"], "pocket": ["logo", "save"], "power": ["on", "off"], "printer": ["fax", "office", "device"], "radio": ["signal"], "refresh-cw": ["synchronise", "arrows"], "refresh-ccw": ["arrows"], "repeat": ["loop", "arrows"], "rewind": ["music"], "rotate-ccw": ["arrow"], "rotate-cw": ["arrow"], "rss": ["feed", "subscribe"], "save": ["floppy disk"], "scissors": ["cut"], "search": ["find", "magnifier", "magnifying glass"], "send": ["message", "mail", "email", "paper airplane", "paper aeroplane"], "settings": ["cog", "edit", "gear", "preferences"], "share-2": ["network", "connections"], "shield": ["security", "secure"], "shield-off": ["security", "insecure"], "shopping-bag": ["ecommerce", "cart", "purchase", "store"], "shopping-cart": ["ecommerce", "cart", "purchase", "store"], "shuffle": ["music"], "skip-back": ["music"], "skip-forward": ["music"], "slack": ["logo"], "slash": ["ban", "no"], "sliders": ["settings", "controls"], "smartphone": ["cellphone", "device"], "smile": ["emoji", "face", "happy", "good", "emotion"], "speaker": ["audio", "music"], "star": ["bookmark", "favorite", "like"], "stop-circle": ["media", "music"], "sun": ["brightness", "weather", "light"], "sunrise": ["weather", "time", "morning", "day"], "sunset": ["weather", "time", "evening", "night"], "tablet": ["device"], "tag": ["label"], "target": ["logo", "bullseye"], "terminal": ["code", "command line", "prompt"], "thermometer": ["temperature", "celsius", "fahrenheit", "weather"], "thumbs-down": ["dislike", "bad", "emotion"], "thumbs-up": ["like", "good", "emotion"], "toggle-left": ["on", "off", "switch"], "toggle-right": ["on", "off", "switch"], "tool": ["settings", "spanner"], "trash": ["garbage", "delete", "remove", "bin"], "trash-2": ["garbage", "delete", "remove", "bin"], "triangle": ["delta"], "truck": ["delivery", "van", "shipping", "transport", "lorry"], "tv": ["television", "stream"], "twitch": ["logo"], "twitter": ["logo", "social"], "type": ["text"], "umbrella": ["rain", "weather"], "unlock": ["security"], "user-check": ["followed", "subscribed"], "user-minus": ["delete", "remove", "unfollow", "unsubscribe"], "user-plus": ["new", "add", "create", "follow", "subscribe"], "user-x": ["delete", "remove", "unfollow", "unsubscribe", "unavailable"], "user": ["person", "account"], "users": ["group"], "video-off": ["camera", "movie", "film"], "video": ["camera", "movie", "film"], "voicemail": ["phone"], "volume": ["music", "sound", "mute"], "volume-1": ["music", "sound"], "volume-2": ["music", "sound"], "volume-x": ["music", "sound", "mute"], "watch": ["clock", "time"], "wifi-off": ["disabled"], "wifi": ["connection", "signal", "wireless"], "wind": ["weather", "air"], "x-circle": ["cancel", "close", "delete", "remove", "times", "clear"], "x-octagon": ["delete", "stop", "alert", "warning", "times", "clear"], "x-square": ["cancel", "close", "delete", "remove", "times", "clear"], "x": ["cancel", "close", "delete", "remove", "times", "clear"], "youtube": ["logo", "video", "play"], "zap-off": ["flash", "camera", "lightning"], "zap": ["flash", "camera", "lightning"], "zoom-in": ["magnifying glass"], "zoom-out": ["magnifying glass"] };
+          module3.exports = { "activity": ["pulse", "health", "action", "motion"], "airplay": ["stream", "cast", "mirroring"], "alert-circle": ["warning", "alert", "danger"], "alert-octagon": ["warning", "alert", "danger"], "alert-triangle": ["warning", "alert", "danger"], "align-center": ["text alignment", "center"], "align-justify": ["text alignment", "justified"], "align-left": ["text alignment", "left"], "align-right": ["text alignment", "right"], "anchor": [], "archive": ["index", "box"], "at-sign": ["mention", "at", "email", "message"], "award": ["achievement", "badge"], "aperture": ["camera", "photo"], "bar-chart": ["statistics", "diagram", "graph"], "bar-chart-2": ["statistics", "diagram", "graph"], "battery": ["power", "electricity"], "battery-charging": ["power", "electricity"], "bell": ["alarm", "notification", "sound"], "bell-off": ["alarm", "notification", "silent"], "bluetooth": ["wireless"], "book-open": ["read", "library"], "book": ["read", "dictionary", "booklet", "magazine", "library"], "bookmark": ["read", "clip", "marker", "tag"], "box": ["cube"], "briefcase": ["work", "bag", "baggage", "folder"], "calendar": ["date"], "camera": ["photo"], "cast": ["chromecast", "airplay"], "chevron-down": ["expand"], "chevron-up": ["collapse"], "circle": ["off", "zero", "record"], "clipboard": ["copy"], "clock": ["time", "watch", "alarm"], "cloud-drizzle": ["weather", "shower"], "cloud-lightning": ["weather", "bolt"], "cloud-rain": ["weather"], "cloud-snow": ["weather", "blizzard"], "cloud": ["weather"], "codepen": ["logo"], "codesandbox": ["logo"], "code": ["source", "programming"], "coffee": ["drink", "cup", "mug", "tea", "cafe", "hot", "beverage"], "columns": ["layout"], "command": ["keyboard", "cmd", "terminal", "prompt"], "compass": ["navigation", "safari", "travel", "direction"], "copy": ["clone", "duplicate"], "corner-down-left": ["arrow", "return"], "corner-down-right": ["arrow"], "corner-left-down": ["arrow"], "corner-left-up": ["arrow"], "corner-right-down": ["arrow"], "corner-right-up": ["arrow"], "corner-up-left": ["arrow"], "corner-up-right": ["arrow"], "cpu": ["processor", "technology"], "credit-card": ["purchase", "payment", "cc"], "crop": ["photo", "image"], "crosshair": ["aim", "target"], "database": ["storage", "memory"], "delete": ["remove"], "disc": ["album", "cd", "dvd", "music"], "dollar-sign": ["currency", "money", "payment"], "droplet": ["water"], "edit": ["pencil", "change"], "edit-2": ["pencil", "change"], "edit-3": ["pencil", "change"], "eye": ["view", "watch"], "eye-off": ["view", "watch", "hide", "hidden"], "external-link": ["outbound"], "facebook": ["logo", "social"], "fast-forward": ["music"], "figma": ["logo", "design", "tool"], "file-minus": ["delete", "remove", "erase"], "file-plus": ["add", "create", "new"], "file-text": ["data", "txt", "pdf"], "film": ["movie", "video"], "filter": ["funnel", "hopper"], "flag": ["report"], "folder-minus": ["directory"], "folder-plus": ["directory"], "folder": ["directory"], "framer": ["logo", "design", "tool"], "frown": ["emoji", "face", "bad", "sad", "emotion"], "gift": ["present", "box", "birthday", "party"], "git-branch": ["code", "version control"], "git-commit": ["code", "version control"], "git-merge": ["code", "version control"], "git-pull-request": ["code", "version control"], "github": ["logo", "version control"], "gitlab": ["logo", "version control"], "globe": ["world", "browser", "language", "translate"], "hard-drive": ["computer", "server", "memory", "data"], "hash": ["hashtag", "number", "pound"], "headphones": ["music", "audio", "sound"], "heart": ["like", "love", "emotion"], "help-circle": ["question mark"], "hexagon": ["shape", "node.js", "logo"], "home": ["house", "living"], "image": ["picture"], "inbox": ["email"], "instagram": ["logo", "camera"], "key": ["password", "login", "authentication", "secure"], "layers": ["stack"], "layout": ["window", "webpage"], "life-bouy": ["help", "life ring", "support"], "link": ["chain", "url"], "link-2": ["chain", "url"], "linkedin": ["logo", "social media"], "list": ["options"], "lock": ["security", "password", "secure"], "log-in": ["sign in", "arrow", "enter"], "log-out": ["sign out", "arrow", "exit"], "mail": ["email", "message"], "map-pin": ["location", "navigation", "travel", "marker"], "map": ["location", "navigation", "travel"], "maximize": ["fullscreen"], "maximize-2": ["fullscreen", "arrows", "expand"], "meh": ["emoji", "face", "neutral", "emotion"], "menu": ["bars", "navigation", "hamburger"], "message-circle": ["comment", "chat"], "message-square": ["comment", "chat"], "mic-off": ["record", "sound", "mute"], "mic": ["record", "sound", "listen"], "minimize": ["exit fullscreen", "close"], "minimize-2": ["exit fullscreen", "arrows", "close"], "minus": ["subtract"], "monitor": ["tv", "screen", "display"], "moon": ["dark", "night"], "more-horizontal": ["ellipsis"], "more-vertical": ["ellipsis"], "mouse-pointer": ["arrow", "cursor"], "move": ["arrows"], "music": ["note"], "navigation": ["location", "travel"], "navigation-2": ["location", "travel"], "octagon": ["stop"], "package": ["box", "container"], "paperclip": ["attachment"], "pause": ["music", "stop"], "pause-circle": ["music", "audio", "stop"], "pen-tool": ["vector", "drawing"], "percent": ["discount"], "phone-call": ["ring"], "phone-forwarded": ["call"], "phone-incoming": ["call"], "phone-missed": ["call"], "phone-off": ["call", "mute"], "phone-outgoing": ["call"], "phone": ["call"], "play": ["music", "start"], "pie-chart": ["statistics", "diagram"], "play-circle": ["music", "start"], "plus": ["add", "new"], "plus-circle": ["add", "new"], "plus-square": ["add", "new"], "pocket": ["logo", "save"], "power": ["on", "off"], "printer": ["fax", "office", "device"], "radio": ["signal"], "refresh-cw": ["synchronise", "arrows"], "refresh-ccw": ["arrows"], "repeat": ["loop", "arrows"], "rewind": ["music"], "rotate-ccw": ["arrow"], "rotate-cw": ["arrow"], "rss": ["feed", "subscribe"], "save": ["floppy disk"], "scissors": ["cut"], "search": ["find", "magnifier", "magnifying glass"], "send": ["message", "mail", "email", "paper airplane", "paper aeroplane"], "settings": ["cog", "edit", "gear", "preferences"], "share-2": ["network", "connections"], "shield": ["security", "secure"], "shield-off": ["security", "insecure"], "shopping-bag": ["ecommerce", "cart", "purchase", "store"], "shopping-cart": ["ecommerce", "cart", "purchase", "store"], "shuffle": ["music"], "skip-back": ["music"], "skip-forward": ["music"], "slack": ["logo"], "slash": ["ban", "no"], "sliders": ["settings", "controls"], "smartphone": ["cellphone", "device"], "smile": ["emoji", "face", "happy", "good", "emotion"], "speaker": ["audio", "music"], "star": ["bookmark", "favorite", "like"], "stop-circle": ["media", "music"], "sun": ["brightness", "weather", "light"], "sunrise": ["weather", "time", "morning", "day"], "sunset": ["weather", "time", "evening", "night"], "tablet": ["device"], "tag": ["label"], "target": ["logo", "bullseye"], "terminal": ["code", "command line", "prompt"], "thermometer": ["temperature", "celsius", "fahrenheit", "weather"], "thumbs-down": ["dislike", "bad", "emotion"], "thumbs-up": ["like", "good", "emotion"], "toggle-left": ["on", "off", "switch"], "toggle-right": ["on", "off", "switch"], "tool": ["settings", "spanner"], "trash": ["garbage", "delete", "remove", "bin"], "trash-2": ["garbage", "delete", "remove", "bin"], "triangle": ["delta"], "truck": ["delivery", "van", "shipping", "transport", "lorry"], "tv": ["television", "stream"], "twitch": ["logo"], "twitter": ["logo", "social"], "type": ["text"], "umbrella": ["rain", "weather"], "unlock": ["security"], "user-check": ["followed", "subscribed"], "user-minus": ["delete", "remove", "unfollow", "unsubscribe"], "user-plus": ["new", "add", "create", "follow", "subscribe"], "user-x": ["delete", "remove", "unfollow", "unsubscribe", "unavailable"], "user": ["person", "account"], "users": ["group"], "video-off": ["camera", "movie", "film"], "video": ["camera", "movie", "film"], "voicemail": ["phone"], "volume": ["music", "sound", "mute"], "volume-1": ["music", "sound"], "volume-2": ["music", "sound"], "volume-x": ["music", "sound", "mute"], "watch": ["clock", "time"], "wifi-off": ["disabled"], "wifi": ["connection", "signal", "wireless"], "wind": ["weather", "air"], "x-circle": ["cancel", "close", "delete", "remove", "times", "clear"], "x-octagon": ["delete", "stop", "alert", "warning", "times", "clear"], "x-square": ["cancel", "close", "delete", "remove", "times", "clear"], "x": ["cancel", "close", "delete", "remove", "times", "clear"], "youtube": ["logo", "video", "play"], "zap-off": ["flash", "camera", "lightning"], "zap": ["flash", "camera", "lightning"], "zoom-in": ["magnifying glass"], "zoom-out": ["magnifying glass"] };
         },
         "./src/to-svg.js": function(module3, exports2, __webpack_require__) {
           "use strict";
@@ -2348,9 +1919,9 @@ var require_lodash = __commonJS({
       }
       return result;
     }
-    function baseUnary(func) {
+    function baseUnary(func2) {
       return function(value) {
-        return func(value);
+        return func2(value);
       };
     }
     function getValue(object, key) {
@@ -2373,9 +1944,9 @@ var require_lodash = __commonJS({
       });
       return result;
     }
-    function overArg(func, transform) {
+    function overArg(func2, transform) {
       return function(arg) {
-        return func(transform(arg));
+        return func2(transform(arg));
       };
     }
     function setToArray(set) {
@@ -2764,8 +2335,8 @@ var require_lodash = __commonJS({
     }
     function createAggregator(setter, initializer) {
       return function(collection, iteratee) {
-        var func = isArray(collection) ? arrayAggregator : baseAggregator, accumulator = initializer ? initializer() : {};
-        return func(collection, setter, baseIteratee(iteratee, 2), accumulator);
+        var func2 = isArray(collection) ? arrayAggregator : baseAggregator, accumulator = initializer ? initializer() : {};
+        return func2(collection, setter, baseIteratee(iteratee, 2), accumulator);
       };
     }
     function createBaseEach(eachFunc, fromRight) {
@@ -2998,8 +2569,8 @@ var require_lodash = __commonJS({
       var type = typeof value;
       return type == "string" || type == "number" || type == "symbol" || type == "boolean" ? value !== "__proto__" : value === null;
     }
-    function isMasked(func) {
-      return !!maskSrcKey && maskSrcKey in func;
+    function isMasked(func2) {
+      return !!maskSrcKey && maskSrcKey in func2;
     }
     function isPrototype(value) {
       var Ctor = value && value.constructor, proto = typeof Ctor == "function" && Ctor.prototype || objectProto;
@@ -3034,14 +2605,14 @@ var require_lodash = __commonJS({
       var result = value + "";
       return result == "0" && 1 / value == -INFINITY ? "-0" : result;
     }
-    function toSource(func) {
-      if (func != null) {
+    function toSource(func2) {
+      if (func2 != null) {
         try {
-          return funcToString.call(func);
+          return funcToString.call(func2);
         } catch (e) {
         }
         try {
-          return func + "";
+          return func2 + "";
         } catch (e) {
         }
       }
@@ -3054,8 +2625,8 @@ var require_lodash = __commonJS({
         result[key] = [value];
       }
     });
-    function memoize(func, resolver) {
-      if (typeof func != "function" || resolver && typeof resolver != "function") {
+    function memoize(func2, resolver) {
+      if (typeof func2 != "function" || resolver && typeof resolver != "function") {
         throw new TypeError(FUNC_ERROR_TEXT);
       }
       var memoized = function() {
@@ -3063,7 +2634,7 @@ var require_lodash = __commonJS({
         if (cache.has(key)) {
           return cache.get(key);
         }
-        var result = func.apply(this, args);
+        var result = func2.apply(this, args);
         memoized.cache = cache.set(key, result);
         return result;
       };
@@ -3186,18 +2757,18 @@ var require_lodash2 = __commonJS({
       }
     }();
     var nodeIsTypedArray = nodeUtil && nodeUtil.isTypedArray;
-    function apply(func, thisArg, args) {
+    function apply(func2, thisArg, args) {
       switch (args.length) {
         case 0:
-          return func.call(thisArg);
+          return func2.call(thisArg);
         case 1:
-          return func.call(thisArg, args[0]);
+          return func2.call(thisArg, args[0]);
         case 2:
-          return func.call(thisArg, args[0], args[1]);
+          return func2.call(thisArg, args[0], args[1]);
         case 3:
-          return func.call(thisArg, args[0], args[1], args[2]);
+          return func2.call(thisArg, args[0], args[1], args[2]);
       }
-      return func.apply(thisArg, args);
+      return func2.apply(thisArg, args);
     }
     function baseTimes(n, iteratee) {
       var index = -1, result = Array(n);
@@ -3206,17 +2777,17 @@ var require_lodash2 = __commonJS({
       }
       return result;
     }
-    function baseUnary(func) {
+    function baseUnary(func2) {
       return function(value) {
-        return func(value);
+        return func2(value);
       };
     }
     function getValue(object, key) {
       return object == null ? void 0 : object[key];
     }
-    function overArg(func, transform) {
+    function overArg(func2, transform) {
       return function(arg) {
-        return func(transform(arg));
+        return func2(transform(arg));
       };
     }
     var arrayProto = Array.prototype;
@@ -3243,9 +2814,9 @@ var require_lodash2 = __commonJS({
     var symToStringTag = Symbol2 ? Symbol2.toStringTag : void 0;
     var defineProperty = function() {
       try {
-        var func = getNative(Object, "defineProperty");
-        func({}, "", {});
-        return func;
+        var func2 = getNative(Object, "defineProperty");
+        func2({}, "", {});
+        return func2;
       } catch (e) {
       }
     }();
@@ -3568,11 +3139,11 @@ var require_lodash2 = __commonJS({
       }
       assignMergeValue(object, key, newValue);
     }
-    function baseRest(func, start2) {
-      return setToString(overRest(func, start2, identity), func + "");
+    function baseRest(func2, start2) {
+      return setToString(overRest(func2, start2, identity), func2 + "");
     }
-    var baseSetToString = !defineProperty ? identity : function(func, string) {
-      return defineProperty(func, "toString", {
+    var baseSetToString = !defineProperty ? identity : function(func2, string) {
+      return defineProperty(func2, "toString", {
         "configurable": true,
         "enumerable": false,
         "value": constant(string),
@@ -3699,8 +3270,8 @@ var require_lodash2 = __commonJS({
       var type = typeof value;
       return type == "string" || type == "number" || type == "symbol" || type == "boolean" ? value !== "__proto__" : value === null;
     }
-    function isMasked(func) {
-      return !!maskSrcKey && maskSrcKey in func;
+    function isMasked(func2) {
+      return !!maskSrcKey && maskSrcKey in func2;
     }
     function isPrototype(value) {
       var Ctor = value && value.constructor, proto = typeof Ctor == "function" && Ctor.prototype || objectProto;
@@ -3718,8 +3289,8 @@ var require_lodash2 = __commonJS({
     function objectToString(value) {
       return nativeObjectToString.call(value);
     }
-    function overRest(func, start2, transform) {
-      start2 = nativeMax(start2 === void 0 ? func.length - 1 : start2, 0);
+    function overRest(func2, start2, transform) {
+      start2 = nativeMax(start2 === void 0 ? func2.length - 1 : start2, 0);
       return function() {
         var args = arguments, index = -1, length = nativeMax(args.length - start2, 0), array = Array(length);
         while (++index < length) {
@@ -3731,7 +3302,7 @@ var require_lodash2 = __commonJS({
           otherArgs[index] = args[index];
         }
         otherArgs[start2] = transform(array);
-        return apply(func, this, otherArgs);
+        return apply(func2, this, otherArgs);
       };
     }
     function safeGet(object, key) {
@@ -3744,7 +3315,7 @@ var require_lodash2 = __commonJS({
       return object[key];
     }
     var setToString = shortOut(baseSetToString);
-    function shortOut(func) {
+    function shortOut(func2) {
       var count = 0, lastCalled = 0;
       return function() {
         var stamp = nativeNow(), remaining = HOT_SPAN - (stamp - lastCalled);
@@ -3756,17 +3327,17 @@ var require_lodash2 = __commonJS({
         } else {
           count = 0;
         }
-        return func.apply(void 0, arguments);
+        return func2.apply(void 0, arguments);
       };
     }
-    function toSource(func) {
-      if (func != null) {
+    function toSource(func2) {
+      if (func2 != null) {
         try {
-          return funcToString.call(func);
+          return funcToString.call(func2);
         } catch (e) {
         }
         try {
-          return func + "";
+          return func2 + "";
         } catch (e) {
         }
       }
@@ -3932,9 +3503,9 @@ var require_lodash3 = __commonJS({
       }
       return result;
     }
-    function baseUnary(func) {
+    function baseUnary(func2) {
       return function(value) {
-        return func(value);
+        return func2(value);
       };
     }
     function getValue(object, key) {
@@ -3957,9 +3528,9 @@ var require_lodash3 = __commonJS({
       });
       return result;
     }
-    function overArg(func, transform) {
+    function overArg(func2, transform) {
       return function(arg) {
-        return func(transform(arg));
+        return func2(transform(arg));
       };
     }
     function setToArray(set) {
@@ -4348,8 +3919,8 @@ var require_lodash3 = __commonJS({
     }
     function createAggregator(setter, initializer) {
       return function(collection, iteratee) {
-        var func = isArray(collection) ? arrayAggregator : baseAggregator, accumulator = initializer ? initializer() : {};
-        return func(collection, setter, baseIteratee(iteratee, 2), accumulator);
+        var func2 = isArray(collection) ? arrayAggregator : baseAggregator, accumulator = initializer ? initializer() : {};
+        return func2(collection, setter, baseIteratee(iteratee, 2), accumulator);
       };
     }
     function createBaseEach(eachFunc, fromRight) {
@@ -4582,8 +4153,8 @@ var require_lodash3 = __commonJS({
       var type = typeof value;
       return type == "string" || type == "number" || type == "symbol" || type == "boolean" ? value !== "__proto__" : value === null;
     }
-    function isMasked(func) {
-      return !!maskSrcKey && maskSrcKey in func;
+    function isMasked(func2) {
+      return !!maskSrcKey && maskSrcKey in func2;
     }
     function isPrototype(value) {
       var Ctor = value && value.constructor, proto = typeof Ctor == "function" && Ctor.prototype || objectProto;
@@ -4618,14 +4189,14 @@ var require_lodash3 = __commonJS({
       var result = value + "";
       return result == "0" && 1 / value == -INFINITY ? "-0" : result;
     }
-    function toSource(func) {
-      if (func != null) {
+    function toSource(func2) {
+      if (func2 != null) {
         try {
-          return funcToString.call(func);
+          return funcToString.call(func2);
         } catch (e) {
         }
         try {
-          return func + "";
+          return func2 + "";
         } catch (e) {
         }
       }
@@ -4634,8 +4205,8 @@ var require_lodash3 = __commonJS({
     var keyBy2 = createAggregator(function(result, value, key) {
       result[key] = value;
     });
-    function memoize(func, resolver) {
-      if (typeof func != "function" || resolver && typeof resolver != "function") {
+    function memoize(func2, resolver) {
+      if (typeof func2 != "function" || resolver && typeof resolver != "function") {
         throw new TypeError(FUNC_ERROR_TEXT);
       }
       var memoized = function() {
@@ -4643,7 +4214,7 @@ var require_lodash3 = __commonJS({
         if (cache.has(key)) {
           return cache.get(key);
         }
-        var result = func.apply(this, args);
+        var result = func2.apply(this, args);
         memoized.cache = cache.set(key, result);
         return result;
       };
@@ -4732,9 +4303,9 @@ var require_lodash4 = __commonJS({
         return object[key];
       });
     }
-    function overArg(func, transform) {
+    function overArg(func2, transform) {
       return function(arg) {
-        return func(transform(arg));
+        return func2(transform(arg));
       };
     }
     var objectProto = Object.prototype;
@@ -4868,18 +4439,18 @@ var require_lodash5 = __commonJS({
       }
     }();
     var nodeIsTypedArray = nodeUtil && nodeUtil.isTypedArray;
-    function apply(func, thisArg, args) {
+    function apply(func2, thisArg, args) {
       switch (args.length) {
         case 0:
-          return func.call(thisArg);
+          return func2.call(thisArg);
         case 1:
-          return func.call(thisArg, args[0]);
+          return func2.call(thisArg, args[0]);
         case 2:
-          return func.call(thisArg, args[0], args[1]);
+          return func2.call(thisArg, args[0], args[1]);
         case 3:
-          return func.call(thisArg, args[0], args[1], args[2]);
+          return func2.call(thisArg, args[0], args[1], args[2]);
       }
-      return func.apply(thisArg, args);
+      return func2.apply(thisArg, args);
     }
     function arrayMap(array, iteratee) {
       var index = -1, length = array ? array.length : 0, result = Array(length);
@@ -4924,9 +4495,9 @@ var require_lodash5 = __commonJS({
       }
       return result;
     }
-    function baseUnary(func) {
+    function baseUnary(func2) {
       return function(value) {
-        return func(value);
+        return func2(value);
       };
     }
     function getValue(object, key) {
@@ -4949,9 +4520,9 @@ var require_lodash5 = __commonJS({
       });
       return result;
     }
-    function overArg(func, transform) {
+    function overArg(func2, transform) {
       return function(arg) {
-        return func(transform(arg));
+        return func2(transform(arg));
       };
     }
     function setToArray(set) {
@@ -5359,8 +4930,8 @@ var require_lodash5 = __commonJS({
         return baseGet(object, path);
       };
     }
-    function baseRest(func, start2) {
-      start2 = nativeMax(start2 === void 0 ? func.length - 1 : start2, 0);
+    function baseRest(func2, start2) {
+      start2 = nativeMax(start2 === void 0 ? func2.length - 1 : start2, 0);
       return function() {
         var args = arguments, index = -1, length = nativeMax(args.length - start2, 0), array = Array(length);
         while (++index < length) {
@@ -5372,7 +4943,7 @@ var require_lodash5 = __commonJS({
           otherArgs[index] = args[index];
         }
         otherArgs[start2] = array;
-        return apply(func, this, otherArgs);
+        return apply(func2, this, otherArgs);
       };
     }
     function baseToString(value) {
@@ -5658,8 +5229,8 @@ var require_lodash5 = __commonJS({
       var type = typeof value;
       return type == "string" || type == "number" || type == "symbol" || type == "boolean" ? value !== "__proto__" : value === null;
     }
-    function isMasked(func) {
-      return !!maskSrcKey && maskSrcKey in func;
+    function isMasked(func2) {
+      return !!maskSrcKey && maskSrcKey in func2;
     }
     function isPrototype(value) {
       var Ctor = value && value.constructor, proto = typeof Ctor == "function" && Ctor.prototype || objectProto;
@@ -5694,14 +5265,14 @@ var require_lodash5 = __commonJS({
       var result = value + "";
       return result == "0" && 1 / value == -INFINITY ? "-0" : result;
     }
-    function toSource(func) {
-      if (func != null) {
+    function toSource(func2) {
+      if (func2 != null) {
         try {
-          return funcToString.call(func);
+          return funcToString.call(func2);
         } catch (e) {
         }
         try {
-          return func + "";
+          return func2 + "";
         } catch (e) {
         }
       }
@@ -5719,8 +5290,8 @@ var require_lodash5 = __commonJS({
       }
       return baseOrderBy(collection, baseFlatten(iteratees, 1), []);
     });
-    function memoize(func, resolver) {
-      if (typeof func != "function" || resolver && typeof resolver != "function") {
+    function memoize(func2, resolver) {
+      if (typeof func2 != "function" || resolver && typeof resolver != "function") {
         throw new TypeError(FUNC_ERROR_TEXT);
       }
       var memoized = function() {
@@ -5728,7 +5299,7 @@ var require_lodash5 = __commonJS({
         if (cache.has(key)) {
           return cache.get(key);
         }
-        var result = func.apply(this, args);
+        var result = func2.apply(this, args);
         memoized.cache = cache.set(key, result);
         return result;
       };
@@ -5840,7 +5411,8 @@ var DEFAULT_SETTINGS = Object.freeze({
     filtered_folders: "",
     folders: "",
     no_folder: ""
-  }
+  },
+  displayMedia: true
 });
 
 // src/view/ViewLoader.ts
@@ -5893,6 +5465,7 @@ function component_subscribe(component, store, callback) {
 function action_destroyer(action_result) {
   return action_result && is_function(action_result.destroy) ? action_result.destroy : noop;
 }
+var tasks = new Set();
 var is_hydrating = false;
 function start_hydrating() {
   is_hydrating = true;
@@ -5946,8 +5519,13 @@ function set_data(text2, data) {
     text2.data = data;
 }
 function set_style(node, key, value, important) {
-  node.style.setProperty(key, value, important ? "important" : "");
+  if (value === null) {
+    node.style.removeProperty(key);
+  } else {
+    node.style.setProperty(key, value, important ? "important" : "");
+  }
 }
+var managed_styles = new Map();
 var current_component;
 function set_current_component(component) {
   current_component = component;
@@ -5967,20 +5545,20 @@ function schedule_update() {
 function add_render_callback(fn2) {
   render_callbacks.push(fn2);
 }
-var flushing = false;
-var seen_callbacks = /* @__PURE__ */ new Set();
+var seen_callbacks = new Set();
+var flushidx = 0;
 function flush() {
-  if (flushing)
-    return;
-  flushing = true;
+  const saved_component = current_component;
   do {
-    for (let i = 0; i < dirty_components.length; i += 1) {
-      const component = dirty_components[i];
+    while (flushidx < dirty_components.length) {
+      const component = dirty_components[flushidx];
+      flushidx++;
       set_current_component(component);
       update(component.$$);
     }
     set_current_component(null);
     dirty_components.length = 0;
+    flushidx = 0;
     while (binding_callbacks.length)
       binding_callbacks.pop()();
     for (let i = 0; i < render_callbacks.length; i += 1) {
@@ -5996,8 +5574,8 @@ function flush() {
     flush_callbacks.pop()();
   }
   update_scheduled = false;
-  flushing = false;
   seen_callbacks.clear();
+  set_current_component(saved_component);
 }
 function update($$) {
   if ($$.fragment !== null) {
@@ -6009,7 +5587,7 @@ function update($$) {
     $$.after_update.forEach(add_render_callback);
   }
 }
-var outroing = /* @__PURE__ */ new Set();
+var outroing = new Set();
 var outros;
 function group_outros() {
   outros = {
@@ -6047,6 +5625,32 @@ function transition_out(block, local, detach2, callback) {
   }
 }
 var globals = typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : global;
+var boolean_attributes = new Set([
+  "allowfullscreen",
+  "allowpaymentrequest",
+  "async",
+  "autofocus",
+  "autoplay",
+  "checked",
+  "controls",
+  "default",
+  "defer",
+  "disabled",
+  "formnovalidate",
+  "hidden",
+  "ismap",
+  "loop",
+  "multiple",
+  "muted",
+  "nomodule",
+  "novalidate",
+  "open",
+  "playsinline",
+  "readonly",
+  "required",
+  "reversed",
+  "selected"
+]);
 function create_component(block) {
   block && block.c();
 }
@@ -6202,40 +5806,11 @@ var SvelteComponent = class {
   }
 };
 
-// node_modules/tslib/modules/index.js
-var import_tslib = __toModule(require_tslib());
-var {
-  __extends,
-  __assign,
-  __rest,
-  __decorate,
-  __param,
-  __metadata,
-  __awaiter,
-  __generator,
-  __exportStar,
-  __createBinding,
-  __values,
-  __read,
-  __spread,
-  __spreadArrays,
-  __spreadArray,
-  __await,
-  __asyncGenerator,
-  __asyncDelegator,
-  __asyncValues,
-  __makeTemplateObject,
-  __importStar,
-  __importDefault,
-  __classPrivateFieldGet,
-  __classPrivateFieldSet
-} = import_tslib.default;
-
 // node_modules/svelte/store/index.mjs
 var subscriber_queue = [];
 function writable(value, start2 = noop) {
   let stop;
-  const subscribers = /* @__PURE__ */ new Set();
+  const subscribers = new Set();
   function set(new_value) {
     if (safe_not_equal(value, new_value)) {
       value = new_value;
@@ -6378,16 +5953,29 @@ var import_obsidian2 = __toModule(require("obsidian"));
 var import_ts_md5 = __toModule(require_md5());
 function getElementByName(element2, name) {
   let value;
-  if (typeof element2.getElementsByTagName !== "function") {
+  if (typeof element2.getElementsByTagName !== "function" && typeof element2.getElementsByTagNameNS !== "function") {
     return;
   }
-  if (name.contains(":")) {
+  if (name.includes(":")) {
     const [namespace, tag] = name.split(":");
     const namespaceUri = element2.lookupNamespaceURI(namespace);
-    if (element2.getElementsByTagNameNS(namespaceUri, tag).length > 0) {
-      value = element2.getElementsByTagNameNS(namespaceUri, tag)[0].childNodes[0];
+    const byNamespace = element2.getElementsByTagNameNS(namespaceUri, tag);
+    if (byNamespace.length > 0) {
+      value = byNamespace[0].childNodes[0];
+    } else {
+      const tmp = element2.getElementsByTagName(name);
+      if (tmp.length > 0) {
+        if (tmp[0].childNodes.length === 0) {
+          value = tmp[0];
+        } else {
+          const node = tmp[0].childNodes[0];
+          if (node !== void 0) {
+            value = node;
+          }
+        }
+      }
     }
-  } else if (name.contains(".")) {
+  } else if (name.includes(".")) {
     const [prefix, tag] = name.split(".");
     if (element2.getElementsByTagName(prefix).length > 0) {
       const nodes = Array.from(element2.getElementsByTagName(prefix)[0].childNodes);
@@ -6397,28 +5985,26 @@ function getElementByName(element2, name) {
         }
       });
     }
-  } else {
-    if (element2.getElementsByTagName(name).length > 0) {
-      if (element2.getElementsByTagName(name)[0].childNodes.length == 0) {
-        value = element2.getElementsByTagName(name)[0];
-      } else {
-        const node = element2.getElementsByTagName(name)[0].childNodes[0];
-        if (node !== void 0)
-          value = node;
-      }
+  } else if (element2.getElementsByTagName(name).length > 0) {
+    if (element2.getElementsByTagName(name)[0].childNodes.length == 0) {
+      value = element2.getElementsByTagName(name)[0];
+    } else {
+      const node = element2.getElementsByTagName(name)[0].childNodes[0];
+      if (node !== void 0)
+        value = node;
     }
   }
   return value;
 }
 function getContent(element2, names) {
   let value;
-  names.forEach((name) => {
-    if (name.contains("#")) {
+  for (const name of names) {
+    if (name.includes("#")) {
       const [elementName, attr2] = name.split("#");
       const data = getElementByName(element2, elementName);
       if (data) {
         if (data.nodeName === elementName) {
-          const tmp = data.getAttr(attr2);
+          const tmp = data.getAttribute(attr2);
           if (tmp.length > 0) {
             value = tmp;
           }
@@ -6427,15 +6013,18 @@ function getContent(element2, names) {
     } else {
       const data = getElementByName(element2, name);
       if (data) {
-        if (data.nodeValue && data.nodeValue.length > 0) {
+        if (data.wholeText && data.wholeText.length > 0) {
+          value = data.wholeText;
+        }
+        if (!value && data.nodeValue && data.nodeValue.length > 0) {
           value = data.nodeValue;
         }
-        if (data.innerHTML && data.innerHTML.length > 0) {
+        if (!value && data.innerHTML && data.innerHTML.length > 0) {
           value = data.innerHTML;
         }
       }
     }
-  });
+  }
   if (value === void 0) {
     return "";
   }
@@ -6445,7 +6034,7 @@ function buildItem(element2) {
   return {
     title: getContent(element2, ["title"]),
     description: getContent(element2, ["content", "content:encoded", "itunes:summary", "description", "summary", "media:description"]),
-    content: getContent(element2, ["itunes:summary", "description", "summary", "media:description", "content", "content:encoded"]),
+    content: getContent(element2, ["itunes:summary", "description", "summary", "media:description", "content", "content:encoded", "ns0:encoded"]),
     category: getContent(element2, ["category"]),
     link: getContent(element2, ["link", "link#href"]),
     creator: getContent(element2, ["creator", "dc:creator", "author", "author.name"]),
@@ -6481,11 +6070,16 @@ function getAllItems(doc) {
   }
   return items;
 }
+function requestFeed(feed) {
+  return __async(this, null, function* () {
+    return yield (0, import_obsidian2.request)({ url: feed.url });
+  });
+}
 function getFeedItems(feed) {
   return __async(this, null, function* () {
     let data;
     try {
-      const rawData = yield (0, import_obsidian2.request)({ url: feed.url });
+      const rawData = yield requestFeed(feed);
       data = new window.DOMParser().parseFromString(rawData, "text/xml");
     } catch (e) {
       console.error(e);
@@ -6504,7 +6098,7 @@ function getFeedItems(feed) {
         item.created = false;
         item.language = language;
         item.hash = new import_ts_md5.Md5().appendStr(item.title).appendStr(item.folder).appendStr(item.link).end();
-        if (!item.image && feed.url.contains("youtube.com/feeds")) {
+        if (!item.image && feed.url.includes("youtube.com/feeds")) {
           item.image = "https://i3.ytimg.com/vi/" + item.id.split(":")[2] + "/hqdefault.jpg";
         }
         items.push(item);
@@ -6682,6 +6276,8 @@ var BaseModal = class extends import_obsidian3.Modal {
 
 // src/l10n/locales/en.ts
 var en_default = {
+  testingValue: "",
+  testingInserts: "",
   RSS_Reader: "RSS Reader",
   RSS_Feeds: "RSS Feeds",
   open: "Open",
@@ -6734,7 +6330,7 @@ var en_default = {
   invalid_name: "you need to specify a name",
   invalid_url: "this url is not valid",
   invalid_feed: "This feed does not have any entries",
-  filter_tags: "all articles with tags",
+  filter_tags: "All articles with tags",
   filter_unread: "All unread articles(from folders)",
   filter_read: "All read articles(from folders)",
   filter_favorites: "Favorites(from folders)",
@@ -6757,6 +6353,7 @@ var en_default = {
   from_folders: "from folders: ",
   from_feeds: "from feeds: ",
   with_tags: "with tags: ",
+  no_feed_with_name: "There is no feed with this name",
   invalid_tag: "This is not a valid tag",
   note_exists: "there is already a note with that name",
   invalid_filename: "that filename is not valid",
@@ -6804,8 +6401,8 @@ var en_default = {
   default_filename: "Template for filename",
   default_filename_help: "All variables from the paste template are available",
   cleanup: "Cleanup articles",
-  cleanup_help: "Removes all entries which fit the criteria specified below.",
-  cleanup_help2: "Keep in mind that all articles that still exist in the feed will reappear on the next refresh",
+  cleanup_help: "Removes entries which fit the criteria specified below.",
+  cleanup_help2: "Keep in mind that articles that still exist in the feed will reappear on the next refresh",
   perform_cleanup: "Perform cleanup",
   all: "all",
   from_feed: "from feed",
@@ -6830,7 +6427,23 @@ var en_default = {
   highlight_remove: "remove highlight",
   filter_folder_ignore_help: "ignore the following folders",
   filter_feed_ignore_help: "ignore the following feeds",
-  filter_tags_ignore_help: "ignore the following tags"
+  filter_tags_ignore_help: "ignore the following tags",
+  loading: "Loading",
+  article_title: "Title",
+  article_link: "Link to article",
+  article_author: "Author of article",
+  article_published: "Date published",
+  article_description: "Short article description",
+  article_content: "article content",
+  article_tags: "Tags split by comma",
+  article_media: "Link to video/audio file",
+  feed_folder: "Folder of feed",
+  feed_title: "Title of feed",
+  highlights: "Highlights",
+  note_created: "Note creation date",
+  filename: "Filename",
+  display_media: "Include Media",
+  base_folder: "Base folder"
 };
 
 // src/l10n/locales/de.ts
@@ -6910,6 +6523,7 @@ var de_default = {
   from_folders: "Aus Ordnern: ",
   from_feeds: "Aus Feeds: ",
   with_tags: "Mit Tags: ",
+  no_feed_with_name: "Es existiert kein Feed mit diesem Namen",
   invalid_tag: "Dieser Tag ist nicht g\xFCltig",
   note_exists: "Es existiert bereits eine Notiz mit diesem Namen",
   invalid_filename: "Der Dateiname ist nicht g\xFCltig",
@@ -6983,16 +6597,192 @@ var de_default = {
   highlight_remove: "Markierung entfernen",
   filter_folder_ignore_help: "diese Ordner ignorieren",
   filter_feed_ignore_help: "diese Feeds ignorieren",
-  filter_tags_ignore_help: "diese Tags ignorieren"
+  filter_tags_ignore_help: "diese Tags ignorieren",
+  loading: "L\xE4dt",
+  article_title: "Titel",
+  article_link: "Link zum Artikel",
+  article_author: "Autor",
+  article_published: "Ver\xF6ffentlichungsdatum",
+  article_description: "Kurze Beschreibung des Artikels",
+  article_content: "Inhalt des Artikels",
+  article_tags: "Tags getrennt durch Komma",
+  article_media: "Link zu Video/Audio Datei",
+  feed_folder: "Ordner des Feeds",
+  feed_title: "Feed Titel",
+  highlights: "Highlights",
+  note_created: "Erstelldatum der Notiz",
+  filename: "Dateiname"
+};
+
+// src/l10n/locales/zh.ts
+var zh_default = {
+  RSS_Reader: "RSS Reader",
+  RSS_Feeds: "\u8BA2\u9605\u6E90",
+  open: "\u6253\u5F00",
+  refresh_feeds: "\u66F4\u65B0\u8BA2\u9605",
+  create_all: "\u521B\u5EFA\u5168\u90E8",
+  mark_all_as_read: "\u5168\u90E8\u6807\u8BB0\u4E3A\u5DF2\u8BFB",
+  add_tags_to_all: "\u4E3A\u6240\u6709\u6761\u76EE\u6DFB\u52A0\u6807\u7B7E",
+  filtered_folders: "\u7B5B\u9009\u5206\u7C7B",
+  folders: "\u5206\u7C7B",
+  folder: "\u5206\u7C7B",
+  feeds: "\u8BA2\u9605\u6E90",
+  create_note: "\u65B0\u5EFA\u7B14\u8BB0",
+  paste_to_note: "\u7C98\u8D34\u5230\u5F53\u524D\u7B14\u8BB0",
+  copy_to_clipboard: "\u590D\u5236\u5230\u526A\u5207\u677F",
+  open_browser: "\u7528\u6D4F\u89C8\u5668\u6253\u5F00",
+  edit_tags: "\u7F16\u8F91\u6807\u7B7E",
+  mark_as_read: "\u6807\u8BB0\u4E3A\u5DF2\u8BFB",
+  mark_as_unread: "\u6807\u8BB0\u4E3A\u672A\u8BFB",
+  mark_as_favorite: "\u6DFB\u52A0\u5230\u6536\u85CF\u5939",
+  remove_from_favorites: "\u4ECE\u6536\u85CF\u5939\u4E2D\u5220\u9664",
+  read_article_tts: "\u8BED\u97F3(TTS)\u9605\u8BFB\u6587\u7AE0",
+  next: "\u4E0B\u4E00\u7BC7",
+  previous: "\u4E0A\u4E00\u7BC7",
+  mark_as_read_unread: "\u6807\u8BB0\u4E3A\u5DF2\u8BFB/\u672A\u8BFB",
+  mark_as_favorite_remove: "\u6DFB\u52A0\u5230\u6536\u85CF\u5939/\u4ECE\u6536\u85CF\u5939\u4E2D\u5220\u9664",
+  marked_as_read: "\u5DF2\u6807\u8BB0\u4E3A\u5DF2\u8BFB",
+  marked_as_unread: "\u5DF2\u6807\u8BB0\u4E3A\u672A\u8BFB",
+  removed_from_favorites: "\u5DF2\u4ECE\u6536\u85CF\u5939\u4E2D\u5220\u9664",
+  added_to_favorites: "\u5DF2\u6DFB\u52A0\u5230\u6536\u85CF\u5939",
+  read: "\u5DF2\u8BFB",
+  unread: "\u672A\u8BFB",
+  favorites: "\u6536\u85CF\u5939",
+  favorite: "\u6536\u85CF",
+  tags: "\u6807\u7B7E",
+  tag: "\u6807\u7B7E",
+  save: "\u4FDD\u5B58",
+  cancel: "\u53D6\u6D88",
+  delete: "\u5220\u9664",
+  edit: "\u7F16\u8F91",
+  reset: "\u6062\u590D\u9ED8\u8BA4\u503C",
+  fix_errors: "\u8BF7\u5728\u4FDD\u5B58\u524D\u4FEE\u590D\u9519\u8BEF\u3002",
+  add_new: "\u6DFB\u52A0",
+  add_new_feed: "\u6DFB\u52A0\u65B0\u8BA2\u9605\u6E90",
+  feed_already_configured: "\u60A8\u5DF2\u7ECF\u6DFB\u52A0\u4E86\u8BE5 URL \u5730\u5740\u7684\u8BA2\u9605\u6E90",
+  no_folder: "\u672A\u5206\u7C7B",
+  name: "\u540D\u79F0",
+  name_help: "\u8BBE\u7F6E\u8BA2\u9605\u6E90\u540D\u79F0",
+  url_help: "\u8F93\u5165\u8BA2\u9605\u6E90\u7684 URL \u5730\u5740",
+  folder_help: "\u8BBE\u7F6E\u8BA2\u9605\u6E90\u5206\u7C7B",
+  invalid_name: "\u8BF7\u8F93\u5165\u8BA2\u9605\u6E90\u540D\u79F0",
+  invalid_url: "\u8BF7\u8F93\u5165\u6709\u6548\u7684\u8BA2\u9605\u6E90 URL \u5730\u5740",
+  invalid_feed: "\u6B64\u8BA2\u9605\u6E90\u6CA1\u6709\u4EFB\u4F55\u5185\u5BB9",
+  filter_tags: "\u5DF2\u6253\u6807\u7B7E\u7684\u6587\u7AE0",
+  filter_unread: "\u5168\u90E8\u672A\u8BFB\u6587\u7AE0(\u6765\u81EA\u5206\u7C7B)",
+  filter_read: "\u5168\u90E8\u5DF2\u8BFB\u6587\u7AE0(\u6765\u81EA\u5206\u7C7B)",
+  filter_favorites: "\u6536\u85CF\u5939(\u6765\u81EA\u5206\u7C7B)",
+  sort_date_newest: "\u53D1\u5E03\u65E5\u671F (\u65B0 \u2192 \u65E7)",
+  sort_date_oldest: "\u53D1\u5E03\u65E5\u671F (\u65E7 to \u65B0)",
+  sort_alphabet_normal: "\u540D\u79F0 (A \u2192 Z)",
+  sort_alphabet_inverted: "\u540D\u79F0 (Z \u2192 A)",
+  sort: "\u6392\u5E8F",
+  filter_name_help: "\u8BBE\u7F6E\u7B5B\u9009\u5668\u540D\u79F0",
+  filter_type: "\u7C7B\u578B",
+  filter_type_help: "\u7B5B\u9009\u5668\u7C7B\u578B",
+  filter: "\u7B5B\u9009\u5668",
+  filter_help: "\u8981\u7B5B\u9009\u7684\u5206\u7C7B/\u6807\u7B7E,",
+  only_favorites: "\u4EC5\u663E\u793A\u5DF2\u6536\u85CF",
+  show_read: "\u663E\u793A\u5DF2\u8BFB",
+  show_unread: "\u663E\u793A\u672A\u8BFB",
+  filter_folder_help: "\u4EC5\u663E\u793A\u4EE5\u4E0B\u5206\u7C7B\u4E2D\u7684\u6587\u7AE0",
+  filter_feed_help: "\u4EC5\u663E\u793A\u4EE5\u4E0B\u8BA2\u9605\u6E90\u4E2D\u7684\u6587\u7AE0",
+  filter_tags_help: "\u4EC5\u663E\u793A\u4EE5\u4E0B\u6807\u7B7E\u4E2D\u7684\u6587\u7AE0",
+  from_folders: "\u6765\u81EA\u5206\u7C7B: ",
+  from_feeds: "\u6765\u81EA\u8BA2\u9605\u6E90: ",
+  with_tags: "\u6765\u81EA\u6807\u7B7E: ",
+  invalid_tag: "\u6B64\u6807\u7B7E\u65E0\u6548",
+  note_exists: "\u5DF2\u5B58\u5728\u540C\u540D\u7B14\u8BB0",
+  invalid_filename: "\u6587\u4EF6\u540D\u65E0\u6548",
+  specify_name: "\u8BF7\u8F93\u5165\u6587\u4EF6\u540D",
+  cannot_contain: "\u4E0D\u80FD\u5305\u542B: ",
+  created_note: "\u5DF2\u5C06\u8BE5\u6587\u7AE0\u590D\u5236\u4E3A\u7B14\u8BB0",
+  inserted_article: "\u5DF2\u5C06\u8BE5\u6587\u7AE0\u590D\u5236\u5230\u5F53\u524D\u7B14\u8BB0",
+  no_file_active: "\u6CA1\u6709\u6587\u4EF6\u5904\u4E8E\u6D3B\u52A8\u72B6\u6001",
+  settings: "\u8BBE\u7F6E",
+  file_creation: "\u65B0\u5EFA\u7B14\u8BB0",
+  template_new: "\u7B14\u8BB0\u6A21\u677F",
+  template_new_help: "\u4F7F\u7528\u8BA2\u9605\u6587\u7AE0\u521B\u5EFA\u7B14\u8BB0\u65F6\uFF0C\u4F1A\u6839\u636E\u5DF2\u8BBE\u7F6E\u7684\u6A21\u677F\u53D8\u91CF\u8FDB\u884C\u5904\u7406\u3002",
+  template_paste: "\u590D\u5236/\u7C98\u8D34\u6A21\u677F",
+  template_paste_help: "\u5C06\u8BA2\u9605\u6587\u7AE0\u590D\u5236/\u7C98\u8D34\u4E3A\u7B14\u8BB0\u65F6\uFF0C\u4F1A\u6839\u636E\u5DF2\u8BBE\u7F6E\u7684\u6A21\u677F\u53D8\u91CF\u8FDB\u884C\u5904\u7406\u3002",
+  available_variables: "\u53EF\u7528\u6A21\u677F\u53D8\u91CF: ",
+  file_location: "\u4FDD\u5B58\u4F4D\u7F6E",
+  file_location_help: "\u8BF7\u9009\u62E9\u8981\u4FDD\u5B58\u65B0\u5EFA\u7B14\u8BB0\u7684\u4F4D\u7F6E",
+  file_location_default: "\u9ED8\u8BA4\u76EE\u5F55",
+  file_location_custom: "\u81EA\u5B9A\u4E49\u76EE\u5F55",
+  file_location_folder: "\u8BF7\u9009\u62E9\u8981\u4FDD\u5B58\u65B0\u5EFA\u7B14\u8BB0\u7684\u76EE\u5F55",
+  file_location_folder_help: "\u65B0\u521B\u5EFA\u7684\u7B14\u8BB0\u5C06\u4FDD\u5B58\u5728\u8BE5\u76EE\u5F55\u4E2D",
+  date_format: "\u65E5\u671F\u683C\u5F0F",
+  syntax_reference: "\u65E5\u671F\u683C\u5F0F\u8BED\u6CD5\u53C2\u8003",
+  syntax_looks: "\u5F53\u524D\u65E5\u671F\u683C\u5F0F: ",
+  ask_filename: "\u786E\u8BA4\u6587\u4EF6\u540D",
+  ask_filename_help: "\u7981\u7528\u5219\u81EA\u52A8\u4F7F\u7528\u4E0B\u9762\u7684\u6587\u4EF6\u540D\u6A21\u677F\u521B\u5EFA\u6587\u4EF6\uFF08\u81EA\u52A8\u5220\u9664\u65E0\u6548\u7684\u6587\u4EF6\u540D\u5B57\u7B26\uFF09",
+  refresh_time: "\u66F4\u65B0\u9891\u7387",
+  refresh_time_help: "\u591A\u4E45\u66F4\u65B0\u4E00\u6B21\u8BA2\u9605\u6E90\uFF08\u5355\u4F4D: \u5206\u949F\uFF09\uFF0C\u8BBE\u7F6E\u4E3A0\u5219\u7981\u7528\u3002",
+  specify_positive_number: "\u8BF7\u8F93\u5165\u6B63\u6570",
+  multi_device_usage: "\u591A\u8BBE\u5907\u4F7F\u7528",
+  multi_device_usage_help: "\u540C\u65F6\u4F7F\u7528\u591A\u4E2A\u8BBE\u5907\u65F6\u4FDD\u6301\u6587\u7AE0\u72B6\u6001\u540C\u6B65\n(\u9700\u8981\u91CD\u65B0\u542F\u52A8\u624D\u80FD\u751F\u6548)",
+  add_new_filter: "\u6DFB\u52A0\u65B0\u7B5B\u9009\u5668",
+  filter_exists: "\u5DF2\u5B58\u5728\u540C\u540D\u7B5B\u9009\u5668",
+  hotkeys: "\u5FEB\u6377\u952E",
+  hotkeys_reading: "\u9605\u8BFB\u6587\u7AE0\u65F6",
+  press_key: "\u6309\u4E0B\u5FEB\u6377\u952E",
+  customize_hotkey: "\u5206\u914D\u5FEB\u6377\u952E",
+  refreshed_feeds: "\u5DF2\u66F4\u65B0 RSS \u8BA2\u9605\u6E90",
+  import: "\u5BFC\u5165",
+  import_opml: "\u901A\u8FC7 OPML \u5BFC\u5165",
+  imported_x_feeds: "\u5DF2\u5BFC\u5165 %1 \u6761\u8BA2\u9605\u6E90",
+  choose_file: "\u9009\u62E9\u6587\u4EF6",
+  choose_file_help: "\u8BF7\u9009\u62E9\u8981\u5BFC\u5165\u7684\u6587\u4EF6",
+  export_opml: "\u5BFC\u51FA OPML \u6587\u4EF6",
+  default_filename: "\u6587\u4EF6\u540D\u6A21\u677F",
+  default_filename_help: "\u4E0A\u9762\u521B\u5EFA\u7B14\u8BB0\u7684\u6240\u6709\u6A21\u677F\u53D8\u91CF\u90FD\u53EF\u7528",
+  cleanup: "\u6E05\u9664\u6587\u7AE0",
+  cleanup_help: "\u6E05\u9664\u7B26\u5408\u4EE5\u4E0B\u89C4\u5219\u7684\u6587\u7AE0",
+  cleanup_help2: "\u6CE8\u610F\uFF0C\u8BA2\u9605\u6E90\u4E2D\u4ECD\u5B58\u5728\u7684\u6587\u7AE0\u5C06\u5728\u4E0B\u6B21\u5237\u65B0\u65F6\u91CD\u65B0\u51FA\u73B0",
+  perform_cleanup: "\u6E05\u9664\u6587\u7AE0",
+  all: "\u5168\u90E8",
+  from_feed: "\u6765\u81EA\u8BA2\u9605\u6E90",
+  older_than: "\u591A\u5C11\u5929\u4E4B\u524D\u53D1\u5E03\u7684\u6587\u7AE0",
+  older_than_help: "\u5982\u679C\u6CA1\u6709\u7B26\u5408\u7684\u6587\u7AE0\uFF0C\u5219\u5FFD\u7565\u8BE5\u6761\u89C4\u5219\uFF08\u4E3A\u7A7A\u5219\u4FDD\u7559\u6240\u6709\u65E5\u671F\u7684\u6587\u7AE0\uFF09",
+  advanced: "\u9AD8\u7EA7\u8BBE\u7F6E",
+  remove_wrong_feed: "\u6E05\u9664\u6240\u6709\u4E0D\u6B63\u786E\u8BA2\u9605\u6E90\u4E2D\u7684\u6587\u7AE0",
+  remove_wrong_feed_help: "\u8FD9\u53EF\u80FD\u662F\u7531\u4E8E0.8\u4E4B\u524D\u7248\u672C\u4E2D\u7684\u9519\u8BEF\u9020\u6210\u7684",
+  scanning_items: "\u626B\u63CF\u6587\u7AE0 (%1 / %2))",
+  created_export: "\u5DF2\u5728\u7B14\u8BB0\u4ED3\u5E93\u6839\u76EE\u5F55\u521B\u5EFA OPML \u6587\u4EF6",
+  add: "\u6DFB\u52A0",
+  from_archive: "\u4ECE\u4E92\u8054\u7F51\u6863\u6848\u9986(archive.org)\u83B7\u53D6\u65E7\u6587\u7AE0",
+  reading_archive: "\u6B63\u5728\u4ECE\u5B58\u6863\u4E2D\u8BFB\u53D6\u6570\u636E",
+  scanning_duplicates: "\u626B\u63CF\u91CD\u590D\u6587\u7AE0",
+  do_not_close: "\u8BF7\u52FF\u5173\u95ED\u6B64\u7A97\u53E3",
+  display_style: "\u663E\u793A\u98CE\u683C",
+  list: "\u5217\u8868",
+  cards: "\u5361\u7247",
+  customize_terms: "\u81EA\u5B9A\u4E49\u672F\u8BED",
+  content: "\u5185\u5BB9\u8BBE\u7F6E",
+  highlight: "\u9AD8\u4EAE",
+  highlight_remove: "\u5220\u9664\u9AD8\u4EAE",
+  filter_folder_ignore_help: "\u5FFD\u7565\u4EE5\u4E0B\u5206\u7C7B",
+  filter_feed_ignore_help: "\u5FFD\u7565\u4EE5\u4E0B\u8BA2\u9605\u6E90",
+  filter_tags_ignore_help: "\u5FFD\u7565\u4EE5\u4E0B\u6807\u7B7E",
+  loading: "\u6B63\u5728\u52A0\u8F7D"
+};
+
+// src/l10n/locales/test.ts
+var test_default = {
+  "testingValue": "Hello World",
+  testingInserts: "Hello %1 %2"
 };
 
 // src/l10n/locale.ts
-var locale = window.moment.locale;
+var locale = window.moment ? window.moment.locale() : "test";
 var localeMap = {
   en: en_default,
-  de: de_default
+  de: de_default,
+  "zh-cn": zh_default,
+  test: test_default
 };
-var userLocale = localeMap[locale()];
+var userLocale = localeMap[locale];
 function t(str, ...inserts) {
   var _a;
   let localeStr = (_a = userLocale && userLocale[str]) != null ? _a : en_default[str];
@@ -7046,15 +6836,6 @@ var TextInputPrompt = class extends BaseModal {
 // node_modules/obsidian-community-lib/dist/utils.js
 var feather = __toModule(require_feather());
 var import_obsidian5 = __toModule(require("obsidian"));
-function addFeatherIcon(name, attr2 = { viewBox: "0 0 24 24", width: "100", height: "100" }) {
-  if (feather.icons[name]) {
-    const iconName = `feather-${name}`;
-    (0, import_obsidian5.addIcon)(iconName, feather.icons[name].toSvg(attr2));
-    return iconName;
-  } else {
-    throw Error(`This Icon (${name}) doesn't exist in the Feather Library.`);
-  }
-}
 function copy(content, success = () => new import_obsidian5.Notice("Copied to clipboard"), failure = (reason) => {
   new import_obsidian5.Notice("Could not copy to clipboard");
   console.log({ reason });
@@ -7073,7 +6854,7 @@ function createNewNote(plugin, item) {
     if (plugin.settings.saveLocation === "custom") {
       dir = plugin.settings.saveLocationFolder;
     }
-    let filename = applyTemplate(item, plugin.settings.defaultFilename, plugin.settings);
+    let filename = applyTemplate(plugin, item, plugin.settings.defaultFilename);
     filename = filename.replace(/[\/\\:]/g, " ");
     if (plugin.settings.askForFilename) {
       const inputPrompt = new TextInputPrompt(plugin.app, t("specify_name"), t("cannot_contain") + ' * " \\ / < > : | ?', filename, filename);
@@ -7104,7 +6885,7 @@ function createNewFile(plugin, item, path, title) {
       new import_obsidian6.Notice(t("note_exists"));
       return;
     }
-    const appliedTemplate = applyTemplate(item, plugin.settings.template, plugin.settings, title);
+    const appliedTemplate = applyTemplate(plugin, item, plugin.settings.template, title);
     const file = yield plugin.app.vault.create(path, appliedTemplate);
     yield plugin.app.workspace.activeLeaf.openFile(file, {
       state: { mode: "edit" }
@@ -7126,7 +6907,7 @@ function pasteToNote(plugin, item) {
     }
     const view = plugin.app.workspace.getActiveViewOfType(import_obsidian6.MarkdownView);
     if (view) {
-      const appliedTemplate = applyTemplate(item, plugin.settings.pasteTemplate, plugin.settings);
+      const appliedTemplate = applyTemplate(plugin, item, plugin.settings.pasteTemplate);
       const editor = view.editor;
       editor.replaceRange(appliedTemplate, editor.getCursor());
       item.created = true;
@@ -7138,13 +6919,13 @@ function pasteToNote(plugin, item) {
     }
   });
 }
-function applyTemplate(item, template, settings, filename) {
+function applyTemplate(plugin, item, template, filename) {
   let result = template.replace(/{{title}}/g, item.title);
   result = result.replace(/{{link}}/g, item.link);
   result = result.replace(/{{author}}/g, item.creator);
-  result = result.replace(/{{published}}/g, (0, import_obsidian6.moment)(item.pubDate).format(settings.dateFormat));
-  result = result.replace(/{{created}}/g, (0, import_obsidian6.moment)().format(settings.dateFormat));
-  result = result.replace(/{{date}}/g, (0, import_obsidian6.moment)().format(settings.dateFormat));
+  result = result.replace(/{{published}}/g, (0, import_obsidian6.moment)(item.pubDate).format(plugin.settings.dateFormat));
+  result = result.replace(/{{created}}/g, (0, import_obsidian6.moment)().format(plugin.settings.dateFormat));
+  result = result.replace(/{{date}}/g, (0, import_obsidian6.moment)().format(plugin.settings.dateFormat));
   result = result.replace(/{{feed}}/g, item.feed);
   result = result.replace(/{{folder}}/g, item.folder);
   result = result.replace(/{{description}}/g, item.description);
@@ -7172,20 +6953,20 @@ function applyTemplate(item, template, settings, filename) {
   result = result.replace(/{{tags}}/g, item.tags.join(", "));
   result = result.replace(/{{#tags}}/g, item.tags.map((i) => "#" + i).join(", "));
   result = result.replace(/{{highlights}}/g, item.highlights.map((value) => {
-    return "- " + (0, import_obsidian6.htmlToMarkdown)(removeFormatting(value).replace(/^(-+)/, ""));
+    return "- " + rssToMd(plugin, removeFormatting(value).replace(/^(-+)/, ""));
   }).join("\n"));
   result = result.replace(/({{highlights:)[\s\S][^}]*(}})/g, function(k) {
     const value = k.split(/(:[\s\S]?)/);
     const tmp = value.slice(1).join("");
     const template2 = tmp.substring(1, tmp.indexOf("}"));
     return item.highlights.map((i) => {
-      return template2.replace(/%%highlight%%/g, (0, import_obsidian6.htmlToMarkdown)(removeFormatting(i)).replace(/^(-+)/, ""));
+      return template2.replace(/%%highlight%%/g, rssToMd(plugin, removeFormatting(i)).replace(/^(-+)/, ""));
     }).join("");
   });
   if (filename) {
     result = result.replace(/{{filename}}/g, filename);
   }
-  let content = (0, import_obsidian6.htmlToMarkdown)(item.content);
+  let content = rssToMd(plugin, item.content);
   item.highlights.forEach((highlight) => {
     const mdHighlight = (0, import_obsidian6.htmlToMarkdown)(highlight);
     content = content.replace(mdHighlight, "==" + mdHighlight + "==");
@@ -7216,6 +6997,36 @@ function openInBrowser(item) {
   if (typeof item.link === "string") {
     window.open(item.link, "_blank");
   }
+}
+function rssToMd(plugin, content) {
+  let markdown = (0, import_obsidian6.htmlToMarkdown)(content);
+  if (plugin.app.plugins.plugins["dataview"]) {
+    const {
+      inlineQueryPrefix,
+      inlineJsQueryPrefix
+    } = plugin.app.plugins.plugins.dataview.api.settings;
+    markdown = markdown.replace(RegExp(`\`${escapeRegExp(inlineQueryPrefix)}.*\``, "g"), "<pre>$&</pre>");
+    markdown = markdown.replace(RegExp(`\`${escapeRegExp(inlineJsQueryPrefix)}.*\``, "g"), "<pre>$&</pre>");
+  }
+  if (plugin.app.plugins.plugins["templater-obsidian"]) {
+    markdown = markdown.replace(/<%([\s\S]*?)%>/g, "```javascript\n$&\n```");
+  }
+  if (import_obsidian6.MarkdownPreviewRenderer.codeBlockPostProcessors) {
+    const codeblockProcessors = Object.keys(import_obsidian6.MarkdownPreviewRenderer.codeBlockPostProcessors);
+    for (const codeblockProcessor of codeblockProcessors) {
+      const regex = RegExp("^```" + codeblockProcessor + "[\\s\\S]*?```$", "gm");
+      markdown = markdown.replace(regex, "<pre>$&</pre>");
+    }
+  } else {
+    markdown = markdown.replace(/^```.*\n([\s\S]*?)```$/gm, "<pre>$&</pre>");
+  }
+  if (!plugin.settings.displayMedia) {
+    markdown = markdown.replace(/!?\[(.*)\]\(.+\)/gm, "$1");
+  }
+  return markdown;
+}
+function escapeRegExp(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
 // src/actions/Action.ts
@@ -7364,6 +7175,11 @@ function getBasePlacement(placement) {
   return placement.split("-")[0];
 }
 
+// node_modules/@popperjs/core/lib/utils/math.js
+var max = Math.max;
+var min = Math.min;
+var round = Math.round;
+
 // node_modules/@popperjs/core/lib/dom-utils/getBoundingClientRect.js
 function getBoundingClientRect(element2, includeScale) {
   if (includeScale === void 0) {
@@ -7372,6 +7188,16 @@ function getBoundingClientRect(element2, includeScale) {
   var rect = element2.getBoundingClientRect();
   var scaleX = 1;
   var scaleY = 1;
+  if (isHTMLElement(element2) && includeScale) {
+    var offsetHeight = element2.offsetHeight;
+    var offsetWidth = element2.offsetWidth;
+    if (offsetWidth > 0) {
+      scaleX = round(rect.width) / offsetWidth || 1;
+    }
+    if (offsetHeight > 0) {
+      scaleY = round(rect.height) / offsetHeight || 1;
+    }
+  }
   return {
     width: rect.width / scaleX,
     height: rect.height / scaleY,
@@ -7460,6 +7286,9 @@ function getContainingBlock(element2) {
     }
   }
   var currentNode = getParentNode(element2);
+  if (isShadowRoot(currentNode)) {
+    currentNode = currentNode.host;
+  }
   while (isHTMLElement(currentNode) && ["html", "body"].indexOf(getNodeName(currentNode)) < 0) {
     var css = getComputedStyle2(currentNode);
     if (css.transform !== "none" || css.perspective !== "none" || css.contain === "paint" || ["transform", "perspective"].indexOf(css.willChange) !== -1 || isFirefox && css.willChange === "filter" || isFirefox && css.filter && css.filter !== "none") {
@@ -7487,14 +7316,13 @@ function getMainAxisFromPlacement(placement) {
   return ["top", "bottom"].indexOf(placement) >= 0 ? "x" : "y";
 }
 
-// node_modules/@popperjs/core/lib/utils/math.js
-var max = Math.max;
-var min = Math.min;
-var round = Math.round;
-
 // node_modules/@popperjs/core/lib/utils/within.js
 function within(min2, value, max2) {
   return max(min2, min(value, max2));
+}
+function withinMaxClamp(min2, value, max2) {
+  var v = within(min2, value, max2);
+  return v > max2 ? max2 : v;
 }
 
 // node_modules/@popperjs/core/lib/utils/getFreshSideObject.js
@@ -7607,14 +7435,23 @@ function roundOffsetsByDPR(_ref) {
   var win = window;
   var dpr = win.devicePixelRatio || 1;
   return {
-    x: round(round(x * dpr) / dpr) || 0,
-    y: round(round(y * dpr) / dpr) || 0
+    x: round(x * dpr) / dpr || 0,
+    y: round(y * dpr) / dpr || 0
   };
 }
 function mapToStyles(_ref2) {
   var _Object$assign2;
-  var popper2 = _ref2.popper, popperRect = _ref2.popperRect, placement = _ref2.placement, variation = _ref2.variation, offsets = _ref2.offsets, position = _ref2.position, gpuAcceleration = _ref2.gpuAcceleration, adaptive = _ref2.adaptive, roundOffsets = _ref2.roundOffsets;
-  var _ref3 = roundOffsets === true ? roundOffsetsByDPR(offsets) : typeof roundOffsets === "function" ? roundOffsets(offsets) : offsets, _ref3$x = _ref3.x, x = _ref3$x === void 0 ? 0 : _ref3$x, _ref3$y = _ref3.y, y = _ref3$y === void 0 ? 0 : _ref3$y;
+  var popper2 = _ref2.popper, popperRect = _ref2.popperRect, placement = _ref2.placement, variation = _ref2.variation, offsets = _ref2.offsets, position = _ref2.position, gpuAcceleration = _ref2.gpuAcceleration, adaptive = _ref2.adaptive, roundOffsets = _ref2.roundOffsets, isFixed = _ref2.isFixed;
+  var _offsets$x = offsets.x, x = _offsets$x === void 0 ? 0 : _offsets$x, _offsets$y = offsets.y, y = _offsets$y === void 0 ? 0 : _offsets$y;
+  var _ref3 = typeof roundOffsets === "function" ? roundOffsets({
+    x,
+    y
+  }) : {
+    x,
+    y
+  };
+  x = _ref3.x;
+  y = _ref3.y;
   var hasX = offsets.hasOwnProperty("x");
   var hasY = offsets.hasOwnProperty("y");
   var sideX = left;
@@ -7634,26 +7471,37 @@ function mapToStyles(_ref2) {
     offsetParent = offsetParent;
     if (placement === top || (placement === left || placement === right) && variation === end) {
       sideY = bottom;
-      y -= offsetParent[heightProp] - popperRect.height;
+      var offsetY = isFixed && offsetParent === win && win.visualViewport ? win.visualViewport.height : offsetParent[heightProp];
+      y -= offsetY - popperRect.height;
       y *= gpuAcceleration ? 1 : -1;
     }
     if (placement === left || (placement === top || placement === bottom) && variation === end) {
       sideX = right;
-      x -= offsetParent[widthProp] - popperRect.width;
+      var offsetX = isFixed && offsetParent === win && win.visualViewport ? win.visualViewport.width : offsetParent[widthProp];
+      x -= offsetX - popperRect.width;
       x *= gpuAcceleration ? 1 : -1;
     }
   }
   var commonStyles = Object.assign({
     position
   }, adaptive && unsetSides);
+  var _ref4 = roundOffsets === true ? roundOffsetsByDPR({
+    x,
+    y
+  }) : {
+    x,
+    y
+  };
+  x = _ref4.x;
+  y = _ref4.y;
   if (gpuAcceleration) {
     var _Object$assign;
     return Object.assign({}, commonStyles, (_Object$assign = {}, _Object$assign[sideY] = hasY ? "0" : "", _Object$assign[sideX] = hasX ? "0" : "", _Object$assign.transform = (win.devicePixelRatio || 1) <= 1 ? "translate(" + x + "px, " + y + "px)" : "translate3d(" + x + "px, " + y + "px, 0)", _Object$assign));
   }
   return Object.assign({}, commonStyles, (_Object$assign2 = {}, _Object$assign2[sideY] = hasY ? y + "px" : "", _Object$assign2[sideX] = hasX ? x + "px" : "", _Object$assign2.transform = "", _Object$assign2));
 }
-function computeStyles(_ref4) {
-  var state = _ref4.state, options = _ref4.options;
+function computeStyles(_ref5) {
+  var state = _ref5.state, options = _ref5.options;
   var _options$gpuAccelerat = options.gpuAcceleration, gpuAcceleration = _options$gpuAccelerat === void 0 ? true : _options$gpuAccelerat, _options$adaptive = options.adaptive, adaptive = _options$adaptive === void 0 ? true : _options$adaptive, _options$roundOffsets = options.roundOffsets, roundOffsets = _options$roundOffsets === void 0 ? true : _options$roundOffsets;
   if (true) {
     var transitionProperty = getComputedStyle2(state.elements.popper).transitionProperty || "";
@@ -7668,7 +7516,8 @@ function computeStyles(_ref4) {
     variation: getVariation(state.placement),
     popper: state.elements.popper,
     popperRect: state.rects.popper,
-    gpuAcceleration
+    gpuAcceleration,
+    isFixed: state.options.strategy === "fixed"
   };
   if (state.modifiersData.popperOffsets != null) {
     state.styles.popper = Object.assign({}, state.styles.popper, mapToStyles(Object.assign({}, commonStyles, {
@@ -7877,7 +7726,7 @@ function getInnerBoundingClientRect(element2) {
   return rect;
 }
 function getClientRectFromMixedType(element2, clippingParent) {
-  return clippingParent === viewport ? rectToClientRect(getViewportRect(element2)) : isHTMLElement(clippingParent) ? getInnerBoundingClientRect(clippingParent) : rectToClientRect(getDocumentRect(getDocumentElement(element2)));
+  return clippingParent === viewport ? rectToClientRect(getViewportRect(element2)) : isElement(clippingParent) ? getInnerBoundingClientRect(clippingParent) : rectToClientRect(getDocumentRect(getDocumentElement(element2)));
 }
 function getClippingParents(element2) {
   var clippingParents2 = listScrollParents(getParentNode(element2));
@@ -8065,7 +7914,7 @@ function flip(_ref) {
   }, []);
   var referenceRect = state.rects.reference;
   var popperRect = state.rects.popper;
-  var checksMap = /* @__PURE__ */ new Map();
+  var checksMap = new Map();
   var makeFallbackChecks = true;
   var firstFittingPlacement = placements2[0];
   for (var i = 0; i < placements2.length; i++) {
@@ -8278,6 +8127,14 @@ function preventOverflow(_ref) {
   var tetherOffsetValue = typeof tetherOffset === "function" ? tetherOffset(Object.assign({}, state.rects, {
     placement: state.placement
   })) : tetherOffset;
+  var normalizedTetherOffsetValue = typeof tetherOffsetValue === "number" ? {
+    mainAxis: tetherOffsetValue,
+    altAxis: tetherOffsetValue
+  } : Object.assign({
+    mainAxis: 0,
+    altAxis: 0
+  }, tetherOffsetValue);
+  var offsetModifierState = state.modifiersData.offset ? state.modifiersData.offset[state.placement] : null;
   var data = {
     x: 0,
     y: 0
@@ -8285,13 +8142,14 @@ function preventOverflow(_ref) {
   if (!popperOffsets2) {
     return;
   }
-  if (checkMainAxis || checkAltAxis) {
+  if (checkMainAxis) {
+    var _offsetModifierState$;
     var mainSide = mainAxis === "y" ? top : left;
     var altSide = mainAxis === "y" ? bottom : right;
     var len = mainAxis === "y" ? "height" : "width";
     var offset2 = popperOffsets2[mainAxis];
-    var min2 = popperOffsets2[mainAxis] + overflow[mainSide];
-    var max2 = popperOffsets2[mainAxis] - overflow[altSide];
+    var min2 = offset2 + overflow[mainSide];
+    var max2 = offset2 - overflow[altSide];
     var additive = tether ? -popperRect[len] / 2 : 0;
     var minLen = variation === start ? referenceRect[len] : popperRect[len];
     var maxLen = variation === start ? -popperRect[len] : -referenceRect[len];
@@ -8304,28 +8162,32 @@ function preventOverflow(_ref) {
     var arrowPaddingMin = arrowPaddingObject[mainSide];
     var arrowPaddingMax = arrowPaddingObject[altSide];
     var arrowLen = within(0, referenceRect[len], arrowRect[len]);
-    var minOffset = isBasePlacement ? referenceRect[len] / 2 - additive - arrowLen - arrowPaddingMin - tetherOffsetValue : minLen - arrowLen - arrowPaddingMin - tetherOffsetValue;
-    var maxOffset = isBasePlacement ? -referenceRect[len] / 2 + additive + arrowLen + arrowPaddingMax + tetherOffsetValue : maxLen + arrowLen + arrowPaddingMax + tetherOffsetValue;
+    var minOffset = isBasePlacement ? referenceRect[len] / 2 - additive - arrowLen - arrowPaddingMin - normalizedTetherOffsetValue.mainAxis : minLen - arrowLen - arrowPaddingMin - normalizedTetherOffsetValue.mainAxis;
+    var maxOffset = isBasePlacement ? -referenceRect[len] / 2 + additive + arrowLen + arrowPaddingMax + normalizedTetherOffsetValue.mainAxis : maxLen + arrowLen + arrowPaddingMax + normalizedTetherOffsetValue.mainAxis;
     var arrowOffsetParent = state.elements.arrow && getOffsetParent(state.elements.arrow);
     var clientOffset = arrowOffsetParent ? mainAxis === "y" ? arrowOffsetParent.clientTop || 0 : arrowOffsetParent.clientLeft || 0 : 0;
-    var offsetModifierValue = state.modifiersData.offset ? state.modifiersData.offset[state.placement][mainAxis] : 0;
-    var tetherMin = popperOffsets2[mainAxis] + minOffset - offsetModifierValue - clientOffset;
-    var tetherMax = popperOffsets2[mainAxis] + maxOffset - offsetModifierValue;
-    if (checkMainAxis) {
-      var preventedOffset = within(tether ? min(min2, tetherMin) : min2, offset2, tether ? max(max2, tetherMax) : max2);
-      popperOffsets2[mainAxis] = preventedOffset;
-      data[mainAxis] = preventedOffset - offset2;
-    }
-    if (checkAltAxis) {
-      var _mainSide = mainAxis === "x" ? top : left;
-      var _altSide = mainAxis === "x" ? bottom : right;
-      var _offset = popperOffsets2[altAxis];
-      var _min = _offset + overflow[_mainSide];
-      var _max = _offset - overflow[_altSide];
-      var _preventedOffset = within(tether ? min(_min, tetherMin) : _min, _offset, tether ? max(_max, tetherMax) : _max);
-      popperOffsets2[altAxis] = _preventedOffset;
-      data[altAxis] = _preventedOffset - _offset;
-    }
+    var offsetModifierValue = (_offsetModifierState$ = offsetModifierState == null ? void 0 : offsetModifierState[mainAxis]) != null ? _offsetModifierState$ : 0;
+    var tetherMin = offset2 + minOffset - offsetModifierValue - clientOffset;
+    var tetherMax = offset2 + maxOffset - offsetModifierValue;
+    var preventedOffset = within(tether ? min(min2, tetherMin) : min2, offset2, tether ? max(max2, tetherMax) : max2);
+    popperOffsets2[mainAxis] = preventedOffset;
+    data[mainAxis] = preventedOffset - offset2;
+  }
+  if (checkAltAxis) {
+    var _offsetModifierState$2;
+    var _mainSide = mainAxis === "x" ? top : left;
+    var _altSide = mainAxis === "x" ? bottom : right;
+    var _offset = popperOffsets2[altAxis];
+    var _len = altAxis === "y" ? "height" : "width";
+    var _min = _offset + overflow[_mainSide];
+    var _max = _offset - overflow[_altSide];
+    var isOriginSide = [top, left].indexOf(basePlacement) !== -1;
+    var _offsetModifierValue = (_offsetModifierState$2 = offsetModifierState == null ? void 0 : offsetModifierState[altAxis]) != null ? _offsetModifierState$2 : 0;
+    var _tetherMin = isOriginSide ? _min : _offset - referenceRect[_len] - popperRect[_len] - _offsetModifierValue + normalizedTetherOffsetValue.altAxis;
+    var _tetherMax = isOriginSide ? _offset + referenceRect[_len] + popperRect[_len] - _offsetModifierValue - normalizedTetherOffsetValue.altAxis : _max;
+    var _preventedOffset = tether && isOriginSide ? withinMaxClamp(_tetherMin, _offset, _tetherMax) : within(tether ? _tetherMin : _min, _offset, tether ? _tetherMax : _max);
+    popperOffsets2[altAxis] = _preventedOffset;
+    data[altAxis] = _preventedOffset - _offset;
   }
   state.modifiersData[name] = data;
 }
@@ -8357,8 +8219,8 @@ function getNodeScroll(node) {
 // node_modules/@popperjs/core/lib/dom-utils/getCompositeRect.js
 function isElementScaled(element2) {
   var rect = element2.getBoundingClientRect();
-  var scaleX = rect.width / element2.offsetWidth || 1;
-  var scaleY = rect.height / element2.offsetHeight || 1;
+  var scaleX = round(rect.width) / element2.offsetWidth || 1;
+  var scaleY = round(rect.height) / element2.offsetHeight || 1;
   return scaleX !== 1 || scaleY !== 1;
 }
 function getCompositeRect(elementOrVirtualElement, offsetParent, isFixed) {
@@ -8399,8 +8261,8 @@ function getCompositeRect(elementOrVirtualElement, offsetParent, isFixed) {
 
 // node_modules/@popperjs/core/lib/utils/orderModifiers.js
 function order(modifiers) {
-  var map = /* @__PURE__ */ new Map();
-  var visited = /* @__PURE__ */ new Set();
+  var map = new Map();
+  var visited = new Set();
   var result = [];
   modifiers.forEach(function(modifier) {
     map.set(modifier.name, modifier);
@@ -8526,7 +8388,7 @@ function validateModifiers(modifiers) {
 
 // node_modules/@popperjs/core/lib/utils/uniqueBy.js
 function uniqueBy(arr, fn2) {
-  var identifiers = /* @__PURE__ */ new Set();
+  var identifiers = new Set();
   return arr.filter(function(item) {
     var identifier = fn2(item);
     if (!identifiers.has(identifier)) {
@@ -8904,7 +8766,7 @@ var TagModal = class extends BaseModal {
           this.tags.push(value);
         }));
       })).addExtraButton((button) => {
-        button.setTooltip(t("delete")).setIcon("feather-trash").onClick(() => {
+        button.setTooltip(t("delete")).setIcon("trash").onClick(() => {
           this.tags = this.tags.filter((e) => e !== this.tags[tag]);
           this.display();
         });
@@ -8923,7 +8785,7 @@ var TagModal = class extends BaseModal {
         tagValue = value;
       }));
     })).addExtraButton((button) => {
-      button.setTooltip(t("add")).setIcon("feather-plus").onClick(() => {
+      button.setTooltip(t("add")).setIcon("plus").onClick(() => {
         if (!tagValue.match(TAG_REGEX) || tagValue.match(NUMBER_REGEX) || tagValue.contains(" ") || tagValue.contains("#")) {
           this.setValidationError(tagComponent, t("invalid_tag"));
           return;
@@ -8983,7 +8845,7 @@ Action.TAGS = new _Action(t("edit_tags"), "tag-glyph", (plugin, item) => {
   modal.open();
   return Promise.resolve();
 });
-Action.READ = new _Action(t("mark_as_read_unread"), "feather-eye", (plugin, item) => __async(_Action, null, function* () {
+Action.READ = new _Action(t("mark_as_read_unread"), "eye", (plugin, item) => __async(_Action, null, function* () {
   if (item.read) {
     item.read = false;
     new import_obsidian9.Notice(t("marked_as_unread"));
@@ -9124,7 +8986,7 @@ var ItemModal = class extends import_obsidian10.Modal {
   markAsRead() {
     return __async(this, null, function* () {
       yield Action.READ.processor(this.plugin, this.item);
-      this.readButton.setIcon(this.item.read ? "feather-eye-off" : "feather-eye");
+      this.readButton.setIcon(this.item.read ? "eye-off" : "eye");
       this.readButton.setTooltip(this.item.read ? t("mark_as_unread") : t("mark_as_unread"));
     });
   }
@@ -9138,7 +9000,7 @@ var ItemModal = class extends import_obsidian10.Modal {
       const topButtons = contentEl.createDiv("topButtons");
       let actions = Array.of(Action.CREATE_NOTE, Action.PASTE, Action.COPY, Action.OPEN);
       if (this.save) {
-        this.readButton = new import_obsidian10.ButtonComponent(topButtons).setIcon(this.item.read ? "feather-eye-off" : "feather-eye").setTooltip(this.item.read ? t("mark_as_unread") : t("mark_as_read")).onClick(() => __async(this, null, function* () {
+        this.readButton = new import_obsidian10.ButtonComponent(topButtons).setIcon(this.item.read ? "eye-off" : "eye").setTooltip(this.item.read ? t("mark_as_unread") : t("mark_as_read")).onClick(() => __async(this, null, function* () {
           yield this.markAsRead();
         }));
         this.readButton.buttonEl.setAttribute("tabindex", "-1");
@@ -9158,7 +9020,7 @@ var ItemModal = class extends import_obsidian10.Modal {
         button.buttonEl.addClass("rss-button");
       });
       if (this.app.plugins.plugins["obsidian-tts"]) {
-        const ttsButton = new import_obsidian10.ButtonComponent(topButtons).setIcon("feather-headphones").setTooltip(t("read_article_tts")).onClick(() => __async(this, null, function* () {
+        const ttsButton = new import_obsidian10.ButtonComponent(topButtons).setIcon("headphones").setTooltip(t("read_article_tts")).onClick(() => __async(this, null, function* () {
           const content2 = (0, import_obsidian10.htmlToMarkdown)(this.item.content);
           yield this.app.plugins.plugins["obsidian-tts"].ttsService.say(this.item.title, content2, this.item.language);
         }));
@@ -9191,7 +9053,7 @@ var ItemModal = class extends import_obsidian10.Modal {
       });
       const content = contentEl.createDiv("rss-content");
       content.addClass("rss-scrollable-content", "rss-selectable");
-      if (this.item.enclosure) {
+      if (this.item.enclosure && this.plugin.settings.displayMedia) {
         if (this.item.enclosureType.toLowerCase().contains("audio")) {
           const audio = content.createEl("audio", { attr: { controls: "controls" } });
           audio.createEl("source", { attr: { src: this.item.enclosure, type: this.item.enclosureType } });
@@ -9213,7 +9075,8 @@ var ItemModal = class extends import_obsidian10.Modal {
         }
       }
       if (this.item.content) {
-        yield import_obsidian10.MarkdownRenderer.renderMarkdown((0, import_obsidian10.htmlToMarkdown)(this.item.content), content, "", this.plugin);
+        const markdown = "---\n---" + rssToMd(this.plugin, this.item.content);
+        yield import_obsidian10.MarkdownRenderer.renderMarkdown(markdown, content, "", this.plugin);
         this.item.highlights.forEach((highlight) => {
           if (content.innerHTML.includes(highlight)) {
             const newNode = contentEl.createEl("mark");
@@ -9281,7 +9144,7 @@ var ItemModal = class extends import_obsidian10.Modal {
             });
             if (this.app.plugins.plugins["obsidian-tts"]) {
               menu.addItem((item) => {
-                item.setIcon("feather-headphones").setTitle(t("read_article_tts")).onClick(() => {
+                item.setIcon("headphones").setTitle(t("read_article_tts")).onClick(() => {
                   const tts = this.app.plugins.plugins["obsidian-tts"].ttsService;
                   tts.say("", selection.toString());
                 });
@@ -9488,7 +9351,7 @@ function instance3($$self, $$props, $$invalidate) {
   let { item = null } = $$props;
   let { items = null } = $$props;
   function openMenu(e) {
-    return __awaiter(this, void 0, void 0, function* () {
+    return __async(this, null, function* () {
       if (e.ctrlKey && e.altKey) {
         openInBrowser(item);
         return;
@@ -9504,7 +9367,7 @@ function instance3($$self, $$props, $$invalidate) {
       const menu = new import_obsidian11.Menu(plugin.app);
       Action.actions.forEach((action) => {
         menu.addItem((menuItem) => {
-          menuItem.setIcon(action.icon).setTitle(action.name).onClick(() => __awaiter(this, void 0, void 0, function* () {
+          menuItem.setIcon(action.icon).setTitle(action.name).onClick(() => __async(this, null, function* () {
             yield action.processor(plugin, item);
           }));
         });
@@ -9761,8 +9624,8 @@ function create_if_block_5(ctx) {
       if (if_block2)
         if_block2.c();
       attr(span, "class", "rss-item-title");
-      attr(div0, "class", "rss-item");
-      attr(div1, "class", "rss-item");
+      attr(div0, "class", "rss-item-image");
+      attr(div1, "class", "rss-item-text");
       attr(div2, "class", "rss-card-items");
       attr(div3, "class", "rss-card is-clickable");
     },
@@ -10382,12 +10245,16 @@ function create_else_block(ctx) {
   let current_block_type_index;
   let if_block0;
   let t0;
-  let span;
+  let span0;
   let t1_value = ctx[0].name + "";
   let t1;
   let t2;
-  let div1_class_value;
   let t3;
+  let span1;
+  let t4_value = ctx[0].items.filter(func).length + "";
+  let t4;
+  let div1_class_value;
+  let t5;
   let div2;
   let show_if = !ctx[2].contains(ctx[0].name);
   let current;
@@ -10396,7 +10263,9 @@ function create_else_block(ctx) {
   const if_block_creators = [create_if_block_32, create_else_block_1];
   const if_blocks = [];
   function select_block_type_1(ctx2, dirty) {
-    if (show_if_1 == null || dirty & 5)
+    if (dirty & 5)
+      show_if_1 = null;
+    if (show_if_1 == null)
       show_if_1 = !!ctx2[2].contains(ctx2[0].name);
     if (show_if_1)
       return 0;
@@ -10413,17 +10282,21 @@ function create_else_block(ctx) {
       div0 = element("div");
       if_block0.c();
       t0 = space();
-      span = element("span");
+      span0 = element("span");
       t1 = text(t1_value);
       t2 = space();
       if (if_block1)
         if_block1.c();
       t3 = space();
+      span1 = element("span");
+      t4 = text(t4_value);
+      t5 = space();
       div2 = element("div");
       if (if_block2)
         if_block2.c();
       attr(div0, "class", "rss-feed-title");
       set_style(div0, "overflow", "hidden");
+      attr(span1, "class", "rss-item-count");
       attr(div1, "class", div1_class_value = "" + ((ctx[2].contains(ctx[0].name) ? "is-collapsed" : "") + " tree-item-self is-clickable"));
       attr(div2, "class", "rss-feed-items");
       attr(div3, "class", "rss-feed");
@@ -10434,12 +10307,15 @@ function create_else_block(ctx) {
       append(div1, div0);
       if_blocks[current_block_type_index].m(div0, null);
       append(div0, t0);
-      append(div0, span);
-      append(span, t1);
-      append(span, t2);
+      append(div0, span0);
+      append(span0, t1);
+      append(span0, t2);
       if (if_block1)
-        if_block1.m(span, null);
-      append(div3, t3);
+        if_block1.m(span0, null);
+      append(div1, t3);
+      append(div1, span1);
+      append(span1, t4);
+      append(div3, t5);
       append(div3, div2);
       if (if_block2)
         if_block2.m(div2, null);
@@ -10478,12 +10354,14 @@ function create_else_block(ctx) {
         } else {
           if_block1 = create_if_block_22(ctx2);
           if_block1.c();
-          if_block1.m(span, null);
+          if_block1.m(span0, null);
         }
       } else if (if_block1) {
         if_block1.d(1);
         if_block1 = null;
       }
+      if ((!current || dirty & 1) && t4_value !== (t4_value = ctx2[0].items.filter(func).length + ""))
+        set_data(t4, t4_value);
       if (!current || dirty & 5 && div1_class_value !== (div1_class_value = "" + ((ctx2[2].contains(ctx2[0].name) ? "is-collapsed" : "") + " tree-item-self is-clickable"))) {
         attr(div1, "class", div1_class_value);
       }
@@ -10830,6 +10708,7 @@ function create_fragment6(ctx) {
     }
   };
 }
+var func = (item) => !item.read;
 function instance6($$self, $$props, $$invalidate) {
   let { feed = null } = $$props;
   let { plugin } = $$props;
@@ -10848,17 +10727,17 @@ function instance6($$self, $$props, $$invalidate) {
     plugin.writeFolded(folded);
   }
   function openMenu(e) {
-    return __awaiter(this, void 0, void 0, function* () {
+    return __async(this, null, function* () {
       const menu = new import_obsidian13.Menu(plugin.app);
       menu.addItem((menuItem) => {
-        menuItem.setIcon("create-new").setTitle(t("create_all")).onClick(() => __awaiter(this, void 0, void 0, function* () {
+        menuItem.setIcon("create-new").setTitle(t("create_all")).onClick(() => __async(this, null, function* () {
           for (let item of feed.items) {
             yield Action.CREATE_NOTE.processor(plugin, item);
           }
         }));
       });
       menu.addItem((menuItem) => {
-        menuItem.setIcon("feather-eye").setTitle(t("mark_all_as_read")).onClick(() => __awaiter(this, void 0, void 0, function* () {
+        menuItem.setIcon("feather-eye").setTitle(t("mark_all_as_read")).onClick(() => __async(this, null, function* () {
           for (let item of feed.items) {
             item.read = true;
           }
@@ -10869,9 +10748,9 @@ function instance6($$self, $$props, $$invalidate) {
         }));
       });
       menu.addItem((menuItem) => {
-        menuItem.setIcon("tag-glyph").setTitle(t("add_tags_to_all")).onClick(() => __awaiter(this, void 0, void 0, function* () {
+        menuItem.setIcon("tag-glyph").setTitle(t("add_tags_to_all")).onClick(() => __async(this, null, function* () {
           const tagModal = new TagModal(plugin, []);
-          tagModal.onClose = () => __awaiter(this, void 0, void 0, function* () {
+          tagModal.onClose = () => __async(this, null, function* () {
             for (let item of feed.items) {
               item.tags.push(...tagModal.tags);
             }
@@ -10942,7 +10821,7 @@ function instance7($$self, $$props, $$invalidate) {
   let { plugin } = $$props;
   const buttons = (node, plugin2) => {
     new import_obsidian14.Setting(node).addExtraButton((button) => {
-      button.setIcon("sync").setTooltip(t("refresh_feeds")).onClick(() => __awaiter(void 0, void 0, void 0, function* () {
+      button.setIcon("refresh-cw").setTooltip(t("refresh_feeds")).onClick(() => __async(this, null, function* () {
         yield plugin2.updateFeeds();
       }));
     });
@@ -10964,32 +10843,32 @@ var TopRowButtons_default = TopRowButtons;
 // src/view/FolderView.svelte
 function get_each_context3(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[14] = list[i];
+  child_ctx[15] = list[i];
   return child_ctx;
 }
 function get_each_context_12(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[17] = list[i];
+  child_ctx[18] = list[i];
   return child_ctx;
 }
 function get_each_context_2(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[14] = list[i];
+  child_ctx[15] = list[i];
   return child_ctx;
 }
 function get_each_context_3(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[22] = list[i];
+  child_ctx[23] = list[i];
   return child_ctx;
 }
 function get_each_context_4(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[25] = list[i];
+  child_ctx[26] = list[i];
   return child_ctx;
 }
 function get_each_context_5(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[25] = list[i];
+  child_ctx[26] = list[i];
   return child_ctx;
 }
 function create_else_block2(ctx) {
@@ -11047,6 +10926,7 @@ function create_else_block2(ctx) {
       }
       if (!ctx2[2]) {
         if (if_block1) {
+          if_block1.p(ctx2, dirty);
         } else {
           if_block1 = create_if_block_82(ctx2);
           if_block1.c();
@@ -11101,21 +10981,21 @@ function create_else_block2(ctx) {
   };
 }
 function create_if_block7(ctx) {
-  let p;
+  let h1;
   return {
     c() {
-      p = element("p");
-      p.textContent = "Loading";
+      h1 = element("h1");
+      h1.textContent = `${t("loading")}`;
     },
     m(target, anchor) {
-      insert(target, p, anchor);
+      insert(target, h1, anchor);
     },
     p: noop,
     i: noop,
     o: noop,
     d(detaching) {
       if (detaching)
-        detach(p);
+        detach(h1);
     }
   };
 }
@@ -11136,7 +11016,9 @@ function create_if_block_9(ctx) {
   const if_block_creators = [create_if_block_20, create_else_block_8];
   const if_blocks = [];
   function select_block_type_1(ctx2, dirty) {
-    if (show_if_1 == null || dirty & 2)
+    if (dirty & 2)
+      show_if_1 = null;
+    if (show_if_1 == null)
       show_if_1 = !!ctx2[1].contains("rss-filters");
     if (show_if_1)
       return 0;
@@ -11179,7 +11061,7 @@ function create_if_block_9(ctx) {
         if_block2.m(div1, null);
       current = true;
       if (!mounted) {
-        dispose = listen(div0, "click", ctx[7]);
+        dispose = listen(div0, "click", ctx[8]);
         mounted = true;
       }
     },
@@ -11384,7 +11266,7 @@ function create_if_block_10(ctx) {
       current = true;
     },
     p(ctx2, dirty) {
-      if (dirty & 43) {
+      if (dirty & 171) {
         each_value_2 = buildTreeStructure(ctx2[3]);
         let i;
         for (i = 0; i < each_value_2.length; i += 1) {
@@ -11487,7 +11369,7 @@ function create_if_block_18(ctx) {
   };
 }
 function create_if_block_16(ctx) {
-  let show_if = !ctx[1].contains("rss-filters-" + ctx[14].name);
+  let show_if = !ctx[1].contains("rss-filters-" + ctx[15].name);
   let if_block_anchor;
   let current;
   let if_block = show_if && create_if_block_17(ctx);
@@ -11505,7 +11387,7 @@ function create_if_block_16(ctx) {
     },
     p(ctx2, dirty) {
       if (dirty & 10)
-        show_if = !ctx2[1].contains("rss-filters-" + ctx2[14].name);
+        show_if = !ctx2[1].contains("rss-filters-" + ctx2[15].name);
       if (show_if) {
         if (if_block) {
           if_block.p(ctx2, dirty);
@@ -11547,7 +11429,7 @@ function create_if_block_16(ctx) {
 function create_if_block_17(ctx) {
   let div;
   let current;
-  let each_value_5 = ctx[14].filter.items.items;
+  let each_value_5 = ctx[15].filter.items.items;
   let each_blocks = [];
   for (let i = 0; i < each_value_5.length; i += 1) {
     each_blocks[i] = create_each_block_5(get_each_context_5(ctx, each_value_5, i));
@@ -11572,7 +11454,7 @@ function create_if_block_17(ctx) {
     },
     p(ctx2, dirty) {
       if (dirty & 9) {
-        each_value_5 = ctx2[14].filter.items.items;
+        each_value_5 = ctx2[15].filter.items.items;
         let i;
         for (i = 0; i < each_value_5.length; i += 1) {
           const child_ctx = get_each_context_5(ctx2, each_value_5, i);
@@ -11623,9 +11505,9 @@ function create_each_block_5(ctx) {
   let current;
   itemview = new ItemView_default({
     props: {
-      item: ctx[25],
+      item: ctx[26],
       plugin: ctx[0],
-      items: ctx[14].filter.items.items
+      items: ctx[15].filter.items.items
     }
   });
   return {
@@ -11647,11 +11529,11 @@ function create_each_block_5(ctx) {
     p(ctx2, dirty) {
       const itemview_changes = {};
       if (dirty & 8)
-        itemview_changes.item = ctx2[25];
+        itemview_changes.item = ctx2[26];
       if (dirty & 1)
         itemview_changes.plugin = ctx2[0];
       if (dirty & 8)
-        itemview_changes.items = ctx2[14].filter.items.items;
+        itemview_changes.items = ctx2[15].filter.items.items;
       itemview.$set(itemview_changes);
     },
     i(local) {
@@ -11672,7 +11554,7 @@ function create_each_block_5(ctx) {
   };
 }
 function create_if_block_11(ctx) {
-  let show_if = !ctx[1].contains("rss-filters-" + ctx[14].name);
+  let show_if = !ctx[1].contains("rss-filters-" + ctx[15].name);
   let if_block_anchor;
   let current;
   let if_block = show_if && create_if_block_122(ctx);
@@ -11690,7 +11572,7 @@ function create_if_block_11(ctx) {
     },
     p(ctx2, dirty) {
       if (dirty & 10)
-        show_if = !ctx2[1].contains("rss-filters-" + ctx2[14].name);
+        show_if = !ctx2[1].contains("rss-filters-" + ctx2[15].name);
       if (show_if) {
         if (if_block) {
           if_block.p(ctx2, dirty);
@@ -11732,7 +11614,7 @@ function create_if_block_11(ctx) {
 function create_if_block_122(ctx) {
   let each_1_anchor;
   let current;
-  let each_value_3 = ctx[14].children;
+  let each_value_3 = ctx[15].children;
   let each_blocks = [];
   for (let i = 0; i < each_value_3.length; i += 1) {
     each_blocks[i] = create_each_block_3(get_each_context_3(ctx, each_value_3, i));
@@ -11756,7 +11638,7 @@ function create_if_block_122(ctx) {
     },
     p(ctx2, dirty) {
       if (dirty & 43) {
-        each_value_3 = ctx2[14].children;
+        each_value_3 = ctx2[15].children;
         let i;
         for (i = 0; i < each_value_3.length; i += 1) {
           const child_ctx = get_each_context_3(ctx2, each_value_3, i);
@@ -11858,7 +11740,7 @@ function create_if_block_15(ctx) {
   };
 }
 function create_if_block_132(ctx) {
-  let show_if = !ctx[1].contains("rss-filters-" + ctx[22].filter.filter.name);
+  let show_if = !ctx[1].contains("rss-filters-" + ctx[23].filter.filter.name);
   let if_block_anchor;
   let current;
   let if_block = show_if && create_if_block_14(ctx);
@@ -11876,7 +11758,7 @@ function create_if_block_132(ctx) {
     },
     p(ctx2, dirty) {
       if (dirty & 10)
-        show_if = !ctx2[1].contains("rss-filters-" + ctx2[22].filter.filter.name);
+        show_if = !ctx2[1].contains("rss-filters-" + ctx2[23].filter.filter.name);
       if (show_if) {
         if (if_block) {
           if_block.p(ctx2, dirty);
@@ -11918,7 +11800,7 @@ function create_if_block_132(ctx) {
 function create_if_block_14(ctx) {
   let div;
   let current;
-  let each_value_4 = ctx[22].filter.items.items;
+  let each_value_4 = ctx[23].filter.items.items;
   let each_blocks = [];
   for (let i = 0; i < each_value_4.length; i += 1) {
     each_blocks[i] = create_each_block_4(get_each_context_4(ctx, each_value_4, i));
@@ -11943,7 +11825,7 @@ function create_if_block_14(ctx) {
     },
     p(ctx2, dirty) {
       if (dirty & 9) {
-        each_value_4 = ctx2[22].filter.items.items;
+        each_value_4 = ctx2[23].filter.items.items;
         let i;
         for (i = 0; i < each_value_4.length; i += 1) {
           const child_ctx = get_each_context_4(ctx2, each_value_4, i);
@@ -11994,9 +11876,9 @@ function create_each_block_4(ctx) {
   let current;
   itemview = new ItemView_default({
     props: {
-      item: ctx[25],
+      item: ctx[26],
       plugin: ctx[0],
-      items: ctx[22].filter.items.items
+      items: ctx[23].filter.items.items
     }
   });
   return {
@@ -12018,11 +11900,11 @@ function create_each_block_4(ctx) {
     p(ctx2, dirty) {
       const itemview_changes = {};
       if (dirty & 8)
-        itemview_changes.item = ctx2[25];
+        itemview_changes.item = ctx2[26];
       if (dirty & 1)
         itemview_changes.plugin = ctx2[0];
       if (dirty & 8)
-        itemview_changes.items = ctx2[22].filter.items.items;
+        itemview_changes.items = ctx2[23].filter.items.items;
       itemview.$set(itemview_changes);
     },
     i(local) {
@@ -12043,26 +11925,33 @@ function create_each_block_4(ctx) {
   };
 }
 function create_each_block_3(ctx) {
+  var _a;
   let div1;
   let div0;
   let show_if;
   let current_block_type_index;
   let if_block0;
   let t0;
-  let span;
-  let t1_value = ctx[22].name + "";
+  let span0;
+  let t1_value = ctx[23].name + "";
   let t1;
-  let div0_class_value;
   let t2;
+  let span1;
+  let t3_value = ((_a = ctx[23].filter) == null ? void 0 : _a.items.items.length) + "";
   let t3;
+  let div0_class_value;
+  let t4;
+  let t5;
   let current;
   let mounted;
   let dispose;
   const if_block_creators = [create_if_block_15, create_else_block_5];
   const if_blocks = [];
   function select_block_type_4(ctx2, dirty) {
-    if (show_if == null || dirty & 10)
-      show_if = !!ctx2[1].contains("rss-filters-" + ctx2[22].filter.filter.name);
+    if (dirty & 10)
+      show_if = null;
+    if (show_if == null)
+      show_if = !!ctx2[1].contains("rss-filters-" + ctx2[23].filter.filter.name);
     if (show_if)
       return 0;
     return 1;
@@ -12070,22 +11959,26 @@ function create_each_block_3(ctx) {
   current_block_type_index = select_block_type_4(ctx, -1);
   if_block0 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
   function click_handler_2() {
-    return ctx[9](ctx[22]);
+    return ctx[11](ctx[23]);
   }
-  let if_block1 = ctx[22].filter !== void 0 && create_if_block_132(ctx);
+  let if_block1 = ctx[23].filter !== void 0 && create_if_block_132(ctx);
   return {
     c() {
       div1 = element("div");
       div0 = element("div");
       if_block0.c();
       t0 = space();
-      span = element("span");
+      span0 = element("span");
       t1 = text(t1_value);
       t2 = space();
+      span1 = element("span");
+      t3 = text(t3_value);
+      t4 = space();
       if (if_block1)
         if_block1.c();
-      t3 = space();
-      attr(div0, "class", div0_class_value = "" + ((ctx[1].contains("rss-filters-" + ctx[22].filter.filter.name) ? "is-collapsed" : "") + " tree-item-self is-clickable"));
+      t5 = space();
+      attr(span1, "class", "rss-item-count");
+      attr(div0, "class", div0_class_value = "" + ((ctx[1].contains("rss-filters-" + ctx[23].filter.filter.name) ? "is-collapsed" : "") + " tree-item-self is-clickable"));
       attr(div1, "class", "tree-item-children");
     },
     m(target, anchor) {
@@ -12093,12 +11986,15 @@ function create_each_block_3(ctx) {
       append(div1, div0);
       if_blocks[current_block_type_index].m(div0, null);
       append(div0, t0);
-      append(div0, span);
-      append(span, t1);
-      append(div1, t2);
+      append(div0, span0);
+      append(span0, t1);
+      append(div0, t2);
+      append(div0, span1);
+      append(span1, t3);
+      append(div1, t4);
       if (if_block1)
         if_block1.m(div1, null);
-      append(div1, t3);
+      append(div1, t5);
       current = true;
       if (!mounted) {
         dispose = listen(div0, "click", click_handler_2);
@@ -12106,6 +12002,7 @@ function create_each_block_3(ctx) {
       }
     },
     p(new_ctx, dirty) {
+      var _a2;
       ctx = new_ctx;
       let previous_block_index = current_block_type_index;
       current_block_type_index = select_block_type_4(ctx, dirty);
@@ -12124,12 +12021,14 @@ function create_each_block_3(ctx) {
         transition_in(if_block0, 1);
         if_block0.m(div0, t0);
       }
-      if ((!current || dirty & 8) && t1_value !== (t1_value = ctx[22].name + ""))
+      if ((!current || dirty & 8) && t1_value !== (t1_value = ctx[23].name + ""))
         set_data(t1, t1_value);
-      if (!current || dirty & 10 && div0_class_value !== (div0_class_value = "" + ((ctx[1].contains("rss-filters-" + ctx[22].filter.filter.name) ? "is-collapsed" : "") + " tree-item-self is-clickable"))) {
+      if ((!current || dirty & 8) && t3_value !== (t3_value = ((_a2 = ctx[23].filter) == null ? void 0 : _a2.items.items.length) + ""))
+        set_data(t3, t3_value);
+      if (!current || dirty & 10 && div0_class_value !== (div0_class_value = "" + ((ctx[1].contains("rss-filters-" + ctx[23].filter.filter.name) ? "is-collapsed" : "") + " tree-item-self is-clickable"))) {
         attr(div0, "class", div0_class_value);
       }
-      if (ctx[22].filter !== void 0) {
+      if (ctx[23].filter !== void 0) {
         if (if_block1) {
           if_block1.p(ctx, dirty);
           if (dirty & 8) {
@@ -12139,7 +12038,7 @@ function create_each_block_3(ctx) {
           if_block1 = create_if_block_132(ctx);
           if_block1.c();
           transition_in(if_block1, 1);
-          if_block1.m(div1, t3);
+          if_block1.m(div1, t5);
         }
       } else if (if_block1) {
         group_outros();
@@ -12173,81 +12072,102 @@ function create_each_block_3(ctx) {
   };
 }
 function create_each_block_2(ctx) {
+  var _a;
   let div1;
   let div0;
-  let span1;
+  let span2;
   let show_if;
   let current_block_type_index;
   let if_block0;
   let t0;
   let span0;
-  let t1_value = ctx[14].name + "";
+  let t1_value = ctx[15].name + "";
   let t1;
-  let div0_class_value;
   let t2;
+  let span1;
+  let t3_value = ((_a = ctx[15].filter) == null ? void 0 : _a.items.items.length) + "";
   let t3;
+  let div0_class_value;
   let t4;
+  let t5;
+  let t6;
   let current;
   let mounted;
   let dispose;
   const if_block_creators = [create_if_block_18, create_else_block_6];
   const if_blocks = [];
   function select_block_type_3(ctx2, dirty) {
-    if (show_if == null || dirty & 10)
-      show_if = !!ctx2[1].contains("rss-filters-" + ctx2[14].name);
+    if (dirty & 10)
+      show_if = null;
+    if (show_if == null)
+      show_if = !!ctx2[1].contains("rss-filters-" + ctx2[15].name);
     if (show_if)
       return 0;
     return 1;
   }
   current_block_type_index = select_block_type_3(ctx, -1);
   if_block0 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
-  function click_handler_1() {
-    return ctx[8](ctx[14]);
+  function contextmenu_handler(...args) {
+    return ctx[9](ctx[15], ...args);
   }
-  let if_block1 = ctx[14].filter !== void 0 && create_if_block_16(ctx);
-  let if_block2 = ctx[14].children && create_if_block_11(ctx);
+  function click_handler_1() {
+    return ctx[10](ctx[15]);
+  }
+  let if_block1 = ctx[15].filter !== void 0 && create_if_block_16(ctx);
+  let if_block2 = ctx[15].children && create_if_block_11(ctx);
   return {
     c() {
       div1 = element("div");
       div0 = element("div");
-      span1 = element("span");
+      span2 = element("span");
       if_block0.c();
       t0 = space();
       span0 = element("span");
       t1 = text(t1_value);
       t2 = space();
+      span1 = element("span");
+      t3 = text(t3_value);
+      t4 = space();
       if (if_block1)
         if_block1.c();
-      t3 = space();
+      t5 = space();
       if (if_block2)
         if_block2.c();
-      t4 = space();
-      attr(span1, "class", "tree-item-self is-clickable");
-      attr(div0, "class", div0_class_value = "" + ((ctx[1].contains("rss-filters-" + ctx[14].name) ? "is-collapsed" : "") + " tree-item is-clickable"));
+      t6 = space();
+      attr(span1, "class", "rss-item-count");
+      attr(span2, "class", "tree-item-self is-clickable");
+      attr(div0, "class", div0_class_value = "" + ((ctx[1].contains("rss-filters-" + ctx[15].name) ? "is-collapsed" : "") + " tree-item is-clickable"));
       attr(div1, "class", "tree-item-children");
     },
     m(target, anchor) {
       insert(target, div1, anchor);
       append(div1, div0);
-      append(div0, span1);
-      if_blocks[current_block_type_index].m(span1, null);
-      append(span1, t0);
-      append(span1, span0);
+      append(div0, span2);
+      if_blocks[current_block_type_index].m(span2, null);
+      append(span2, t0);
+      append(span2, span0);
       append(span0, t1);
-      append(div1, t2);
+      append(span2, t2);
+      append(span2, span1);
+      append(span1, t3);
+      append(div1, t4);
       if (if_block1)
         if_block1.m(div1, null);
-      append(div1, t3);
+      append(div1, t5);
       if (if_block2)
         if_block2.m(div1, null);
-      append(div1, t4);
+      append(div1, t6);
       current = true;
       if (!mounted) {
-        dispose = listen(div0, "click", click_handler_1);
+        dispose = [
+          listen(span2, "contextmenu", contextmenu_handler),
+          listen(div0, "click", click_handler_1)
+        ];
         mounted = true;
       }
     },
     p(new_ctx, dirty) {
+      var _a2;
       ctx = new_ctx;
       let previous_block_index = current_block_type_index;
       current_block_type_index = select_block_type_3(ctx, dirty);
@@ -12264,14 +12184,16 @@ function create_each_block_2(ctx) {
         } else {
         }
         transition_in(if_block0, 1);
-        if_block0.m(span1, t0);
+        if_block0.m(span2, t0);
       }
-      if ((!current || dirty & 8) && t1_value !== (t1_value = ctx[14].name + ""))
+      if ((!current || dirty & 8) && t1_value !== (t1_value = ctx[15].name + ""))
         set_data(t1, t1_value);
-      if (!current || dirty & 10 && div0_class_value !== (div0_class_value = "" + ((ctx[1].contains("rss-filters-" + ctx[14].name) ? "is-collapsed" : "") + " tree-item is-clickable"))) {
+      if ((!current || dirty & 8) && t3_value !== (t3_value = ((_a2 = ctx[15].filter) == null ? void 0 : _a2.items.items.length) + ""))
+        set_data(t3, t3_value);
+      if (!current || dirty & 10 && div0_class_value !== (div0_class_value = "" + ((ctx[1].contains("rss-filters-" + ctx[15].name) ? "is-collapsed" : "") + " tree-item is-clickable"))) {
         attr(div0, "class", div0_class_value);
       }
-      if (ctx[14].filter !== void 0) {
+      if (ctx[15].filter !== void 0) {
         if (if_block1) {
           if_block1.p(ctx, dirty);
           if (dirty & 8) {
@@ -12281,7 +12203,7 @@ function create_each_block_2(ctx) {
           if_block1 = create_if_block_16(ctx);
           if_block1.c();
           transition_in(if_block1, 1);
-          if_block1.m(div1, t3);
+          if_block1.m(div1, t5);
         }
       } else if (if_block1) {
         group_outros();
@@ -12290,7 +12212,7 @@ function create_each_block_2(ctx) {
         });
         check_outros();
       }
-      if (ctx[14].children) {
+      if (ctx[15].children) {
         if (if_block2) {
           if_block2.p(ctx, dirty);
           if (dirty & 8) {
@@ -12300,7 +12222,7 @@ function create_each_block_2(ctx) {
           if_block2 = create_if_block_11(ctx);
           if_block2.c();
           transition_in(if_block2, 1);
-          if_block2.m(div1, t4);
+          if_block2.m(div1, t6);
         }
       } else if (if_block2) {
         group_outros();
@@ -12333,7 +12255,7 @@ function create_each_block_2(ctx) {
       if (if_block2)
         if_block2.d();
       mounted = false;
-      dispose();
+      run_all(dispose);
     }
   };
 }
@@ -12342,11 +12264,12 @@ function create_if_block_82(ctx) {
   return {
     c() {
       h1 = element("h1");
-      h1.textContent = "No feeds configured";
+      h1.textContent = `${t("loading")}`;
     },
     m(target, anchor) {
       insert(target, h1, anchor);
     },
+    p: noop,
     d(detaching) {
       if (detaching)
         detach(h1);
@@ -12370,7 +12293,9 @@ function create_if_block_110(ctx) {
   const if_block_creators = [create_if_block_72, create_else_block_4];
   const if_blocks = [];
   function select_block_type_5(ctx2, dirty) {
-    if (show_if_1 == null || dirty & 2)
+    if (dirty & 2)
+      show_if_1 = null;
+    if (show_if_1 == null)
       show_if_1 = !!ctx2[1].contains("rss-folders");
     if (show_if_1)
       return 0;
@@ -12413,7 +12338,7 @@ function create_if_block_110(ctx) {
         if_block2.m(div1, null);
       current = true;
       if (!mounted) {
-        dispose = listen(div0, "click", ctx[10]);
+        dispose = listen(div0, "click", ctx[12]);
         mounted = true;
       }
     },
@@ -12746,7 +12671,7 @@ function create_else_block_12(ctx) {
 }
 function create_if_block_42(ctx) {
   let span;
-  let t_1_value = ctx[14] + "";
+  let t_1_value = ctx[15] + "";
   let t_1;
   return {
     c() {
@@ -12758,7 +12683,7 @@ function create_if_block_42(ctx) {
       append(span, t_1);
     },
     p(ctx2, dirty) {
-      if (dirty & 4 && t_1_value !== (t_1_value = ctx2[14] + ""))
+      if (dirty & 4 && t_1_value !== (t_1_value = ctx2[15] + ""))
         set_data(t_1, t_1_value);
     },
     d(detaching) {
@@ -12770,7 +12695,7 @@ function create_if_block_42(ctx) {
 function create_if_block_33(ctx) {
   let each_1_anchor;
   let current;
-  let each_value_1 = ctx[2][ctx[14]];
+  let each_value_1 = ctx[2][ctx[15]];
   let each_blocks = [];
   for (let i = 0; i < each_value_1.length; i += 1) {
     each_blocks[i] = create_each_block_12(get_each_context_12(ctx, each_value_1, i));
@@ -12794,7 +12719,7 @@ function create_if_block_33(ctx) {
     },
     p(ctx2, dirty) {
       if (dirty & 5) {
-        each_value_1 = ctx2[2][ctx2[14]];
+        each_value_1 = ctx2[2][ctx2[15]];
         let i;
         for (i = 0; i < each_value_1.length; i += 1) {
           const child_ctx = get_each_context_12(ctx2, each_value_1, i);
@@ -12842,7 +12767,7 @@ function create_each_block_12(ctx) {
   let current;
   feedview = new FeedView_default({
     props: {
-      feed: ctx[17],
+      feed: ctx[18],
       plugin: ctx[0]
     }
   });
@@ -12857,7 +12782,7 @@ function create_each_block_12(ctx) {
     p(ctx2, dirty) {
       const feedview_changes = {};
       if (dirty & 4)
-        feedview_changes.feed = ctx2[17];
+        feedview_changes.feed = ctx2[18];
       if (dirty & 1)
         feedview_changes.plugin = ctx2[0];
       feedview.$set(feedview_changes);
@@ -12887,7 +12812,7 @@ function create_each_block3(ctx) {
   let span_class_value;
   let t1;
   let div0;
-  let show_if = !ctx[1].contains(ctx[14]);
+  let show_if = !ctx[1].contains(ctx[15]);
   let t2;
   let current;
   let mounted;
@@ -12895,8 +12820,10 @@ function create_each_block3(ctx) {
   const if_block_creators = [create_if_block_52, create_else_block_2];
   const if_blocks = [];
   function select_block_type_7(ctx2, dirty) {
-    if (show_if_1 == null || dirty & 6)
-      show_if_1 = !!ctx2[1].contains(ctx2[14]);
+    if (dirty & 6)
+      show_if_1 = null;
+    if (show_if_1 == null)
+      show_if_1 = !!ctx2[1].contains(ctx2[15]);
     if (show_if_1)
       return 0;
     return 1;
@@ -12904,17 +12831,17 @@ function create_each_block3(ctx) {
   current_block_type_index = select_block_type_7(ctx, -1);
   if_block0 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
   function select_block_type_8(ctx2, dirty) {
-    if (ctx2[14])
+    if (ctx2[15])
       return create_if_block_42;
     return create_else_block_12;
   }
   let current_block_type = select_block_type_8(ctx, -1);
   let if_block1 = current_block_type(ctx);
   function click_handler_4() {
-    return ctx[11](ctx[14]);
+    return ctx[13](ctx[15]);
   }
-  function contextmenu_handler(...args) {
-    return ctx[12](ctx[14], ...args);
+  function contextmenu_handler_1(...args) {
+    return ctx[14](ctx[15], ...args);
   }
   let if_block2 = show_if && create_if_block_33(ctx);
   return {
@@ -12929,7 +12856,7 @@ function create_each_block3(ctx) {
       if (if_block2)
         if_block2.c();
       t2 = space();
-      attr(span, "class", span_class_value = "" + ((ctx[1].contains(ctx[14]) ? "is-collapsed" : "") + " tree-item-self is-clickable"));
+      attr(span, "class", span_class_value = "" + ((ctx[1].contains(ctx[15]) ? "is-collapsed" : "") + " tree-item-self is-clickable"));
       attr(div0, "class", "tree-item-children");
       attr(div1, "class", "rss-folder tree-item");
     },
@@ -12948,7 +12875,7 @@ function create_each_block3(ctx) {
       if (!mounted) {
         dispose = [
           listen(span, "click", click_handler_4),
-          listen(span, "contextmenu", contextmenu_handler)
+          listen(span, "contextmenu", contextmenu_handler_1)
         ];
         mounted = true;
       }
@@ -12982,11 +12909,11 @@ function create_each_block3(ctx) {
           if_block1.m(span, null);
         }
       }
-      if (!current || dirty & 6 && span_class_value !== (span_class_value = "" + ((ctx[1].contains(ctx[14]) ? "is-collapsed" : "") + " tree-item-self is-clickable"))) {
+      if (!current || dirty & 6 && span_class_value !== (span_class_value = "" + ((ctx[1].contains(ctx[15]) ? "is-collapsed" : "") + " tree-item-self is-clickable"))) {
         attr(span, "class", span_class_value);
       }
       if (dirty & 6)
-        show_if = !ctx[1].contains(ctx[14]);
+        show_if = !ctx[1].contains(ctx[15]);
       if (show_if) {
         if (if_block2) {
           if_block2.p(ctx, dirty);
@@ -13114,7 +13041,7 @@ function buildTreeStructure(filteredContent) {
   let result = [];
   let level = { result };
   filteredContent.forEach((filter) => {
-    filter.filter.name.split("/").reduce((r, name, i, a) => {
+    filter.filter.name.split("/").reduce((r, name) => {
       if (!r[name]) {
         r[name] = { result: [] };
         if (filter.filter.name.endsWith(name)) {
@@ -13151,7 +13078,7 @@ function instance8($$self, $$props, $$invalidate) {
     plugin.writeFolded(folded);
   }
   function openMenuForFolder(e, folder) {
-    return __awaiter(this, void 0, void 0, function* () {
+    return __async(this, null, function* () {
       const items = [];
       for (const feed of $sortedFeedsStore[folder]) {
         for (let item of feed.items) {
@@ -13162,17 +13089,17 @@ function instance8($$self, $$props, $$invalidate) {
     });
   }
   function openMenu(e, feedItems) {
-    return __awaiter(this, void 0, void 0, function* () {
+    return __async(this, null, function* () {
       const menu = new import_obsidian15.Menu(plugin.app);
       menu.addItem((menuItem) => {
-        menuItem.setIcon("create-new").setTitle(t("create_all")).onClick(() => __awaiter(this, void 0, void 0, function* () {
+        menuItem.setIcon("create-new").setTitle(t("create_all")).onClick(() => __async(this, null, function* () {
           for (const item of feedItems) {
             yield Action.CREATE_NOTE.processor(plugin, item);
           }
         }));
       });
       menu.addItem((menuItem) => {
-        menuItem.setIcon("feather-eye").setTitle(t("mark_all_as_read")).onClick(() => __awaiter(this, void 0, void 0, function* () {
+        menuItem.setIcon("feather-eye").setTitle(t("mark_all_as_read")).onClick(() => __async(this, null, function* () {
           for (const item of feedItems) {
             item.read = true;
           }
@@ -13186,11 +13113,12 @@ function instance8($$self, $$props, $$invalidate) {
     });
   }
   const click_handler = () => toggleFold("rss-filters");
+  const contextmenu_handler = (folder, e) => openMenu(e, folder.filter.items.items);
   const click_handler_1 = (folder) => toggleFold("rss-filters-" + folder.name);
   const click_handler_2 = (child) => toggleFold("rss-filters-" + child.filter.filter.name);
   const click_handler_3 = () => toggleFold("rss-folders");
   const click_handler_4 = (folder) => toggleFold(folder);
-  const contextmenu_handler = (folder, e) => openMenuForFolder(e, folder);
+  const contextmenu_handler_1 = (folder, e) => openMenuForFolder(e, folder);
   $$self.$$set = ($$props2) => {
     if ("plugin" in $$props2)
       $$invalidate(0, plugin = $$props2.plugin);
@@ -13203,12 +13131,14 @@ function instance8($$self, $$props, $$invalidate) {
     $settingsStore,
     toggleFold,
     openMenuForFolder,
+    openMenu,
     click_handler,
+    contextmenu_handler,
     click_handler_1,
     click_handler_2,
     click_handler_3,
     click_handler_4,
-    contextmenu_handler
+    contextmenu_handler_1
   ];
 }
 var FolderView = class extends SvelteComponent {
@@ -13232,7 +13162,7 @@ var ViewLoader = class extends import_obsidian16.ItemView {
     return VIEW_ID;
   }
   getIcon() {
-    return "feather-rss";
+    return "rss";
   }
   onOpen() {
     return __async(this, null, function* () {
@@ -13260,13 +13190,19 @@ var import_lodash9 = __toModule(require_lodash4());
 
 // src/modals/FilteredFolderModal.ts
 var import_obsidian17 = __toModule(require("obsidian"));
-var SortOrder = /* @__PURE__ */ ((SortOrder2) => {
+var FilterType;
+(function(FilterType2) {
+  FilterType2[FilterType2["UNREAD"] = 0] = "UNREAD";
+  FilterType2[FilterType2["READ"] = 1] = "READ";
+  FilterType2[FilterType2["FAVORITES"] = 2] = "FAVORITES";
+})(FilterType || (FilterType = {}));
+var SortOrder;
+(function(SortOrder2) {
   SortOrder2[SortOrder2["DATE_NEWEST"] = 0] = "DATE_NEWEST";
   SortOrder2[SortOrder2["DATE_OLDEST"] = 1] = "DATE_OLDEST";
   SortOrder2[SortOrder2["ALPHABET_NORMAL"] = 2] = "ALPHABET_NORMAL";
   SortOrder2[SortOrder2["ALPHABET_INVERTED"] = 3] = "ALPHABET_INVERTED";
-  return SortOrder2;
-})(SortOrder || {});
+})(SortOrder || (SortOrder = {}));
 var FilteredFolderModal = class extends BaseModal {
   constructor(plugin, folder) {
     super(plugin.app);
@@ -13343,7 +13279,7 @@ var FilteredFolderModal = class extends BaseModal {
             this.filterFolders.push(value);
           }));
         })).addExtraButton((button) => {
-          button.setTooltip(t("delete")).setIcon("feather-trash").onClick(() => {
+          button.setTooltip(t("delete")).setIcon("trash").onClick(() => {
             this.filterFolders = this.filterFolders.filter((e) => e !== this.filterFolders[folder]);
             this.display();
           });
@@ -13356,7 +13292,7 @@ var FilteredFolderModal = class extends BaseModal {
           folderValue = value;
         }));
       })).addExtraButton((button) => {
-        button.setTooltip(t("add")).setIcon("feather-plus").onClick(() => {
+        button.setTooltip(t("add")).setIcon("plus").onClick(() => {
           this.filterFolders.push(folderValue);
           this.display();
         });
@@ -13372,7 +13308,7 @@ var FilteredFolderModal = class extends BaseModal {
             this.ignoreFolders.push(value);
           }));
         })).addExtraButton((button) => {
-          button.setTooltip(t("delete")).setIcon("feather-trash").onClick(() => {
+          button.setTooltip(t("delete")).setIcon("trash").onClick(() => {
             this.ignoreFolders = this.ignoreFolders.filter((e) => e !== this.ignoreFolders[folder]);
             this.display();
           });
@@ -13385,7 +13321,7 @@ var FilteredFolderModal = class extends BaseModal {
           folderIgnoreValue = value;
         }));
       })).addExtraButton((button) => {
-        button.setTooltip(t("add")).setIcon("feather-plus").onClick(() => {
+        button.setTooltip(t("add")).setIcon("plus").onClick(() => {
           this.ignoreFolders.push(folderIgnoreValue);
           this.display();
         });
@@ -13400,15 +13336,10 @@ var FilteredFolderModal = class extends BaseModal {
         return this.filterFolders.contains(feed.folder);
       }).map((feed) => feed.name);
       for (const feed in this.filterFeeds) {
-        new import_obsidian17.Setting(feedsDiv).addSearch((search) => __async(this, null, function* () {
-          new ArraySuggest(this.app, search.inputEl, new Set(feeds));
-          search.setValue(this.filterFeeds[feed]).onChange((value) => __async(this, null, function* () {
-            this.removeValidationError(search);
-            this.filterFeeds = this.filterFeeds.filter((e) => e !== this.filterFeeds[feed]);
-            this.filterFeeds.push(value);
-          }));
-        })).addExtraButton((button) => {
-          button.setTooltip(t("delete")).setIcon("feather-trash").onClick(() => {
+        new import_obsidian17.Setting(feedsDiv).addText((text2) => {
+          text2.setDisabled(true).setValue(this.filterFeeds[feed]);
+        }).addExtraButton((button) => {
+          button.setTooltip(t("delete")).setIcon("trash").onClick(() => {
             this.filterFeeds = this.filterFeeds.filter((e) => e !== this.filterFeeds[feed]);
             this.display();
           });
@@ -13418,27 +13349,30 @@ var FilteredFolderModal = class extends BaseModal {
       const newFeed = new import_obsidian17.Setting(feedsDiv).addSearch((search) => __async(this, null, function* () {
         new ArraySuggest(this.app, search.inputEl, new Set(feeds));
         search.onChange((value) => __async(this, null, function* () {
+          const feeds2 = this.plugin.settings.feeds.filter((feed) => feed.name === feedIgnoreValue).length;
+          if (feeds2 !== 1) {
+            this.setValidationError(search, t("no_feed_with_name"));
+            return;
+          }
           feedValue = value;
         }));
       })).addExtraButton((button) => {
-        button.setTooltip(t("add")).setIcon("feather-plus").onClick(() => {
+        button.setTooltip(t("add")).setIcon("plus").onClick(() => {
+          const feeds2 = this.plugin.settings.feeds.filter((feed) => feed.name === feedIgnoreValue).length;
+          if (feeds2 !== 1)
+            return;
           this.filterFeeds.push(feedValue);
           this.display();
         });
       });
       newFeed.controlEl.addClass("rss-setting-input");
       feedsDiv.createEl("p", { text: t("filter_feed_ignore_help") });
-      for (const folder in this.ignoreFeeds) {
-        new import_obsidian17.Setting(feedsDiv).addSearch((search) => __async(this, null, function* () {
-          new ArraySuggest(this.app, search.inputEl, new Set(feeds));
-          search.setValue(this.ignoreFeeds[folder]).onChange((value) => __async(this, null, function* () {
-            this.removeValidationError(search);
-            this.ignoreFeeds = this.ignoreFeeds.filter((e) => e !== this.ignoreFeeds[folder]);
-            this.ignoreFeeds.push(value);
-          }));
-        })).addExtraButton((button) => {
-          button.setTooltip(t("delete")).setIcon("feather-trash").onClick(() => {
-            this.ignoreFeeds = this.ignoreFeeds.filter((e) => e !== this.ignoreFeeds[folder]);
+      for (const feed in this.ignoreFeeds) {
+        new import_obsidian17.Setting(feedsDiv).addText((text2) => {
+          text2.setDisabled(true).setValue(this.ignoreFeeds[feed]);
+        }).addExtraButton((button) => {
+          button.setTooltip(t("delete")).setIcon("trash").onClick(() => {
+            this.ignoreFeeds = this.ignoreFeeds.filter((e) => e !== this.ignoreFeeds[feed]);
             this.display();
           });
         });
@@ -13447,10 +13381,18 @@ var FilteredFolderModal = class extends BaseModal {
       const newIgnoreFeed = new import_obsidian17.Setting(feedsDiv).addSearch((search) => __async(this, null, function* () {
         new ArraySuggest(this.app, search.inputEl, new Set(feeds));
         search.onChange((value) => __async(this, null, function* () {
+          const feeds2 = this.plugin.settings.feeds.filter((feed) => feed.name === feedIgnoreValue).length;
+          if (feeds2 !== 1) {
+            this.setValidationError(search, t("no_feed_with_name"));
+            return;
+          }
           feedIgnoreValue = value;
         }));
       })).addExtraButton((button) => {
-        button.setTooltip(t("add")).setIcon("feather-plus").onClick(() => {
+        button.setTooltip(t("add")).setIcon("plus").onClick(() => {
+          const feeds2 = this.plugin.settings.feeds.filter((feed) => feed.name === feedIgnoreValue).length;
+          if (feeds2 !== 1)
+            return;
           this.ignoreFeeds.push(feedIgnoreValue);
           this.display();
         });
@@ -13460,19 +13402,10 @@ var FilteredFolderModal = class extends BaseModal {
       tagDiv.createEl("h2", { text: t("tags") });
       tagDiv.createEl("p", { text: t("filter_tags_help") });
       for (const tag in this.filterTags) {
-        new import_obsidian17.Setting(tagDiv).addSearch((search) => __async(this, null, function* () {
-          new ArraySuggest(this.app, search.inputEl, get_store_value(tagsStore));
-          search.setValue(this.filterTags[tag]).onChange((value) => __async(this, null, function* () {
-            this.removeValidationError(search);
-            if (!value.match(TAG_REGEX) || value.match(NUMBER_REGEX) || value.contains(" ") || value.contains("#")) {
-              this.setValidationError(search, t("invalid_tag"));
-              return;
-            }
-            this.filterTags = this.filterTags.filter((e) => e !== this.filterTags[tag]);
-            this.filterTags.push(value);
-          }));
-        })).addExtraButton((button) => {
-          button.setTooltip(t("delete")).setIcon("feather-trash").onClick(() => {
+        new import_obsidian17.Setting(tagDiv).addText((text2) => {
+          text2.setDisabled(true).setValue(this.filterTags[tag]);
+        }).addExtraButton((button) => {
+          button.setTooltip(t("delete")).setIcon("trash").onClick(() => {
             this.filterTags = this.filterTags.filter((e) => e !== this.filterTags[tag]);
             this.display();
           });
@@ -13491,7 +13424,7 @@ var FilteredFolderModal = class extends BaseModal {
           tagValue = value;
         }));
       })).addExtraButton((button) => {
-        button.setTooltip(t("add")).setIcon("feather-plus").onClick(() => {
+        button.setTooltip(t("add")).setIcon("plus").onClick(() => {
           if (!tagValue.match(TAG_REGEX) || tagValue.match(NUMBER_REGEX) || tagValue.contains(" ") || tagValue.contains("#")) {
             this.setValidationError(tagComponent, t("invalid_tag"));
             return;
@@ -13515,7 +13448,7 @@ var FilteredFolderModal = class extends BaseModal {
             this.ignoreTags.push(value);
           }));
         })).addExtraButton((button) => {
-          button.setTooltip(t("delete")).setIcon("feather-trash").onClick(() => {
+          button.setTooltip(t("delete")).setIcon("trash").onClick(() => {
             this.ignoreTags = this.ignoreTags.filter((e) => e !== this.ignoreTags[tag]);
             this.display();
           });
@@ -13534,7 +13467,7 @@ var FilteredFolderModal = class extends BaseModal {
           ignoreTagValue = value;
         }));
       })).addExtraButton((button) => {
-        button.setTooltip(t("add")).setIcon("feather-plus").onClick(() => {
+        button.setTooltip(t("add")).setIcon("plus").onClick(() => {
           if (!ignoreTagValue.match(TAG_REGEX) || ignoreTagValue.match(NUMBER_REGEX) || ignoreTagValue.contains(" ") || ignoreTagValue.contains("#")) {
             this.setValidationError(ignoreTagComponent, t("invalid_tag"));
             return;
@@ -13724,7 +13657,7 @@ var FeedModal = class extends BaseModal {
 var import_obsidian20 = __toModule(require("obsidian"));
 
 // src/parser/opmlParser.ts
-function loadFeedsFromString(importData) {
+function loadFeedsFromString(importData, defaultFolder) {
   return __async(this, null, function* () {
     const rawData = new window.DOMParser().parseFromString(importData, "text/xml");
     const feeds = [];
@@ -13738,13 +13671,13 @@ function loadFeedsFromString(importData) {
           feeds.push({
             name: title,
             url: xmlUrl,
-            folder: current.parentElement.getAttribute("title")
+            folder: defaultFolder + (defaultFolder ? "/" : "") + current.parentElement.getAttribute("title")
           });
         } else {
           feeds.push({
             name: title,
             url: xmlUrl,
-            folder: ""
+            folder: defaultFolder + ""
           });
         }
       }
@@ -13758,6 +13691,7 @@ var ImportModal = class extends import_obsidian20.Modal {
   constructor(plugin) {
     super(plugin.app);
     this.importData = "";
+    this.defaultFolder = "";
     this.plugin = plugin;
   }
   onOpen() {
@@ -13782,10 +13716,16 @@ var ImportModal = class extends import_obsidian20.Modal {
           reader.readAsText(file);
         }
       });
+      new import_obsidian20.Setting(this.contentEl).setName(t("base_folder")).addSearch((search) => {
+        new FeedFolderSuggest(this.app, search.inputEl);
+        search.setValue(this.defaultFolder).onChange((value) => {
+          this.defaultFolder = value;
+        });
+      });
       new import_obsidian20.Setting(this.contentEl).addButton((button) => {
         button.setIcon("import-glyph").setTooltip(t("import")).onClick(() => __async(this, null, function* () {
           if (this.importData) {
-            const feeds = yield loadFeedsFromString(this.importData);
+            const feeds = yield loadFeedsFromString(this.importData, this.defaultFolder);
             yield this.plugin.writeFeeds(() => this.plugin.settings.feeds.concat(feeds));
             new import_obsidian20.Notice(t("imported_x_feeds", String(feeds.length)));
             this.close();
@@ -13813,7 +13753,7 @@ var CleanupModal = class extends BaseModal {
   constructor(plugin) {
     super(plugin.app);
     this.tag = "";
-    this.feed = "all-option-id";
+    this.feed = "wallabag.xml-option-id";
     this.plugin = plugin;
   }
   onOpen() {
@@ -13863,7 +13803,7 @@ var CleanupModal = class extends BaseModal {
       }).controlEl.addClass("rss-setting-input");
       older_than_setting.inputEl.setAttr("onkeypress", "return event.charCode >= 48 && event.charCode <= 57");
       new import_obsidian21.Setting(contentEl).setName(t("from_feed")).addDropdown((dropdown) => {
-        dropdown.addOption("all-option-id", t("all"));
+        dropdown.addOption("wallabag.xml-option-id", t("all"));
         const sorted = (0, import_lodash.default)((0, import_lodash2.default)(this.plugin.settings.feeds, "folder"), function(o) {
           return o[0].folder;
         });
@@ -13902,7 +13842,7 @@ var CleanupModal = class extends BaseModal {
               if (item !== void 0) {
                 let toRemove = 0;
                 if (item.pubDate === void 0 || (0, import_obsidian21.moment)(item.pubDate).isBefore(date)) {
-                  if (this.feed === "all-option-id" || this.feed === item.folder + "-" + item.feed) {
+                  if (this.feed === "wallabag.xml-option-id" || this.feed === item.folder + "-" + item.feed) {
                     if (this.read && item.read || !this.read && !item.read || this.read && !item.read) {
                       toRemove++;
                     }
@@ -14011,7 +13951,7 @@ function displayFeedSettings(plugin, container) {
   container.empty();
   container.createEl("h3", { text: t("feeds") });
   new import_obsidian23.Setting(container).setName(t("add_new")).setDesc(t("add_new_feed")).addButton((button) => {
-    return button.setTooltip(t("add_new_feed")).setIcon("feather-plus").onClick(() => __async(this, null, function* () {
+    return button.setTooltip(t("add_new_feed")).setIcon("plus").onClick(() => __async(this, null, function* () {
       const modal = new FeedModal(plugin);
       modal.onClose = () => __async(this, null, function* () {
         if (modal.saved) {
@@ -14030,7 +13970,7 @@ function displayFeedSettings(plugin, container) {
       modal.open();
     }));
   }).addExtraButton((button) => __async(this, null, function* () {
-    button.setTooltip(t("import_opml")).setIcon("feather-download").onClick(() => {
+    button.setTooltip(t("import_opml")).setIcon("download").onClick(() => {
       const modal = new ImportModal(plugin);
       modal.onClose = () => {
         displayFeedSettings(plugin, container);
@@ -14038,7 +13978,7 @@ function displayFeedSettings(plugin, container) {
       modal.open();
     });
   })).addExtraButton((button) => __async(this, null, function* () {
-    button.setTooltip(t("export_opml")).setIcon("feather-upload").onClick(() => {
+    button.setTooltip(t("export_opml")).setIcon("upload").onClick(() => {
       if (plugin.app.vault.adapter.exists("rss-feeds-export.opml")) {
         plugin.app.vault.adapter.remove("rss-feeds-export.opml");
       }
@@ -14046,7 +13986,7 @@ function displayFeedSettings(plugin, container) {
       new import_obsidian23.Notice(t("created_export"));
     });
   })).addExtraButton((button) => __async(this, null, function* () {
-    button.setTooltip(t("perform_cleanup")).setIcon("feather-trash").onClick(() => {
+    button.setTooltip(t("perform_cleanup")).setIcon("lucide-trash").onClick(() => {
       new CleanupModal(plugin).open();
     });
   }));
@@ -14065,7 +14005,7 @@ function displayFeedList(plugin, container, disabled = false) {
       setting.setName((feed.folder ? feed.folder : t("no_folder")) + " - " + feed.name);
       setting.setDesc(feed.url);
       setting.addExtraButton((b) => {
-        b.setDisabled(disabled).setIcon("feather-edit").setTooltip(t("edit")).onClick(() => {
+        b.setDisabled(disabled).setIcon("edit").setTooltip(t("edit")).onClick(() => {
           const modal = new FeedModal(plugin, feed);
           const oldFeed = feed;
           modal.onClose = () => __async(this, null, function* () {
@@ -14101,7 +14041,7 @@ function displayFeedList(plugin, container, disabled = false) {
           modal.open();
         });
       }).addExtraButton((button) => {
-        button.setDisabled(disabled).setTooltip(t("from_archive")).setIcon("feather-archive").onClick(() => __async(this, null, function* () {
+        button.setDisabled(disabled).setTooltip(t("from_archive")).setIcon("archive").onClick(() => __async(this, null, function* () {
           const modal = new MessageModal(plugin, t("reading_archive"));
           modal.open();
           displayFeedList(plugin, container, true);
@@ -14149,7 +14089,7 @@ function displayFeedList(plugin, container, disabled = false) {
           modal.close();
         }));
       }).addExtraButton((b) => {
-        b.setDisabled(disabled).setIcon("feather-trash").setTooltip(t("delete")).onClick(() => __async(this, null, function* () {
+        b.setDisabled(disabled).setIcon("lucide-trash").setTooltip(t("delete")).onClick(() => __async(this, null, function* () {
           const feeds2 = plugin.settings.feeds;
           feeds2.remove(feed);
           yield plugin.writeFeeds(() => feeds2);
@@ -14332,7 +14272,7 @@ function displayFilterSettings(plugin, containerEl) {
   containerEl.createEl("hr", { attr: { style: "border-top: 5px solid var(--background-modifier-border);" } });
   containerEl.createEl("h3", { text: t("filtered_folders") });
   new import_obsidian25.Setting(containerEl).setName(t("add_new")).setDesc(t("add_new_filter")).addButton((button) => {
-    return button.setTooltip(t("add_new_filter")).setIcon("feather-plus").onClick(() => __async(this, null, function* () {
+    return button.setTooltip(t("add_new_filter")).setIcon("plus").onClick(() => __async(this, null, function* () {
       const modal = new FilteredFolderModal(plugin);
       modal.onClose = () => __async(this, null, function* () {
         if (modal.saved) {
@@ -14380,17 +14320,17 @@ function displayFilterSettings(plugin, containerEl) {
       const folders = filter.filterFolders.join(",");
       message += "; " + t("from_folders") + folders;
     }
-    if (filter.filterFeeds.length > 0) {
+    if (filter.filterFeeds !== void 0 && filter.filterFeeds.length > 0) {
       const feeds = filter.filterFeeds.join(",");
       message += "; " + t("from_feeds") + feeds;
     }
-    if (filter.filterTags.length > 0) {
+    if (filter.filterTags !== void 0 && filter.filterTags.length > 0) {
       const tags = filter.filterTags.join(",");
       message += "; " + t("with_tags") + tags;
     }
     setting.setDesc(description.join(",") + message);
     setting.addExtraButton((b) => {
-      b.setIcon("feather-edit").setTooltip(t("edit")).onClick(() => {
+      b.setIcon("edit").setTooltip(t("edit")).onClick(() => {
         const modal = new FilteredFolderModal(plugin, filter);
         const oldFilter = filter;
         modal.onClose = () => __async(this, null, function* () {
@@ -14417,7 +14357,7 @@ function displayFilterSettings(plugin, containerEl) {
         modal.open();
       });
     }).addExtraButton((b) => {
-      b.setIcon("feather-trash").setTooltip(t("delete")).onClick(() => __async(this, null, function* () {
+      b.setIcon("lucide-trash").setTooltip(t("delete")).onClick(() => __async(this, null, function* () {
         const filters = plugin.settings.filtered;
         filters.remove(filter);
         yield plugin.writeFiltered(() => filters);
@@ -14439,7 +14379,7 @@ var RSSReaderSettingsTab = class extends import_obsidian26.PluginSettingTab {
     containerEl.createEl("h2", { text: t("RSS_Reader") + " " + t("settings") });
     containerEl.createEl("h3", { text: t("file_creation") });
     const templateDesc = new DocumentFragment();
-    templateDesc.createDiv().innerHTML = t("template_new_help") + "<br>" + t("available_variables") + `<br><strong>{{title}}</strong> \u2192 Title <br><strong>{{link}}</strong> \u2192 Link to article<br><strong>{{author}}</strong> \u2192 Author of article<br><strong>{{published}}</strong> \u2192 Date published<br><strong>{{created}}</strong> \u2192 Note creation date<br><strong>{{description}}</strong> \u2192 Short article description<br><strong>{{content}}</strong> \u2192 article content<br><strong>{{folder}}</strong> \u2192 Folder of feed<br><strong>{{feed}}</strong> \u2192 Title of feed<br><strong>{{filename}}</strong> \u2192 Filename<br><strong>{{tags}}</strong> \u2192 Tags split by comma<br><strong>{{media}}</strong> \u2192 Link to video/audio file<br><strong>{{highlights}}</strong> \u2192 Highlights`;
+    templateDesc.createDiv().innerHTML = t("template_new_help") + "<br>" + t("available_variables") + `<br><strong>{{title}}</strong> \u2192 ${t("article_title")}<br><strong>{{link}}</strong> \u2192 ${t("article_link")}<br><strong>{{author}}</strong> \u2192 ${t("article_author")}<br><strong>{{published}}</strong> \u2192 ${t("article_published")}<br><strong>{{created}}</strong> \u2192 ${t("note_created")}<br><strong>{{description}}</strong> \u2192 ${t("article_description")}<br><strong>{{content}}</strong> \u2192 ${t("article_content")}<br><strong>{{folder}}</strong> \u2192 ${t("feed_folder")}<br><strong>{{feed}}</strong> \u2192 ${t("feed_title")}<br><strong>{{filename}}</strong> \u2192 ${t("filename")}<br><strong>{{tags}}</strong> \u2192 ${t("article_tags")}<br><strong>{{media}}</strong> \u2192 ${t("article_media")}<br><strong>{{highlights}}</strong> \u2192 ${t("highlights")}`;
     new import_obsidian26.Setting(containerEl).setName(t("template_new")).setDesc(templateDesc).addTextArea((textArea) => {
       textArea.setValue(this.plugin.settings.template).setPlaceholder(DEFAULT_SETTINGS.template).onChange((value) => __async(this, null, function* () {
         yield this.plugin.writeSettings(() => ({
@@ -14450,7 +14390,7 @@ var RSSReaderSettingsTab = class extends import_obsidian26.PluginSettingTab {
       textArea.inputEl.setAttr("cols", 50);
     });
     const pasteTemplateDesc = new DocumentFragment();
-    pasteTemplateDesc.createDiv().innerHTML = t("template_new_help") + "<br>" + t("available_variables") + `<br><strong>{{title}}</strong> \u2192 Title <br><strong>{{link}}</strong> \u2192 Link to article<br><strong>{{author}}</strong> \u2192 Author of article<br><strong>{{published}}</strong> \u2192 Date published<br><strong>{{created}}</strong> \u2192 Note creation date<br><strong>{{description}}</strong> \u2192 Short article description<br><strong>{{content}}</strong> \u2192 article content<br><strong>{{folder}}</strong> \u2192 Folder of feed<br><strong>{{feed}}</strong> \u2192 Title of feed<br><strong>{{tags}}</strong> \u2192 Tags split by comma<br><strong>{{media}}</strong> \u2192 Link to video/audio file<br><strong>{{highlights}}</strong> \u2192 Highlights`;
+    pasteTemplateDesc.createDiv().innerHTML = t("template_new_help") + "<br>" + t("available_variables") + `<br><strong>{{title}}</strong> \u2192 ${t("article_title")}<br><strong>{{link}}</strong> \u2192 ${t("article_link")}<br><strong>{{author}}</strong> \u2192 ${t("article_author")}<br><strong>{{published}}</strong> \u2192 ${t("article_published")}<br><strong>{{created}}</strong> \u2192 ${t("note_created")}<br><strong>{{description}}</strong> \u2192 ${t("article_description")}<br><strong>{{content}}</strong> \u2192 ${t("article_content")}<br><strong>{{folder}}</strong> \u2192 ${t("feed_folder")}<br><strong>{{feed}}</strong> \u2192 ${t("feed_title")}<br><strong>{{tags}}</strong> \u2192 ${t("article_tags")}<br><strong>{{media}}</strong> \u2192 ${t("article_media")}<br><strong>{{highlights}}</strong> \u2192 ${t("highlights")}`;
     new import_obsidian26.Setting(containerEl).setName(t("template_paste")).setDesc(pasteTemplateDesc).addTextArea((textArea) => {
       textArea.setValue(this.plugin.settings.pasteTemplate).setPlaceholder(DEFAULT_SETTINGS.pasteTemplate).onChange((value) => __async(this, null, function* () {
         yield this.plugin.writeSettings(() => ({
@@ -14596,6 +14536,14 @@ var RSSReaderSettingsTab = class extends import_obsidian26.PluginSettingTab {
         }));
       }));
     });
+    advanced.createEl("hr", { attr: { style: "border-top: 5px solid var(--background-modifier-border);" } });
+    new import_obsidian26.Setting(advanced).setName(t("display_media")).addToggle((toggle) => {
+      toggle.setValue(this.plugin.settings.displayMedia).onChange((value) => __async(this, null, function* () {
+        yield this.plugin.writeSettings(() => ({
+          displayMedia: value
+        }));
+      }));
+    });
   }
 };
 
@@ -14630,17 +14578,6 @@ var RssReaderPlugin = class extends import_obsidian28.Plugin {
   onload() {
     return __async(this, null, function* () {
       console.log("loading plugin rss reader");
-      addFeatherIcon("rss");
-      addFeatherIcon("eye");
-      addFeatherIcon("eye-off");
-      addFeatherIcon("star");
-      addFeatherIcon("headphones");
-      addFeatherIcon("upload");
-      addFeatherIcon("trash");
-      addFeatherIcon("plus");
-      addFeatherIcon("edit");
-      addFeatherIcon("download");
-      addFeatherIcon("archive");
       this.register(settingsStore.subscribe((value) => {
         this.settings = value;
       }));
@@ -14829,6 +14766,7 @@ var RssReaderPlugin = class extends import_obsidian28.Plugin {
   }
   updateFeeds() {
     return __async(this, null, function* () {
+      console.log("updating feeds");
       function mergeArrayById(array1, array2) {
         const mergedObjectMap = (0, import_lodash8.default)(array1, "hash");
         const finalArray = [];
@@ -14992,7 +14930,7 @@ var RssReaderPlugin = class extends import_obsidian28.Plugin {
         try {
           JSON.parse(file);
         } catch (e) {
-          console.log("RSS Reader: could not parse json, check if the plugins data.json is valid.");
+          console.log(t("RSS_Reader") + "  could not parse json, check if the plugins data.json is valid.");
           console.error(e);
           new import_obsidian28.Notice(t("RSS_Reader") + " could not parse plugin data. If this message keeps showing up, check the console");
           return Promise.resolve();
@@ -15059,17 +14997,3 @@ var RssReaderPlugin = class extends import_obsidian28.Plugin {
   Licensed under the MIT License (MIT), see
   http://jedwatson.github.io/classnames
 */
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */

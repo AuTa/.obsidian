@@ -35,5 +35,6 @@
       "openFileInMode": "default"
     }
   ],
-  "macros": []
+  "macros": [],
+  "inputPrompt": "single-line"
 }

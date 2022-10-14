@@ -1,12 +1,17 @@
 {
   "theme": "moonstone",
-  "cssTheme": "Yin and Yang",
+  "cssTheme": "Things",
   "enabledCssSnippets": [
     "default-font",
     "internal-link",
     "internal-embed"
   ],
-  "baseFontSize": 20,
+  "baseFontSize": 16,
   "baseFontSizeAction": true,
-  "translucency": false
+  "translucency": false,
+  "accentColor": "#cc4ce6",
+  "showViewHeader": true,
+  "nativeMenus": false,
+  "interfaceFontFamily": "源ノ角ゴシック",
+  "monospaceFontFamily": "源ノ等幅"
 }
