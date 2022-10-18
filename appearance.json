@@ -8,7 +8,7 @@
   ],
   "baseFontSize": 16,
   "baseFontSizeAction": true,
-  "translucency": false,
+  "translucency": true,
   "accentColor": "#cc4ce6",
   "showViewHeader": true,
   "nativeMenus": false,
