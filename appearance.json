@@ -13,5 +13,6 @@
   "showViewHeader": true,
   "nativeMenus": false,
   "interfaceFontFamily": "源ノ角ゴシック",
-  "monospaceFontFamily": "源ノ等幅"
+  "monospaceFontFamily": "源ノ等幅",
+  "textFontFamily": "源ノ角ゴシック"
 }
