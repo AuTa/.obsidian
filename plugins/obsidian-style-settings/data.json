@@ -20,7 +20,6 @@
   "mado-miniflow@@toggle-tab-design": false,
   "mado-miniflow@@toggle-wave-background": true,
   "mado-miniflow@@theme-color": "theme-violette",
-  "mado-miniflow@@toggle-tab-height": false,
   "mado-miniflow@@toggle-scrollbar-overlay": true,
   "mado-miniflow@@toggle-titlebar-buttons": false,
   "mado-miniflow@@toggle-side-ribbons": true,
@@ -33,9 +32,10 @@
   "mado-miniflow@@toggle-explorer-indent": true,
   "mado-miniflow@@toggle-explorer-collapse": true,
   "mado-miniflow@@toggle-sync-button": false,
-  "mado-miniflow@@toggle-status-bar": true,
+  "mado-miniflow@@toggle-status-bar": false,
   "mado-miniflow@@toggle-sidebar-fixed-left": false,
   "mado-miniflow@@toggle-sidebar-fixed-right": false,
   "mado-miniflow@@toggle-sidebar-left-top": false,
-  "mado-miniflow@@toggle-sidebar-right-top": true
+  "mado-miniflow@@toggle-sidebar-right-top": true,
+  "mado-miniflow@@toggle-h1-margin-top": false
 }
