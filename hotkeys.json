@@ -45,5 +45,23 @@
       ],
       "key": "."
     }
+  ],
+  "app:toggle-left-sidebar": [
+    {
+      "modifiers": [
+        "Meta",
+        "Shift"
+      ],
+      "key": "L"
+    }
+  ],
+  "app:toggle-right-sidebar": [
+    {
+      "modifiers": [
+        "Meta",
+        "Shift"
+      ],
+      "key": "R"
+    }
   ]
 }
