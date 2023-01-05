@@ -18,15 +18,6 @@
     }
   ],
   "editor:attach-file": [],
-  "editor:insert-wikilink": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "F"
-    }
-  ],
   "editor:toggle-highlight": [
     {
       "modifiers": [
@@ -45,5 +36,14 @@
       "key": "C"
     }
   ],
-  "wikilinks-to-mdlinks-obsidian:toggle-wiki-md-links": []
+  "wikilinks-to-mdlinks-obsidian:toggle-wiki-md-links": [],
+  "editor:toggle-blockquote": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "."
+    }
+  ]
 }
