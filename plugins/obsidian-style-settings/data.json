@@ -37,5 +37,6 @@
   "mado-miniflow@@toggle-sidebar-fixed-right": false,
   "mado-miniflow@@toggle-sidebar-left-top": false,
   "mado-miniflow@@toggle-sidebar-right-top": true,
-  "mado-miniflow@@toggle-h1-margin-top": false
+  "mado-miniflow@@toggle-h1-margin-top": false,
+  "mado-miniflow@@bold-color@@light": "#9F4DBE"
 }
