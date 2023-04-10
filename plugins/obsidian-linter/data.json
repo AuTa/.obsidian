@@ -177,7 +177,7 @@
       "enabled": false
     },
     "remove-space-around-characters": {
-      "enabled": true,
+      "enabled": false,
       "include-fullwidth-forms": true,
       "include-cjk-symbols-and-punctuation": true,
       "include-dashes": true,
