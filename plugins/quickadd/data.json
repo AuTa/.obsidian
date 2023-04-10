@@ -36,5 +36,16 @@
     }
   ],
   "macros": [],
-  "inputPrompt": "single-line"
+  "inputPrompt": "single-line",
+  "devMode": false,
+  "templateFolderPath": "模板",
+  "announceUpdates": true,
+  "version": "0.19.4",
+  "migrations": {
+    "migrateToMacroIDFromEmbeddedMacro": true,
+    "useQuickAddTemplateFolder": true,
+    "incrementFileNameSettingMoveToDefaultBehavior": true,
+    "mutualExclusionInsertAfterAndWriteToBottomOfFile": true,
+    "setVersionAfterUpdateModalRelease": true
+  }
 }
