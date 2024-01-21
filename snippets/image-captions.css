@@ -1,0 +1,15 @@
+.theme-dark .image-captions-figure,
+.theme-dark .image-captions-caption {
+    background: none ;
+    color: #ebebeb50;
+}
+
+.theme-light .image-captions-figure,
+.theme-light .image-captions-caption {
+    background: none;
+    color: #30303050;
+}
+.image-captions-figure,
+.image-captions-caption {
+    font-size: var(--font-smaller);
+   }

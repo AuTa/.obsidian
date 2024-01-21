@@ -14,7 +14,6 @@
   "open-vscode",
   "buttons",
   "customjs",
-  "cmenu-plugin",
   "obsidian-excalidraw-plugin",
   "obsidian-spaced-repetition",
   "folder-note-plugin",
@@ -35,5 +34,6 @@
   "obsidian-epub-plugin",
   "obsidian-annotator",
   "obsidian-linter",
-  "obsidian-metatable"
+  "obsidian-metatable",
+  "image-captions"
 ]

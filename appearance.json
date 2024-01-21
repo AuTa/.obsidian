@@ -4,7 +4,8 @@
   "enabledCssSnippets": [
     "default-font",
     "internal-link",
-    "internal-embed"
+    "internal-embed",
+    "image-captions"
   ],
   "baseFontSize": 16,
   "baseFontSizeAction": true,
