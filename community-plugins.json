@@ -16,7 +16,6 @@
   "customjs",
   "obsidian-excalidraw-plugin",
   "obsidian-spaced-repetition",
-  "folder-note-plugin",
   "obsidian-banners",
   "media-extended",
   "quickadd",
@@ -35,5 +34,6 @@
   "obsidian-annotator",
   "obsidian-linter",
   "obsidian-metatable",
-  "image-captions"
+  "image-captions",
+  "folder-note-plugin"
 ]
