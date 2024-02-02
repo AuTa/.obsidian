@@ -1,0 +1,10 @@
+{
+  "findText": "`(.*?)`",
+  "replaceText": "<kbd>$1</kbd>",
+  "useRegEx": true,
+  "selOnly": false,
+  "caseInsensitive": false,
+  "processLineBreak": false,
+  "processTab": false,
+  "prefillFind": false
+}

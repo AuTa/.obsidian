@@ -35,5 +35,6 @@
   "obsidian-linter",
   "obsidian-metatable",
   "image-captions",
-  "folder-note-plugin"
+  "folder-note-plugin",
+  "obsidian-regex-replace"
 ]
