@@ -33,8 +33,9 @@
   "obsidian-epub-plugin",
   "obsidian-annotator",
   "obsidian-linter",
-  "obsidian-metatable",
   "image-captions",
   "folder-note-plugin",
-  "obsidian-regex-replace"
+  "obsidian-regex-replace",
+  "obsidian-metatable",
+  "obsidian-local-rest-api"
 ]
