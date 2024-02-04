@@ -37,5 +37,6 @@
   "folder-note-plugin",
   "obsidian-regex-replace",
   "obsidian-metatable",
-  "obsidian-local-rest-api"
+  "obsidian-local-rest-api",
+  "templater-obsidian"
 ]
