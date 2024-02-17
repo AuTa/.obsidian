@@ -38,5 +38,6 @@
   "obsidian-regex-replace",
   "obsidian-metatable",
   "obsidian-local-rest-api",
-  "templater-obsidian"
+  "templater-obsidian",
+  "tag-wrangler"
 ]
