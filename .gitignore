@@ -2,3 +2,4 @@ plugins/obsidian-commits/data.json
 plugins/obsidian-day-planner/data.json
 plugins/templater-obsidian/data.json
 plugins/remember-cursor-position/cursor-positions.json
+.DS_Store
