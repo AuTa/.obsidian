@@ -39,5 +39,6 @@
   "obsidian-metatable",
   "obsidian-local-rest-api",
   "templater-obsidian",
-  "tag-wrangler"
+  "tag-wrangler",
+  "sidebar-highlights"
 ]
