@@ -1,0 +1,18 @@
+.featured-image-info {
+    background-color: var(--background-secondary);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.featured-image-info-text {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.9em;
+}
+
+.thumbnail-settings {
+    padding-left: 1em;
+    border-left: 2px solid var(--background-modifier-border);
+    margin-left: 1em;
+}

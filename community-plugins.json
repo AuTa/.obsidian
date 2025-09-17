@@ -40,5 +40,7 @@
   "obsidian-local-rest-api",
   "templater-obsidian",
   "tag-wrangler",
-  "sidebar-highlights"
+  "sidebar-highlights",
+  "notebook-navigator",
+  "featured-image"
 ]
