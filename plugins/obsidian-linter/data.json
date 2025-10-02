@@ -42,14 +42,14 @@
     "yaml-timestamp": {
       "enabled": true,
       "date-created": true,
-      "date-created-key": "date",
+      "date-created-key": "created",
       "date-modified": true,
-      "date-modified-key": "lastmod",
+      "date-modified-key": "modified",
       "format": "",
       "date-created-source-of-truth": "frontmatter",
       "date-modified-source-of-truth": "file system",
       "convert-to-utc": false,
-      "update-on-file-contents-updated": "never"
+      "update-on-file-contents-updated": "after 5 seconds"
     },
     "yaml-title": {
       "enabled": false,
