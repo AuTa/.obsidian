@@ -63,5 +63,14 @@
       ],
       "key": "R"
     }
+  ],
+  "obsidian-stille:toggleStille": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "S"
+    }
   ]
 }
