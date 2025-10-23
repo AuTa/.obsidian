@@ -17,7 +17,6 @@
   "obsidian-excalidraw-plugin",
   "obsidian-spaced-repetition",
   "obsidian-banners",
-  "media-extended",
   "quickadd",
   "smart-random-note",
   "obsidian42-text-transporter",
@@ -41,6 +40,5 @@
   "templater-obsidian",
   "tag-wrangler",
   "sidebar-highlights",
-  "notebook-navigator",
-  "featured-image"
+  "notebook-navigator"
 ]

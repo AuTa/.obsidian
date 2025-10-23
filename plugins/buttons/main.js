@@ -981,14 +981,36 @@ var getButtonFromStore = async (app, args) => {
 };
 var getButtonById = async (app, id) => {
   const store = getStore(app.isMobile);
-  const storedButton = store.filter((item) => `button-${id}` === item.id)[0];
-  if (storedButton) {
-    const file = app.vault.getAbstractFileByPath(storedButton.path);
+  const readArgsByBlockId = async (blockId) => {
+    const btn = (store || []).find((item) => `button-${blockId}` === item.id);
+    if (!btn)
+      return void 0;
+    const file = app.vault.getAbstractFileByPath(btn.path);
     const content = await app.vault.cachedRead(file);
     const contentArray = content.split("\n");
-    const button = contentArray.slice(storedButton.position.start.line + 1, storedButton.position.end.line).join("\n");
+    const button = contentArray.slice(btn.position.start.line + 1, btn.position.end.line).join("\n");
     return createArgumentObject(button);
-  }
+  };
+  const resolveInheritedArgs = async (startId, visited = new Set(), depth = 0) => {
+    if (depth > 3)
+      return void 0;
+    if (visited.has(startId))
+      return void 0;
+    visited.add(startId);
+    const childArgs = await readArgsByBlockId(startId);
+    if (!childArgs)
+      return void 0;
+    const parentId = typeof childArgs.id === "string" ? childArgs.id.trim() : "";
+    if (!parentId)
+      return childArgs;
+    const parentArgs = await resolveInheritedArgs(parentId, visited, depth + 1);
+    if (!parentArgs)
+      return childArgs;
+    return { ...parentArgs, ...childArgs };
+  };
+  const merged = await resolveInheritedArgs(id);
+  if (merged)
+    return merged;
 };
 var getButtonSwapById = async (app, id) => {
   const store = getStore(app.isMobile);
@@ -4918,7 +4940,6 @@ var ButtonWidget = class extends import_view.WidgetType {
       const args = await getButtonById(this.app, this.id);
       if (args) {
         const name = args.name;
-        const classNames = args.class.split(" ");
         const color = args.color;
         this.el.innerHTML = "";
         import_obsidian19.MarkdownRenderer.render(this.app, name, this.el, this.app.workspace.getActiveFile()?.path || "", this.component);
@@ -4945,6 +4966,7 @@ var ButtonWidget = class extends import_view.WidgetType {
           args.width = "auto";
         }
         this.el.innerHTML = `<div style='width: ${args.width};padding-top: ${paddingTop};padding-bottom: ${paddingBottom};text-align: ${alignment[0] || "center"};line-height: 1.2em;'>${this.el.innerHTML.slice(14, -4)}</div>`;
+        const classNames = args.class ? args.class.split(" ") : [];
         if (classNames.length > 0) {
           this.el.removeClass("button-default");
           classNames.forEach((className) => {
@@ -4963,6 +4985,7 @@ var ButtonWidget = class extends import_view.WidgetType {
         this.el.addClass("button-error");
       }
     } catch (error) {
+      console.log(error);
       this.el.innerText = "Error loading button";
       this.el.removeClass("button-default");
       this.el.addClass("button-error");
